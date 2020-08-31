@@ -1,5 +1,5 @@
 define(['jquery'], function ($) {
-    var fetchContent = function (url, cb) {
+    let fetchContent = function (url, cb) {
         $.ajax({
             url: url,
             type: "GET",

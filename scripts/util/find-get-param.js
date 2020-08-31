@@ -14,7 +14,7 @@ define(function () {
                     result = tmp[1] ? decodeURIComponent(tmp[1]) : true;
                 }
             });
-        return result ? results : config.defaultValue;
+        return result ? result : config.defaultValue;
     };
 
     return findGetParameter;

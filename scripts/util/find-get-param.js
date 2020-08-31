@@ -1,9 +1,9 @@
 define(function () {
-    var findGetParameter = function (parameterName, config = { url: null, defaultValue: null }) {
-        var result = null;
-        var tmp = [];
+    let findGetParameter = function (parameterName, config = { url: null, defaultValue: null }) {
+        let result = null;
+        let tmp = [];
 
-        var url = config.url ? config.url : location.search;
+        let url = config.url ? config.url : location.search;
 
         url
             .substr(1)

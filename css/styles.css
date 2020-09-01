@@ -265,8 +265,6 @@ body {
     margin-right: 10px;
 }
 
-#right.right-list #list-posts .list-post-element.link-to-skb .active-skb .material-icons {}
-
 code, pre {
     display: inline-block;
     background-color: #d6d9db;
@@ -315,10 +313,10 @@ pre {
 
 .skb-content-1 {
     opacity: 0;
-    -webkit-transition: opacity 2s ease-out;
-    -moz-transition: opacity 2s ease-out;
-    -o-transition: opacity 2s ease-out;
-    transition: opacity 2s ease-out;
+    -webkit-transition: opacity 1s ease-out;
+    -moz-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
     border: 1px solid #7c7c7c2f;
     padding: 0px 8px;
     border-radius: 12px;

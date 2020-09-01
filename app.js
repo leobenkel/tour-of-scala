@@ -7,7 +7,7 @@ requirejs.config({
             'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min',
         ],
         lodash: [
-            'https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min'
+            'https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min'
         ],
         text: [
             // https://github.com/requirejs/text

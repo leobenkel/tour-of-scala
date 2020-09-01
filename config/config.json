@@ -1,4 +1,5 @@
-
 {
-    "startUrl": "https://leobenkel.com/2020/07/skb-scala-values/"
+    "startUrl": "https://leobenkel.com/2020/07/skb-scala-values/",
+    "listPostsUrl": "https://leobenkel.com/wp-json/wp/v2/posts?categories=171",
+    "discordServerID": "745529127720714310"
 }

@@ -420,3 +420,7 @@ pre {
 #made-by .img-icon {
     height: 1.3em;
 }
+
+.flex {
+    display: flex !important;
+}

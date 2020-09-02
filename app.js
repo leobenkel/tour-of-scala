@@ -1,5 +1,4 @@
 requirejs.config({
-    waitSeconds: 5,
     enforceDefine: true,
     baseUrl: '/',
     paths: {

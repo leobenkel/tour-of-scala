@@ -88,19 +88,21 @@ define([
                         $skbContent.empty();
 
 
-                        let div0 = $(`<div class="skb-content-0"></div>`).html(infoBoxes[0]);
+                        let div0 = $(`<div class="skb-content"></div>`).html(infoBoxes[0]);
                         $skbContent.append(div0);
 
-                        let div1 = $(`<div class="skb-content-1"></div>`);
-                        $skbContent.append(div1);
-
+                        let divClue = $(`<div id="skb-clue"></div>`);
+                        let div1 = $(`<div class="skb-content"></div>`).html(infoBoxes[1]);
+                        divClue.append(div1);
                         let button = $(`<p id="skb-content-learn-more">Reveal more information and clues</p>`);
-                        $skbContent.append(button);
                         $(button).click(function () {
                             $(this).remove();
-                            $skbContent.find(".skb-content-1").html(infoBoxes[1]);
-                            $skbContent.find(".skb-content-1").addClass("skb-visible");
+                            $skbContent.find("#skb-clue .skb-content").html(infoBoxes[1]);
+                            $skbContent.find("#skb-clue .skb-content").addClass("skb-visible");
                         });
+                        divClue.append(button);
+
+                        $skbContent.append(divClue);
                     } else {
                         $skbContent.append(`<div>Uknown SKB at url: ${url}</div>`)
                     }

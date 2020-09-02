@@ -1,16 +1,9 @@
 define([
-    'scripts/util/local-storage.js',
-    'scripts/core/render-skb.js',
-    'scripts/core/render-list.js'
+    // '/scripts/util/local-storage.js',
+    // '/scripts/core/render-skb.js',
+    // '/scripts/core/render-list.js',
+    'scripts/core/router.js'
 ],
-    function (storage, renderSkb, renderList) {
-        let currentDisplay = storage.get('currentDisplay');
-        switch (currentDisplay) {
-            case "skb":
-                renderSkb();
-                break;
-            default:
-                renderList();
-                break;
-        }
+    function (/*storage, renderSkb, renderList*/router) {
+        router.startRouting();
     });

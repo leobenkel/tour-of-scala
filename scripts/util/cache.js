@@ -1,5 +1,5 @@
 define([
-    'scripts/util/local-storage.js',
+    '/scripts/util/local-storage.js',
 ], function (storage) {
     let getTime = function () {
         var d = new Date();

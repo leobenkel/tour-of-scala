@@ -1,6 +1,7 @@
 requirejs.config({
+    waitSeconds: 5,
     enforceDefine: true,
-    baseUrl: '',
+    baseUrl: '/',
     paths: {
         // TODO: Clean those up
         jquery: [
@@ -11,11 +12,11 @@ requirejs.config({
         ],
         text: [
             // https://github.com/requirejs/text
-            'scripts/lib/text'
+            '/scripts/lib/text'
         ],
         json: [
             // https://github.com/millermedeiros/requirejs-plugins
-            'scripts/lib/json'
+            '/scripts/lib/json'
         ],
         postscribe: [
             // https://github.com/krux/postscribe
@@ -38,7 +39,7 @@ requirejs.config({
     }
 });
 
-define(['scripts/util/find-get-param.js'], function (findGetParameter, preConfig) {
+define(['/scripts/util/find-get-param.js'], function (findGetParameter, preConfig) {
     let disable_cache = findGetParameter('disable_cache');
 
     let config = {

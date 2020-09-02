@@ -1,10 +1,12 @@
 define([], function () {
+    let obfuscated = true;
+
     let encode = function (str) {
-        return btoa(unescape(encodeURIComponent(str)));
+        return obfuscated ? btoa(unescape(encodeURIComponent(str))) : str;
     };
 
     let decode = function (str) {
-        return decodeURIComponent(escape(window.atob(str)));
+        return obfuscated ? decodeURIComponent(escape(window.atob(str))) : str;
     };
 
     let setStorage = function (key, value) {
@@ -23,7 +25,6 @@ define([], function () {
             return defaultValue;
         }
     };
-
 
     let localStorage = {
         get: getStorage,

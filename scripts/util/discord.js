@@ -1,7 +1,7 @@
 define([
     'jquery',
-    'scripts/util/configuration.js',
-    'scripts/util/cache.js',
+    '/scripts/util/configuration.js',
+    '/scripts/util/cache.js',
 ], function ($, config, cache) {
     let initDiscordWidget = function () {
         let url = 'https://discordapp.com/api/servers/' + config.discordServerID + '/widget.json'

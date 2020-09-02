@@ -1,5 +1,8 @@
 {
-    "name": "App",
+    "name": "Tour of Scala",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "orientation": "landscape",
     "icons": [
         {
             "src": "\/favicon\/android-icon-36x36.png",

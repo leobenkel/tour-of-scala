@@ -424,3 +424,7 @@ pre {
 .flex {
     display: flex !important;
 }
+
+.tour-scala-logo {
+    height: fit-content;
+}

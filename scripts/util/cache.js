@@ -1,6 +1,7 @@
 define([
+    '/scripts/util/configuration.js',
     '/scripts/util/local-storage.js',
-], function (storage) {
+], function (config, storage) {
     let getTime = function () {
         var d = new Date();
         var n = d.getTime();
@@ -13,7 +14,7 @@ define([
         let r = storage.get(name);
 
         // cache was found
-        if (r) {
+        if (r && config.cache) {
             r = JSON.parse(r);
             let time = r.tty;
             let value = r.value;

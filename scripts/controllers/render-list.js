@@ -3,13 +3,14 @@ define([
     '/scripts/util/local-storage.js',
     '/scripts/util/discord.js',
     '/scripts/util/build-data.js',
+    '/scripts/util/pannel-rendering.js',
     'jquery',
     'lodash',
     'text!/scripts/template-post-list.html',
 ],
-    function (config, storage, discord, getData, $, _, template) {
+    function (config, storage, discord, getData, pannel, $, _, template) {
         let resetScreen = function () {
-            $('body').html(template);
+            pannel(template);
             $('link[rel="canonical"]').attr('href', null);
         };
 

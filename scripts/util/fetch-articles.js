@@ -105,7 +105,6 @@ define(['jquery'], function ($) {
                     console.error((s, err));
                 }
             });
-            let scastie = require(['scastie']);
         };
         fetchRecursive(url, cb);
     };

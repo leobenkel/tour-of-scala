@@ -9,6 +9,10 @@ define([
         let fetchData = function (cb) {
             let url = config.listPostsUrl;
 
+            setTimeout(function () {
+                let scastie = require(['scastie']);
+            }, 1);
+
             cache("post-list-content", 24 * 600000 /* one day */,
                 function (cb) {
                     getUrl(url, function (body) {

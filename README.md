@@ -16,5 +16,5 @@ npm install http-server -g
 and
 
 ```
-http-server index.html -p 9000
+http-server
 ```

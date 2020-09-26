@@ -12,13 +12,14 @@ define(['jquery'], function ($) {
             if (!intervalStop) {
                 displayArticleCount = displayArticleCount + 1;
                 let percentage = percentageDisplay();
+                if (percentage > 99) percentage = 99;
                 $('.loading').text(`Loading (${percentage}%)...`)
-                setTimeout(function () { refreshLoading(); }, currentTimePerUnit);
+                setTimeout(function () { refreshLoading(); }, Math.floor(currentTimePerUnit));
             }
         }
 
         let percentageDisplay = function () {
-            return pad(Math.round(displayArticleCount / totalArticles * 100.0 || 1), 3);
+            return Math.round(displayArticleCount / totalArticles * 100.0 || 1);
         }
 
         let update = function (total_articles, requestTime, countAddition) {
@@ -26,12 +27,8 @@ define(['jquery'], function ($) {
             currentArticleCount = currentArticleCount + countAddition;
             displayArticleCount = currentArticleCount;
             totalTime = totalTime + requestTime;
-            currentTimePerUnit = totalTime / currentArticleCount
-        }
-
-        let pad = function (num, size) {
-            var s = "000000000" + num;
-            return s.substr(s.length - size);
+            currentTimePerUnit = 1.0 * totalTime / currentArticleCount;
+            currentTimePerUnit = currentTimePerUnit + (currentTimePerUnit * (1 - currentArticleCount / totalArticles));
         }
 
         let stop = function () {
@@ -43,8 +40,8 @@ define(['jquery'], function ($) {
             intervalStop = false;
             currentArticleCount = 0;
             displayArticleCount = 0;
-            totalArticles = 20;
-            currentTimePerUnit = 1000;
+            totalArticles = 100;
+            currentTimePerUnit = 1200;
             setTimeout(function () { refreshLoading(); }, 1);
         }
 

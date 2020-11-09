@@ -3,11 +3,12 @@ define([
     'jquery',
 ],
     function (storage, $) {
-        let setUpRightPannel = function (indexTemplate) {
+        let setUpRightpanel = function (indexTemplate) {
             let template = $(indexTemplate);
 
             let currentValue = storage.get('right_is_close', defaultValue = "false") == "true";
-            console.log(`current: ${currentValue}`);
+            // console.log(`current: ${currentValue}`);
+
             if (currentValue) {
                 template.find('#right-toggle').addClass('right-closing');
                 template.find('#right').addClass('right-closing');
@@ -34,5 +35,5 @@ define([
             });
         }
 
-        return setUpRightPannel;
+        return setUpRightpanel;
     });

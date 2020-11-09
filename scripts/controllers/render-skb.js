@@ -4,13 +4,13 @@ define([
     '/scripts/util/discord.js',
     '/scripts/util/build-data.js',
     '/scripts/util/process-names.js',
-    '/scripts/util/pannel-rendering.js',
+    '/scripts/util/panel-rendering.js',
     'jquery',
     'text!/scripts/template-skb.html'
 ],
-    function (scastie, storage, discord, getData, p, pannel, $, template) {
+    function (scastie, storage, discord, getData, p, panel, $, template) {
         let resetScreen = function () {
-            pannel(template);
+            panel(template);
             $('link[rel="canonical"]').attr('href', null);
         };
 

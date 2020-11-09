@@ -1,0 +1,6 @@
+.history
+vendor
+.bundle
+_site
+Gemfile.lock
+.sass-cache

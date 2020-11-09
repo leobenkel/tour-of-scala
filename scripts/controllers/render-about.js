@@ -3,11 +3,11 @@ define([
     '/scripts/util/local-storage.js',
     '/scripts/util/discord.js',
     '/scripts/util/build-data.js',
+    '/scripts/core/navigator.js',
     'jquery',
-    'lodash',
     'text!/scripts/template-about.html',
 ],
-    function (config, storage, discord, getData, $, _, template) {
+    function (config, storage, discord, getData, navigator, $, template) {
         let resetScreen = function () {
             $('body').html(template);
             $('link[rel="canonical"]').attr('href', null);
@@ -26,7 +26,7 @@ define([
                         let isCurrent = skbName == storage.get("currentUrl") || (!storage.get("currentUrl") && index == 0);
 
                         if (isCurrent) {
-                            $("#skb_link").attr('href', `#skb-${skbName}`);
+                            $("#skb_link").attr('href', `#!skb-${skbName}`);
                             storage.set("currentUrl", skbName);
                             return false;
                         }
@@ -36,7 +36,7 @@ define([
         };
 
         let switchScreen = function () {
-            window.location.hash = '#about';
+            navigator.set('about');
             $("title").html("Tour of Scala | About");
             resetScreen();
             discord();

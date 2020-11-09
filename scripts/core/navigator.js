@@ -50,6 +50,9 @@ define([
 
         return {
             get: getHash,
+            hash: function () {
+                return getHash().hash;
+            },
             set: setHash,
             isDebug: debug
         };

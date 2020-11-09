@@ -4,11 +4,12 @@ define([
     '/scripts/util/discord.js',
     '/scripts/util/build-data.js',
     '/scripts/util/panel-rendering.js',
+    '/scripts/core/navigator.js',
     'jquery',
     'lodash',
     'text!/scripts/template-post-list.html',
 ],
-    function (config, storage, discord, getData, panel, $, _, template) {
+    function (config, storage, discord, getData, panel, navigator, $, _, template) {
         let resetScreen = function () {
             panel(template);
             $('link[rel="canonical"]').attr('href', null);
@@ -38,13 +39,13 @@ define([
                         let isCurrent = skbName == storage.get("currentUrl") || (!storage.get("currentUrl") && index == 0);
                         let marker = isCurrent ? `<i class="material-icons">play_arrow</i>` : ""
                         if (isCurrent) {
-                            $left.find("#skb_link").attr('href', `#skb-${skbName}`);
+                            $left.find("#skb_link").attr('href', `#!skb-${skbName}`);
                             storage.set("currentUrl", skbName);
                         }
 
                         $listPosts.append(`
                                 <a 
-                                    href="#skb-${skbName}" 
+                                    href="#!skb-${skbName}" 
                                     class="list-post-element link-to-skb" 
                                 >
                                     <span class="active-skb">${marker}</span>
@@ -80,7 +81,7 @@ define([
         };
 
         let switchScreen = function () {
-            window.location.hash = '#list';
+            navigator.set('list');
             $("title").html("Tour of Scala | Home");
             resetScreen();
             discord();

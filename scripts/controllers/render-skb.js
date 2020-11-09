@@ -5,10 +5,11 @@ define([
     '/scripts/util/build-data.js',
     '/scripts/util/process-names.js',
     '/scripts/util/panel-rendering.js',
+    '/scripts/core/navigator.js',
     'jquery',
     'text!/scripts/template-skb.html'
 ],
-    function (scastie, storage, discord, getData, p, panel, $, template) {
+    function (scastie, storage, discord, getData, p, panel, navigator, $, template) {
         let resetScreen = function () {
             panel(template);
             $('link[rel="canonical"]').attr('href', null);
@@ -44,8 +45,8 @@ define([
                 $left.find('#article-title').html(title);
                 $('title').html(`${title} | Tour of Scala`);
 
-                if (prevUrl) $left.find('#prev_link').attr('href', `#skb-${prevUrl}`); else $left.find('#prev_link').remove();
-                if (nextUrl) $left.find('#next_link').attr('href', `#skb-${nextUrl}`); else $left.find('#next_link').remove();
+                if (prevUrl) $left.find('#prev_link').attr('href', `#!skb-${prevUrl}`); else $left.find('#prev_link').remove();
+                if (nextUrl) $left.find('#next_link').attr('href', `#!skb-${nextUrl}`); else $left.find('#next_link').remove();
 
                 $skbContent.empty();
 
@@ -73,8 +74,8 @@ define([
             let $left = $("#left");
 
             getData(function (data) {
-                let url = window.location.hash.replace("#skb-", "");
-                if (!url || url == "#" || url == "") {
+                let url = navigator.hash().replace("skb-", "");
+                if (!url || url == "") {
                     url = _.find(Object.values(data), function (d) { return d.index == 0; }).skbName;
                     storage.set('currentUrl', url);
                 }
@@ -82,7 +83,7 @@ define([
 
                 if (rightPost) {
                     let skbName = rightPost.skbName;
-                    window.location.hash = `#skb-${skbName}`;
+                    navigator.set(`skb-${skbName}`)
                     storage.set('currentUrl', url);
 
                     let link = rightPost.link;
@@ -127,13 +128,13 @@ define([
 
                 if (rightPost) {
                     let skbName = rightPost.skbName;
-                    window.location.hash = `#skb-${skbName}`;
+                    navigator.set(`skb-${skbName}`);
                 }
             });
         };
 
         let switchScreen = function (url = null) {
-            if (window.location.hash == "#skb") {
+            if (navigator.hash() == "skb") {
                 setRightPath();
             } else {
                 resetScreen();

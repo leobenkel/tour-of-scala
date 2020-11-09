@@ -3,27 +3,32 @@ define([
     '/scripts/util/local-storage.js',
     '/scripts/util/discord.js',
     '/scripts/util/build-data.js',
-    '/scripts/util/pannel-rendering.js',
+    '/scripts/util/panel-rendering.js',
     'jquery',
     'lodash',
     'text!/scripts/template-post-list.html',
 ],
-    function (config, storage, discord, getData, pannel, $, _, template) {
+    function (config, storage, discord, getData, panel, $, _, template) {
         let resetScreen = function () {
-            pannel(template);
+            panel(template);
             $('link[rel="canonical"]').attr('href', null);
         };
 
         let render = function () {
             let url = config.listPostsUrl;
             let $left = $("#left");
-            let $right = $("#right");
+            let $rightContainer = $("#right");
+            let $right = $rightContainer.find(".list-wrapper");
             $right.html('<p class="loading">Loading...</p>');
 
-            getData(function (data) {
+            let $searchBar = $rightContainer.find('.search-input');
+            $searchBar.prop("disabled", true);
+
+            let drawList = function (data) {
                 $right.empty();
                 $right.append('<div id="list-posts"></div>');
                 let $listPosts = $right.find("#list-posts");
+
                 _.orderBy(Object.values(data), function (d) { return d.index; })
                     .forEach(function (elem) {
                         let title = elem.title;
@@ -46,6 +51,30 @@ define([
                                     <span class="skb-title">${title}</span>
                                 </a>`);
                     });
+            }
+
+            getData(function (data) {
+                let searchAction = _.debounce(function () {
+                    let searchQuery = $(this).val().toLowerCase();
+
+                    let filteredData;
+                    if (!searchQuery || searchQuery == '') {
+                        filteredData = data;
+                    } else {
+                        filteredData = _.filter(data, function (d) {
+                            return d.title.toLowerCase().includes(searchQuery);
+                        });
+                    }
+
+                    drawList(filteredData);
+                }, 200)
+                $searchBar.keydown(searchAction);
+                $searchBar.keyup(searchAction);
+                $searchBar.keypress(searchAction);
+
+                $searchBar.prop("disabled", false);
+
+                drawList(data);
             }
             );
         };

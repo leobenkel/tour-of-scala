@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to url with files served",
+            "type": "chrome",
+            "request": "attach",
+            "port": 9222,
+            "urlFilter": "http://127.0.0.1:4000/*",
+            "webRoot": "${workspaceFolder}",
+            "sourceMaps": true,
+        }
+    ]
+}

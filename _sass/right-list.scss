@@ -1,0 +1,81 @@
+#right.right-list {
+    display: flex;
+    flex-direction: column;
+
+    .search-bar {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        padding-right: 64px;
+        font-size: 18px;
+
+        .search-label {
+            @media screen and (max-width: 532px) {
+                display: none;
+            }
+        }
+
+        input.search-input {
+            flex: 1;
+            margin-left: 8px;
+            border-radius: 8px;
+            border: #bbc0c4 solid 1px;
+            line-height: 18px;
+            padding: 8px;
+        }
+    }
+
+    .list-wrapper {
+        background-color: #ececec;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        #list-posts {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            flex-wrap: nowrap;
+
+            .list-post-element.link-to-skb {
+                display: flex;
+                width: 100%;
+                padding: 8px;
+                padding-left: 5%;
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+                justify-content: left;
+                flex-wrap: nowrap;
+                align-items: center;
+
+                &:hover {
+                    background: #bbc0c4;
+
+                    .skb-title {
+                        color: black;
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+                }
+
+                .active-skb,
+                .active-skb .material-icons {
+                    margin: 0;
+                    padding: 0;
+                    width: 20px;
+                    height: 20px;
+                    display: block;
+                    font-size: 20px;
+                    text-decoration: none !important;
+                }
+
+                .active-skb {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

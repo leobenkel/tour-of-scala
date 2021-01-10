@@ -10,7 +10,7 @@ define([
         let usingEscapedFragment = false;
 
         // TODO: Needs to be false
-        let debug = true;
+        let debug = false;
 
         let latestReadDisplay
         let displayRead = function (hash) {

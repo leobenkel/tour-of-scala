@@ -112,7 +112,9 @@ define([
                         infoBoxes: infoBoxes
                     });
                 } else {
-                    console.error(`Could not find a page for key: ${url}`)
+                    console.error(`Could not find a page for key: ${url}`);
+                    setRightPath();
+                    return;
                 }
             });
         };

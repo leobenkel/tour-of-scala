@@ -1,7 +1,7 @@
 define(function () {
     return {
         url: function (input) {
-            if (!input.endsWith('/')) {
+            if (input && !input.endsWith('/')) {
                 input = input + '/';
             }
             // console.log('process URL: ', input);

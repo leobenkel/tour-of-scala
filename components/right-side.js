@@ -22,10 +22,15 @@ const useStyles = createUseStyles(
         closed: {
             width: '84px',
             paddingLeft: '84px',
-            overflow: 'hidden'
+            overflow: 'hidden',
+            '& > *': {
+                opacity: 0
+            }
         },
         expanded: {
             width: '55vw',
+            minWidth: '55vw',
+            maxWidth: '55vw'
         },
         rightToggle: {
             position: 'absolute',
@@ -69,7 +74,7 @@ export default function RightSide({ children, forList, className }) {
                 [styles.closed]: !rightExpanded
             }
         )} >
-            {rightExpanded ? children : null}
+            {children}
         </div>
         <div className={styles.rightToggle}>
             <button className={styles.rightToggleBtn} onClick={() => setRightExpanded(!rightExpanded)}>

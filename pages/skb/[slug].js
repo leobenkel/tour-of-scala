@@ -19,6 +19,7 @@ import Layout from 'components/layout'
 import LeftSide from 'components/left-side'
 import Nav from 'components/nav'
 import RightSide from 'components/right-side'
+import Scastie from 'components/scastie'
 import Top from 'components/top-container'
 
 
@@ -30,7 +31,10 @@ const useStyles = createUseStyles(
         skbContent: {
             overflow: 'auto',
             padding: '12px',
-            paddingTop: '0'
+            paddingTop: '0',
+            '& pre, & code': {
+                whiteSpace: 'break-space'
+            }
         },
         skbClue: {
             border: '1px solid #7c7c7c2f',
@@ -104,7 +108,7 @@ export default function Skb({ lesson }) {
             <link rel="canonical" href={lesson.link} />
         </Head>
 
-        <LeftSide>
+        <LeftSide key={lesson.scastieId}>
             <Top>
                 <Header title={lesson.title} sourceLink={lesson.link} />
                 <div className={styles.skbContent}>
@@ -116,7 +120,7 @@ export default function Skb({ lesson }) {
         </LeftSide>
 
         <RightSide>
-            {/* TODO: <Scastie /> */}
+            <Scastie scastieId={lesson.scastieId} key={lesson.scastieId} />
         </RightSide>
     </Layout>
 }

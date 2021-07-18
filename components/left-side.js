@@ -16,7 +16,7 @@ const useStyles = createUseStyles(
             justifyContent: 'space-between',
             borderRight: '2px #7c7c7c2f solid',
             width: 'auto',
-            flex: '1 1 45%'
+            flex: '1 1 45vw'
         }
     },
     {

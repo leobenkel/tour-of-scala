@@ -118,7 +118,7 @@ function SkbRow({ slug, title }) {
 export default function SkbList({ allLessons }) {
     const styles = useStyles()
 
-    // TODO: List-wrapper / can't scroll right now
+    // TODO: Search bar
     return <RightSide forList>
         <div className={styles.searchBar}>
             <span className={styles.searchLabel}>Search:</span>

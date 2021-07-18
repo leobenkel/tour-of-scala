@@ -1,14 +1,26 @@
+start:
+	netlify dev -e -p 4001
 
-kill_servers:
-	cli/killServers.sh
+clean:
+	rm -rf node_modules package-lock.json .netlify .next out next-env.d.ts
 
-startServer: kill_servers
-	bundle exec jekyll serve --livereload
+install:
+	npm install
+	npm audit fix || echo ''
 
-launchBrowser:
-	/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
-		--new-window "http://127.0.0.1:4000" \
-		--remote-debugging-port=9222 \
-		--user-data-dir=/tmp/chrome2/ \
-		--media-cache-size=1 \
-		--disk-cache-size=1
+start_dev:
+	npx next dev -p 4001
+
+start_prod:
+	npx next build --debug
+	NODE_OPTIONS='--inspect' npx next start -p 4001
+
+start_prod_netlify:
+	netlify build
+	cd ./out
+	http-server -p 4001
+
+update_netlify:
+	npm uninstall -g netlify-cli
+	npm i -g netlify-cli
+	npm audit fix

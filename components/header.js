@@ -48,7 +48,7 @@ const useStyles = createUseStyles(
     }
 )
 
-export default function Header() {
+export default function Header({ title, sourceLink }) {
     const styles = useStyles()
     const discordLink = '' //TODO: getDiscordLink()
 
@@ -56,13 +56,13 @@ export default function Header() {
     return <div>
         <div className={styles.title}>
             <h1 className={styles.articleTitle}>
-                <ImageFull className={styles.tourOfScalaLogo} src="/assets/tour-of-scala-logo.png" />Tour of Scala
+                {title ? title : (<><ImageFull className={styles.tourOfScalaLogo} src="/assets/tour-of-scala-logo.png" />Tour of Scala</>)}
             </h1>
             <div className={styles.titleLinks}>
                 <L to={discordLink} className={styles.discordLink}>
                     <ImageFull src="/assets/Discord-Logo+Wordmark-Black.svg" />
                 </L>
-                <L to="https://leobenkel.com/category/scala/knowledge-bits/" className={styles.sourceLink}>
+                <L to={sourceLink ? sourceLink : "https://leobenkel.com/category/scala/knowledge-bits/"} className={styles.sourceLink}>
                     <i className={cn("material-icons", styles.sourceLinkIcon)}>link</i>
                 </L>
             </div>

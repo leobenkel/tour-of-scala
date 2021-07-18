@@ -13,6 +13,8 @@
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "html-to-react": "^1.4.5",
+    "jquery": "^3.6.0",
+    "jsdom": "^16.6.0",
     "lodash": "^4.17.21",
     "netlify-plugin-cache-nextjs": "^1.6.1",
     "netlify-plugin-inline-source": "^1.0.4",

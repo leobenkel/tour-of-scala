@@ -12,7 +12,12 @@ const useStyles = createUseStyles(
             minHeight: '100%',
             maxHeight: '100%',
             backgroundColor: '#ececec',
-            boxSizing: 'border-box'
+            boxSizing: 'border-box',
+            transition: 'width .225s ease'
+        },
+        rightAsListContainer: {
+            display: 'flex',
+            flexDirection: 'column'
         },
         closed: {
             width: '84px',
@@ -50,7 +55,7 @@ const useStyles = createUseStyles(
     }
 )
 
-export default function RightSide({ children, className }) {
+export default function RightSide({ children, forList, className }) {
     const styles = useStyles()
     const [rightExpanded, setRightExpanded] = useState(true)
 
@@ -59,6 +64,7 @@ export default function RightSide({ children, className }) {
             styles.right,
             className,
             {
+                [styles.rightAsListContainer]: forList,
                 [styles.expanded]: rightExpanded,
                 [styles.closed]: !rightExpanded
             }

@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router'
 
 import cn from 'classnames'
+import concat from 'lodash/concat'
+import sortBy from 'lodash/sortBy'
 import { createUseStyles } from 'react-jss'
 
 import { useActiveLesson } from 'lib/lesson-save'
@@ -8,6 +10,8 @@ import * as Routes from 'lib/routes'
 
 import L from 'components/link'
 
+
+// TODO : colors not right
 
 const useStyles = createUseStyles(
     {
@@ -41,30 +45,47 @@ const useStyles = createUseStyles(
 )
 
 
-export default function Nav({ }) {
+export default function Nav({ navigation }) {
     const styles = useStyles()
     const router = useRouter()
     const currentPath = router.pathname
+    const isSKBPath = currentPath.startsWith('/skb')
     const currentLesson = useActiveLesson()
 
-    const pages = [
-        {
+    const links = concat([],
+        [{
             to: Routes.home,
-            icon: 'list'
-        },
-        {
+            icon: 'list',
+            priority: 1
+        }],
+        [!isSKBPath ? {
             to: Routes.about,
-            icon: 'help_outline'
-        },
-        currentLesson ? {
-            to: currentLesson,
-            icon: 'engineering'
-        } : null
-    ].filter(e => e)
+            icon: 'help_outline',
+            priority: 2
+        } : null],
+        [currentLesson && !isSKBPath ? {
+            to: Routes.skbFromSlug(currentLesson),
+            icon: 'engineering',
+            priority: 1
+        } : null],
+
+        navigation ? concat([],
+            [navigation[0] ? {
+                to: navigation[0],
+                icon: 'navigate_before',
+                priority: 0
+            } : null],
+            [navigation[1] ? {
+                to: navigation[1],
+                icon: 'navigate_next',
+                priority: 10
+            } : null]
+        ) : null
+    ).filter(e => e)
 
     return <div className={styles.nav}>
         {
-            pages.map(({ to, icon }, i) => {
+            sortBy(links, ['priority']).map(({ to, icon }, i) => {
                 if (currentPath == to) return null
 
                 return <L key={i} to={to} className={styles.navLink}>

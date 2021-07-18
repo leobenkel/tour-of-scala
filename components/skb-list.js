@@ -4,6 +4,7 @@ import cn from 'classnames'
 import { createUseStyles } from 'react-jss'
 
 import { useHover } from 'lib/hover'
+import { useActiveLesson } from 'lib/lesson-save'
 import * as Routes from 'lib/routes'
 
 import RightSide from 'components/right-side'
@@ -14,6 +15,19 @@ const L = dynamic(() => import('components/link'))
 
 const useStyles = createUseStyles(
     {
+        listWrapper: {
+            backgroundColor: '#ececec',
+            overflowY: 'auto',
+            overflowX: 'hidden',
+            flex: '1'
+        },
+        listSkb: {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            justifyContent: 'center',
+            flexWrap: 'nowrap'
+        },
         searchBar: {
             display: 'flex',
             alignContent: 'center',
@@ -59,6 +73,26 @@ const useStyles = createUseStyles(
         },
         skbListTitle: {
 
+        },
+        activeSkb: {
+            marginRight: '10px',
+            margin: '0',
+            padding: '0',
+            width: '20px',
+            height: '20px',
+            display: 'block',
+            fontSize: '20px',
+            textDecoration: 'none',
+
+            '& i': {
+                margin: '0',
+                padding: '0',
+                width: '20px',
+                height: '20px',
+                display: 'block',
+                fontSize: '20px',
+                textDecoration: 'none'
+            }
         }
     },
     {
@@ -69,28 +103,31 @@ const useStyles = createUseStyles(
 function SkbRow({ slug, title }) {
     const styles = useStyles()
     const { hover, hoverProps } = useHover()
-    const activeLesson = ''// useActiveLesson()
+    const activeLesson = useActiveLesson()
 
     return <L
         to={Routes.skbFromSlug(slug)}
         className={styles.linkToSkb}
         {...hoverProps}
     >
-        {activeLesson == slug ? <span class="active-skb"><i className="material-icons">play_arrow</i></span> : null}
-        <span class={cn(styles.skbListTitle, { [styles.titleHovered]: hover })}>{title.rendered}</span>
+        <span class={styles.activeSkb}> {activeLesson == slug ? <i className="material-icons">play_arrow</i> : null}</span>
+        <span class={cn(styles.skbListTitle, { [styles.titleHovered]: hover })}>{title}</span>
     </L>
 }
 
 export default function SkbList({ allLessons }) {
     const styles = useStyles()
 
-    return <RightSide>
+    // TODO: List-wrapper / can't scroll right now
+    return <RightSide forList>
         <div className={styles.searchBar}>
             <span className={styles.searchLabel}>Search:</span>
             <input type="text" placeholder="Search..." className={styles.searchInput} />
         </div>
-        <div className="list-wrapper">
-            {allLessons.map((d, i) => <SkbRow key={i} {...d} />)}
+        <div className={styles.listWrapper}>
+            <div className={styles.listSkb}>
+                {allLessons.map((d, i) => <SkbRow key={i} {...d} />)}
+            </div>
         </div>
     </RightSide>
 }

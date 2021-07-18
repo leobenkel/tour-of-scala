@@ -12,6 +12,7 @@
     "@netlify/plugin-sitemap": "^0.8.1",
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
+    "html-to-react": "^1.4.5",
     "lodash": "^4.17.21",
     "netlify-plugin-cache-nextjs": "^1.6.1",
     "netlify-plugin-inline-source": "^1.0.4",

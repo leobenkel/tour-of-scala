@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import cn from 'classnames'
 import { createUseStyles } from 'react-jss'
 
-import { getCurrentLesson } from 'lib/lesson-save'
+import { useActiveLesson } from 'lib/lesson-save'
 import * as Routes from 'lib/routes'
 
 import L from 'components/link'
@@ -45,7 +45,7 @@ export default function Nav({ }) {
     const styles = useStyles()
     const router = useRouter()
     const currentPath = router.pathname
-    const currentLesson = getCurrentLesson()
+    const currentLesson = useActiveLesson()
 
     const pages = [
         {

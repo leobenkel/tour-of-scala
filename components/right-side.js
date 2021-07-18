@@ -63,7 +63,7 @@ export default function RightSide({ children, className }) {
                 [styles.closed]: !rightExpanded
             }
         )} >
-            {children}
+            {rightExpanded ? children : null}
         </div>
         <div className={styles.rightToggle}>
             <button className={styles.rightToggleBtn} onClick={() => setRightExpanded(!rightExpanded)}>

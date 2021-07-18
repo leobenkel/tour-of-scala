@@ -1,50 +1,50 @@
-#right-toggle {
-    position: absolute;
-    top: 16px;
-    right: 32px;
-    z-index: 999;
-}
+// #right-toggle {
+//     position: absolute;
+//     top: 16px;
+//     right: 32px;
+//     z-index: 999;
+// }
 
-#right-toggle .right-toggle-opening {
-    display: none;
-}
+// #right-toggle .right-toggle-opening {
+//     display: none;
+// }
 
-#right-toggle .right-toggle-closing {
-    display: block;
-}
+// #right-toggle .right-toggle-closing {
+//     display: block;
+// }
 
-#right-toggle.right-closing .right-toggle-opening {
-    display: block;
-}
+// #right-toggle.right-closing .right-toggle-opening {
+//     display: block;
+// }
 
-#right-toggle.right-closing .right-toggle-closing {
-    display: none;
-}
+// #right-toggle.right-closing .right-toggle-closing {
+//     display: none;
+// }
 
-#right-toggle .right-toggle-btn {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    cursor: pointer;
-    border: 0;
-    background-color: transparent;
-    outline: none;
-}
+// #right-toggle .right-toggle-btn {
+//     margin: 0;
+//     padding: 0;
+//     display: flex;
+//     cursor: pointer;
+//     border: 0;
+//     background-color: transparent;
+//     outline: none;
+// }
 
-#right-toggle .right-toggle-btn:focus {
-    border: 0;
-    outline: none;
-}
+// #right-toggle .right-toggle-btn:focus {
+//     border: 0;
+//     outline: none;
+// }
 
-#right-toggle .material-icons {
-    font-size: 2em;
-}
+// #right-toggle .material-icons {
+//     font-size: 2em;
+// }
 
-#right.right-closing {
-    width: 84px;
-    padding-left: 84px;
-    overflow: hidden;
-}
+// #right.right-closing {
+//     width: 84px;
+//     padding-left: 84px;
+//     overflow: hidden;
+// }
 
 #right.right-closing #load-scastie {
     display: none;

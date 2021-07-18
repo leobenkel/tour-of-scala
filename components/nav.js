@@ -1,6 +1,9 @@
+import { useRouter } from 'next/router'
+
 import cn from 'classnames'
 import { createUseStyles } from 'react-jss'
 
+import { getCurrentLesson } from 'lib/lesson-save'
 import * as Routes from 'lib/routes'
 
 import L from 'components/link'
@@ -40,13 +43,34 @@ const useStyles = createUseStyles(
 
 export default function Nav({ }) {
     const styles = useStyles()
+    const router = useRouter()
+    const currentPath = router.pathname
+    const currentLesson = getCurrentLesson()
+
+    const pages = [
+        {
+            to: Routes.home,
+            icon: 'list'
+        },
+        {
+            to: Routes.about,
+            icon: 'help_outline'
+        },
+        currentLesson ? {
+            to: currentLesson,
+            icon: 'engineering'
+        } : null
+    ].filter(e => e)
 
     return <div className={styles.nav}>
-        <L to={Routes.home} className={styles.navLink}>
-            <i className={cn("material-icons", styles.materialIcons)}>list</i>
-        </L>
-        <L to={Routes.about} className={styles.navLink}>
-            <i className={cn("material-icons", styles.materialIcons)}>engineering</i>
-        </L>
+        {
+            pages.map(({ to, icon }) => {
+                if (currentPath == to) return <></>
+
+                return <L to={to} className={styles.navLink}>
+                    <i className={cn("material-icons", styles.materialIcons)}>{icon}</i>
+                </L>
+            })
+        }
     </div>
 }

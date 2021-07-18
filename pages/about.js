@@ -1,170 +1,50 @@
 import dynamic from 'next/dynamic'
 
-import cn from 'classnames'
-import { createUseStyles } from 'react-jss'
-
-import ImageFull from 'components/image-full'
 import Layout from 'components/layout'
-import L from 'components/link'
 
 
 const Nav = dynamic(() => import('components/nav'))
-
-const useStyles = createUseStyles(
-    {
-        top: {
-            display: 'flex',
-            flexDirection: 'column',
-            flexWrap: 'nowrap',
-            justifyContent: 'left',
-            maxHeight: 'calc(100% - 34px)',
-            padding: '0',
-            boxSizing: 'border-box'
-        },
-
-        title: {
-            display: 'flex',
-            justifyContent: 'space-between',
-            padding: '10px',
-            paddingBottom: '0'
-        },
-        sourceLink: {
-            display: 'inline-block',
-        },
-        sourceLinkIcon: {
-            fontSize: '2em',
-            transform: 'rotate(-45deg)'
-        },
-        discordLink: {
-            display: 'inline-block',
-            height: '2em',
-            '& img': {
-                height: '2em',
-                display: 'block'
-            }
-        },
-        articleTitle: {
-            display: 'flex',
-            margin: 0,
-            paddingRight: '8px',
-        },
-        tourOfScalaLogo: {
-            height: 'fit-content'
-        },
-        titleLinks: {
-            '& a': {
-                textDecoration: 'none',
-                color: 'black'
-            }
-        },
-        madeBy: {
-            display: 'flex',
-            justifyContent: 'space-between',
-            flexWrap: 'nowrap',
-            alignItems: 'center',
-            padding: '4px 12px'
-        },
-        madeByIconLink: {
-            textDecoration: 'none',
-            color: 'black',
-            marginRight: '4px'
-        },
-        iconImgIcon: {
-            height: '1.3em'
-        },
-        iconImgIconMaterial: {
-            fontSize: '1.3em',
-            transform: 'rotate(-45deg)'
-        },
-        skbInstructions: {
-            overflow: 'auto',
-            padding: '12px',
-            paddingTop: '0',
-            fontSize: '1em',
-            paddingLeft: '10%',
-            paddingRight: '10%'
-        }
-
-    },
-    {
-        name: "About"
-    }
-)
+const ContentContainer = dynamic(() => import('components/content-container'))
+const MadeBy = dynamic(() => import('components/made-by'))
+const L = dynamic(() => import('components/link'))
+const Header = dynamic(() => import('components/header'))
+const Top = dynamic(() => import('components/top-container'))
 
 export default function About() {
-    const styles = useStyles()
-    const discordLink = '' //TODO: getDiscordLink()
 
     //TODO : Description
-    return <>
-        <Layout title="About" description="" fullScreen>
-            <div className={styles.top}>
-                <div>
-                    <div className={styles.title}>
-                        <h1 className={styles.articleTitle}>
-                            <ImageFull className={styles.tourOfScalaLogo} src="/assets/tour-of-scala-logo.png" />Tour of Scala
-                        </h1>
-                        <div className={styles.titleLinks}>
-                            <L to={discordLink} className={styles.discordLink}>
-                                <ImageFull src="/assets/Discord-Logo+Wordmark-Black.svg" />
-                            </L>
-                            <L to="https://leobenkel.com/category/scala/knowledge-bits/" className={styles.sourceLink}>
-                                <i className={cn("material-icons", styles.sourceLinkIcon)}>link</i>
-                            </L>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.madeBy}>
-                    <div>Made by Leo Benkel</div>
-                    <div>
-                        <L to="https://www.patreon.com/leobenkel" className={styles.madeByIconLink} >
-                            <ImageFull className={styles.iconImgIcon} src="/assets/Patreon-Logo.png" />
-                        </L>
-                        <L to="https://www.linkedin.com/in/leobenkel/" className={styles.madeByIconLink} >
-                            <ImageFull className={styles.iconImgIcon} src="/assets/linkedin-xxl.png" />
-                        </L>
-                        <L to="https://github.com/leobenkel/" className={styles.madeByIconLink} >
-                            <ImageFull className={styles.iconImgIcon} src="/assets/GitHub-Mark-64px.png" />
-                        </L>
-                        <L to="https://medium.com/scala-knowledge-bits" className={styles.madeByIconLink} >
-                            <ImageFull className={styles.iconImgIcon} src="/assets/medium-logo.png" />
-                        </L>
-                        <L to="https://leobenkel.com" className={styles.madeByIconLink} >
-                            <i className={cn("material-icons", styles.iconImgIconMaterial)}>link</i>
-                        </L>
-                    </div>
-                </div>
-                <div className={styles.skbInstructions}>
-                    {/* <!-- TODO: Better about ! --> */}
-                    <h2>How is this website made?</h2>
-                    <p>
-                        The rendering of this website is generated by this open source project
-                        on <L to="https://github.com/leobenkel/tour-of-scala">GitHub</L>.
-                        If you would like to improve the design, please do. I am not a designer as you can see.
-                    </p>
-                    <p>
-                        The data being rendered is parsed from my website,
-                        and more specifically the <L to="https://leobenkel.com/category/scala/knowledge-bits/"
-                        >SKB series</L>.
-                    </p>
-                    <p>
-                        I post new articles on Mondays, Wednesdays and Fridays each week.
-                    </p>
-                    <p>You can also find the articles on <L to="https://medium.com/scala-knowledge-bits"
-                    >Medium</L>.</p>
-                    <p>If you have any comments, suggestions or feedback, make sure to message me on Discord, or LinkedIn,
-                        or submit a comment on the original article on my website.</p>
+    return <Layout title="About" description="" fullScreen>
+        <Top>
+            <Header />
+            <MadeBy />
+            <ContentContainer fullscreen>
+                {/* <!-- TODO: Better about ! --> */}
+                <h2>How is this website made?</h2>
+                <p>
+                    The rendering of this website is generated by this open source project
+                    on <L to="https://github.com/leobenkel/tour-of-scala">GitHub</L>.
+                    If you would like to improve the design, please do. I am not a designer as you can see.
+                </p>
+                <p>
+                    The data being rendered is parsed from my website,
+                    and more specifically the <L to="https://leobenkel.com/category/scala/knowledge-bits/"
+                    >SKB series</L>.
+                </p>
+                <p>
+                    I post new articles on Mondays, Wednesdays and Fridays each week.
+                </p>
+                <p>You can also find the articles on <L to="https://medium.com/scala-knowledge-bits"
+                >Medium</L>.</p>
+                <p>If you have any comments, suggestions or feedback, make sure to message me on Discord, or LinkedIn,
+                    or submit a comment on the original article on my website.</p>
 
-                    <h2>Credits</h2>
-                    <p>I heavily used the <L to="https://material.io/resources/icons/" >material icons</L>.</p>
-                    <p>Huge thanks to <L to="https://scastie.scala-lang.org/" >Scastie</L> as well which allows
-                        Tour of Scala to have interactive code snippets.</p>
-                    <p>And thank you to the member of the discord community for suggesting to build this website.</p>
-                </div>
-            </div>
-
-
-            <Nav />
-        </Layout>
-    </>
+                <h2>Credits</h2>
+                <p>I heavily used the <L to="https://material.io/resources/icons/" >material icons</L>.</p>
+                <p>Huge thanks to <L to="https://scastie.scala-lang.org/" >Scastie</L> as well which allows
+                    Tour of Scala to have interactive code snippets.</p>
+                <p>And thank you to the member of the discord community for suggesting to build this website.</p>
+            </ContentContainer>
+        </Top>
+        <Nav />
+    </Layout>
 }

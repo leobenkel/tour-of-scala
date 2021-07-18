@@ -1,5 +1,7 @@
 import dynamic from 'next/dynamic'
 
+import fetchLessons from 'lib/fetch-lessons'
+
 import Layout from 'components/layout'
 import LeftSide from 'components/left-side'
 
@@ -48,7 +50,7 @@ export default function Index({ allLessons }) {
 }
 
 export async function getStaticProps() {
-    const allLessons = [] // TODO: Get all lessons.
+    const allLessons = await fetchLessons()
 
     return {
         props: { allLessons },

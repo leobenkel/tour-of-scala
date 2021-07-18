@@ -64,10 +64,10 @@ export default function Nav({ }) {
 
     return <div className={styles.nav}>
         {
-            pages.map(({ to, icon }) => {
-                if (currentPath == to) return <></>
+            pages.map(({ to, icon }, i) => {
+                if (currentPath == to) return null
 
-                return <L to={to} className={styles.navLink}>
+                return <L key={i} to={to} className={styles.navLink}>
                     <i className={cn("material-icons", styles.materialIcons)}>{icon}</i>
                 </L>
             })

@@ -2,13 +2,13 @@
 {
     // The following will hide the js and map files in the editor
     "files.exclude": {
-        "_site": true,
-        ".bundle": true,
-        ".history": true,
-        ".sass-cache": true,
-        "vendor": true,
-        ".ruby-version": true,
-        "CNAME": true,
-        "Gemfile*": true
+        ".netlify": true,
+        "node_modules": true,
+        ".next": true,
+        "sitemap.xml": true,
+        "package-lock.json": true,
+        "next-env.d.ts": true,
+        "out": true,
+        "netlify": true
     }
 }

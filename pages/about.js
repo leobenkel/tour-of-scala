@@ -12,8 +12,7 @@ const Top = dynamic(() => import('components/top-container'))
 
 export default function About() {
 
-    //TODO : Description
-    return <Layout title="About" description="" fullScreen>
+    return <Layout title="About" description="Tour of Scala is a place to learn Scala easily by solving exercises." fullScreen>
         <Top>
             <Header />
             <MadeBy />

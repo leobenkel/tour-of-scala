@@ -42,12 +42,11 @@ const useStyles = createUseStyles(
     }
 )
 
-
 export default function Nav({ navigation }) {
     const styles = useStyles()
     const router = useRouter()
     const currentPath = router.pathname
-    const isSKBPath = currentPath.startsWith('/skb')
+    const isSKBPath = currentPath.startsWith('/scala')
     const currentLesson = useActiveLesson()
 
     const links = concat([],

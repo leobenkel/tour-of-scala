@@ -15,7 +15,7 @@ const Top = dynamic(() => import('components/top-container'))
 const SkbList = dynamic(() => import('components/skb-list'))
 
 export default function Index({ allLessons }) {
-    return <Layout description="">
+    return <Layout description="Tour of Scala is a place to learn Scala easily by solving exercises.">
         <LeftSide>
             <Top>
                 <Header />

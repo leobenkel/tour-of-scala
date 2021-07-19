@@ -60,27 +60,27 @@ package = "netlify-plugin-inline-source"
 # https://github.com/jonahsnider/netlify-cache-nextjs#readme
 package = "netlify-plugin-cache-nextjs"
 
-[[plugins]]
-# https://github.com/philhawksworth/netlify-plugin-minify-html#readme
-package = "netlify-plugin-minify-html"
+# [[plugins]]
+# # https://github.com/philhawksworth/netlify-plugin-minify-html#readme
+# package = "netlify-plugin-minify-html"
 
-    # Specify which deploy contexts we'll minify HTML in.
-    # Supports any Deploy Contexts available in Netlify.
-    # https://docs.netlify.com/site-deploys/overview/#deploy-contexts
-    [plugins.inputs]
-    contexts = [
-        'production',
-        'branch-deploy',
-        'deploy-preview'
-    ]
+#     # Specify which deploy contexts we'll minify HTML in.
+#     # Supports any Deploy Contexts available in Netlify.
+#     # https://docs.netlify.com/site-deploys/overview/#deploy-contexts
+#     [plugins.inputs]
+#     contexts = [
+#         'production',
+#         'branch-deploy',
+#         'deploy-preview'
+#     ]
 
-    # Optionally, override the default options for the minification
-    # https://github.com/kangax/html-minifier#options-quick-reference
-    [plugins.inputs.minifierOptions]
-    removeComments = true
-    collapseInlineTagWhitespace = true
-    collapseWhitespace = true
-    minifyCSS = true
-    minifyJS = true
-    sortAttributes = true
-    sortClassName = true
+#     # Optionally, override the default options for the minification
+#     # https://github.com/kangax/html-minifier#options-quick-reference
+#     [plugins.inputs.minifierOptions]
+#     removeComments = true
+#     collapseInlineTagWhitespace = true
+#     collapseWhitespace = true
+#     minifyCSS = true
+#     minifyJS = true
+#     sortAttributes = true
+#     sortClassName = true

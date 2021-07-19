@@ -36,7 +36,7 @@ const useStyles = createUseStyles(
             position: 'absolute',
             top: '16px',
             right: '32px',
-            zIndex: '999'
+            zIndex: '100'
         },
         rightToggleBtn: {
             margin: '0',

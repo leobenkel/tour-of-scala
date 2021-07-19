@@ -16,17 +16,12 @@ const useStyles = createUseStyles({
         bottom: 'unset',
         top: 0
     },
-    content: //utilsStyle.multiSize({
-    //    desktop:
-    // merge({},
-    // utilsStyle.pop_up,
-    {
+    content: {
         maxWidth: '1200px',
         backgroundColor: 'white',
         color: 'black',
         margin: '26px',
         padding: '32px',
-        borderRadius: '4px',
         border: `1px solid black`,
         display: 'flex',
         width: '100%',
@@ -34,29 +29,10 @@ const useStyles = createUseStyles({
         alignItems: 'center',
         justifyContent: 'space-between',
     },
-    // ),
-    //     mobile: {
-    //         margin: '12px',
-    //         marginBottom: '24px',
-    //         flexDirection: 'column',
-    //         fontSize: '10pt',
-    //         padding: '12px',
-    //     },
-    // }),
-    action: //utilsStyle.multiSize({
-    // desktop: 
-    {
+    action: {
         margin: '16px',
     },
-    //     mobile: {
-    //         '& button': {
-    //             fontSize: '12pt',
-    //         },
-    //     },
-    // }),
-    text: //utilsStyle.multiSize({
-    // desktop: 
-    {
+    text: {
         fontSize: '14pt',
 
         '& p': {
@@ -68,14 +44,17 @@ const useStyles = createUseStyles({
             display: 'inline'
         }
     },
-    //     mobile: { fontSize: '11pt' },
-    //     small: { fontSize: '10pt' },
-    // }),
-    // button: merge({},
-    //     buttonStyle.submit_btn,
-    //     buttonStyle.basic_btn,
-    //     buttonStyle.action_btn
-    // ),
+    button: {
+        backgroundColor: '#ececec',
+        outline: 'none',
+        border: '2px #7c7c7c2f solid',
+        padding: '8px',
+        fontSize: '1.2em',
+        cursor: 'pointer',
+        '&:hover': {
+            backgroundColor: '#bbc0c4'
+        }
+    }
 }, {
     name: 'popUp'
 })

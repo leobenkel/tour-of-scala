@@ -1,6 +1,8 @@
 import cn from 'classnames'
 import { createUseStyles } from 'react-jss'
 
+import useDiscordLink from 'lib/discord-link'
+
 import ImageFull from 'components/image-full'
 import L from 'components/link'
 
@@ -50,7 +52,7 @@ const useStyles = createUseStyles(
 
 export default function Header({ title, sourceLink }) {
     const styles = useStyles()
-    const discordLink = '' //TODO: getDiscordLink()
+    const discordLink = useDiscordLink()
 
     return <div>
         <div className={styles.title}>

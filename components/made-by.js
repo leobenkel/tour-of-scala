@@ -40,16 +40,16 @@ export default function MadeBy() {
         <div>Made by Leo Benkel</div>
         <div>
             <L to="https://www.patreon.com/leobenkel" className={styles.madeByIconLink} >
-                <ImageFull className={styles.iconImgIcon} src="/assets/Patreon-Logo.png" />
+                <ImageFull className={styles.iconImgIcon} src="/assets/Patreon-Logo.png" alt="Patreon Logo" />
             </L>
             <L to="https://www.linkedin.com/in/leobenkel/" className={styles.madeByIconLink} >
-                <ImageFull className={styles.iconImgIcon} src="/assets/linkedin-xxl.png" />
+                <ImageFull className={styles.iconImgIcon} src="/assets/linkedin-xxl.png" alt="LinkedIn Logo" />
             </L>
             <L to="https://github.com/leobenkel/" className={styles.madeByIconLink} >
-                <ImageFull className={styles.iconImgIcon} src="/assets/GitHub-Mark-64px.png" />
+                <ImageFull className={styles.iconImgIcon} src="/assets/GitHub-Mark-64px.png" alt="Github Logo" />
             </L>
             <L to="https://medium.com/scala-knowledge-bits" className={styles.madeByIconLink} >
-                <ImageFull className={styles.iconImgIcon} src="/assets/medium-logo.png" />
+                <ImageFull className={styles.iconImgIcon} src="/assets/medium-logo.png" alt="Medium Logo" />
             </L>
             <L to="https://leobenkel.com" className={styles.madeByIconLink} >
                 <i className={cn("material-icons", styles.iconImgIconMaterial)}>link</i>

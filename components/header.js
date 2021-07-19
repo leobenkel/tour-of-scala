@@ -56,7 +56,7 @@ export default function Header({ title, sourceLink }) {
     return <div>
         <div className={styles.title}>
             <h1 className={styles.articleTitle}>
-                {title ? title : (<><ImageFull className={styles.tourOfScalaLogo} src="/assets/tour-of-scala-logo.png" />Tour of Scala</>)}
+                {title ? title : (<><ImageFull className={styles.tourOfScalaLogo} src="/assets/tour-of-scala-logo.png" alt="Tour of Scala Logo" />Tour of Scala</>)}
             </h1>
             <div className={styles.titleLinks}>
                 <L to={discordLink} className={styles.discordLink}>

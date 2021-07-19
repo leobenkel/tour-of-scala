@@ -103,6 +103,8 @@ export default function Skb({ lesson }) {
     registerLastSeenLesson(lesson.slug)
     const styles = useStyles()
 
+    // TODO: Description from the lesson data structure
+
     return <Layout title={lesson.title} key={`Layout-${lesson.scastieId}`}>
         <Head>
             <link rel="canonical" href={lesson.link} />

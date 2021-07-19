@@ -77,8 +77,7 @@ export default function Layout({ children, title, description, fullScreen }) {
             <meta name="twitter:site" content="@TourOfScala" />
             <meta name="twitter:creator" content="@LeoBenkel" />
             <meta property="og:description" name="og:description" content={description} />
-            {/* 
-            TODO: Image when shared
+            {/* TODO: Image when shared
             <meta property="og:image" name="og:image" content="https://purelambda.com/assets/pure-lambda-logo-10-square.png" /> 
             <meta property="og:image:secure_url" content="https://purelambda.com/assets/pure-lambda-logo-10-square.png" />
             <meta property="og:image:width" name="og:image:width" content="2000" />

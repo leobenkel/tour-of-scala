@@ -52,7 +52,6 @@ export default function Header({ title, sourceLink }) {
     const styles = useStyles()
     const discordLink = '' //TODO: getDiscordLink()
 
-
     return <div>
         <div className={styles.title}>
             <h1 className={styles.articleTitle}>

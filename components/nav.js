@@ -11,8 +11,6 @@ import * as Routes from 'lib/routes'
 import L from 'components/link'
 
 
-// TODO : colors not right
-
 const useStyles = createUseStyles(
     {
         nav: {

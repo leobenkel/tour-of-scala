@@ -41,4 +41,3 @@ public/workbox*.js
 public/workbox*.js.map
 
 .sass-cache
-lessonsData/data.json

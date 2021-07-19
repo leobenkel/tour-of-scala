@@ -4,6 +4,8 @@ import Head from 'next/head'
 import cn from 'classnames'
 import { createUseStyles } from 'react-jss'
 
+import RefreshPopUp from './refresh-pop-up'
+
 
 const Legal = dynamic(() => import('components/legal'))
 
@@ -107,6 +109,7 @@ export default function Layout({ children, title, description, fullScreen }) {
             <meta name="description" content={description} />
             <meta name="author" content="Leo Benkel" />
         </Head>
+        <RefreshPopUp />
         <div className={cn(styles.content, { [styles.fullScreen]: fullScreen })}>
             {children}
         </div>

@@ -110,8 +110,8 @@ function SkbRow({ slug, title }) {
         className={styles.linkToSkb}
         {...hoverProps}
     >
-        <span class={styles.activeSkb}> {activeLesson == slug ? <i className="material-icons">play_arrow</i> : null}</span>
-        <span class={cn(styles.skbListTitle, { [styles.titleHovered]: hover })}>{title}</span>
+        <span className={styles.activeSkb}> {activeLesson == slug ? <i className="material-icons">play_arrow</i> : null}</span>
+        <span className={cn(styles.skbListTitle, { [styles.titleHovered]: hover })}>{title}</span>
     </L>
 }
 

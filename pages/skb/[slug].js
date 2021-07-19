@@ -103,12 +103,12 @@ export default function Skb({ lesson }) {
     registerLastSeenLesson(lesson.slug)
     const styles = useStyles()
 
-    return <Layout title={lesson.title} >
+    return <Layout title={lesson.title} key={`Layout-${lesson.scastieId}`}>
         <Head>
             <link rel="canonical" href={lesson.link} />
         </Head>
 
-        <LeftSide key={lesson.scastieId}>
+        <LeftSide key={`Left-${lesson.scastieId}`}>
             <Top>
                 <Header title={lesson.title} sourceLink={lesson.link} />
                 <div className={styles.skbContent}>
@@ -119,8 +119,8 @@ export default function Skb({ lesson }) {
             <Nav navigation={[lesson.prevUrl, lesson.nextUrl]} />
         </LeftSide>
 
-        <RightSide>
-            <Scastie scastieId={lesson.scastieId} key={lesson.scastieId} />
+        <RightSide key={`Right-${lesson.scastieId}`} >
+            <Scastie scastieId={lesson.scastieId} key={`Scastie-${lesson.scastieId}`} />
         </RightSide>
     </Layout>
 }

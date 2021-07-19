@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import dynamic from 'next/dynamic'
 
 import cn from 'classnames'
@@ -116,17 +118,35 @@ function SkbRow({ slug, title }) {
 }
 
 export default function SkbList({ allLessons }) {
+    const [displayedLessons, setDisplayedLessons] = useState(allLessons)
     const styles = useStyles()
 
-    // TODO: Search bar
     return <RightSide forList>
         <div className={styles.searchBar}>
             <span className={styles.searchLabel}>Search:</span>
-            <input type="text" placeholder="Search..." className={styles.searchInput} />
+            <input
+                type="text"
+                placeholder="Search..."
+                className={styles.searchInput}
+                onChange={(event) => {
+                    event.preventDefault()
+                    const search = event.target.value
+                    setDisplayedLessons(search ?
+                        allLessons
+                            .filter(skb => {
+                                return skb.title.toLowerCase().includes(search.toLowerCase()) ||
+                                    skb.mainInfoBox.toLowerCase().includes(search.toLowerCase()) ||
+                                    skb.detailedInfoBox.toLowerCase().includes(search.toLowerCase()) ||
+                                    skb.slug.toLowerCase().includes(search.toLowerCase())
+                            }) :
+                        allLessons
+                    )
+                }}
+            />
         </div>
         <div className={styles.listWrapper}>
             <div className={styles.listSkb}>
-                {allLessons.map((d, i) => <SkbRow key={i} {...d} />)}
+                {displayedLessons.map((d, i) => <SkbRow key={i} {...d} />)}
             </div>
         </div>
     </RightSide>

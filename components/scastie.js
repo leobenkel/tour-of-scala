@@ -136,7 +136,7 @@ export default function Scastie({ scastieId }) {
         });
 
         setTimeout(() => {
-            const $ = require('jquery');
+            const $ = require('jquery')
 
             // TODO: This line make it crash
             $(".switcher-hide").click();

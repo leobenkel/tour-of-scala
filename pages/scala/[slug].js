@@ -100,8 +100,8 @@ function HiddenClues({ content }) {
 
 export default function Skb({ lesson }) {
     // console.log(lesson)
-    registerLastSeenLesson(lesson.slug)
     const styles = useStyles()
+    registerLastSeenLesson(lesson.slug)
 
     return <Layout title={lesson.title} key={`Layout-${lesson.scastieId}`} description={lesson.description} >
         <Head>

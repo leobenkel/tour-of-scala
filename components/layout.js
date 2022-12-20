@@ -92,17 +92,6 @@ export default function Layout({ children, title, description, fullScreen }) {
             <meta property="og:type" name="og:type" content="website" />
 
 
-
-            {/* <!-- CSS --> */}
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" />
-
-            {/* <!-- fonts --> */}
-            <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@500&display=swap"
-                rel="stylesheet" />
-
-            {/* <!-- icons --> */}
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
             <title>{titleToUse}</title>
             <meta name="og:title" property="og:title" content={titleToUse} />
             <meta name="description" content={description} />

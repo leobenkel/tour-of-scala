@@ -45,7 +45,17 @@ export default class MyDocument extends Document {
     render() {
         return (
             <Html lang="en">
-                <Head />
+                <Head>
+                    {/* <!-- CSS --> */}
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" />
+
+                    {/* <!-- fonts --> */}
+                    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@500&display=swap"
+                        rel="stylesheet" />
+
+                    {/* <!-- icons --> */}
+                    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+                </Head>
                 <body>
                     <Main />
                     <NextScript />

@@ -6,7 +6,7 @@ clean:
 
 install:
 	npm install
-	npm audit fix || echo ''
+	npm audit fix --force || echo ''
 
 start_dev:
 	npx next dev -p 4000
@@ -25,5 +25,5 @@ update_netlify:
 	npm i -g netlify-cli
 	npm audit fix
 
-check_versions:
+check_versions: install
 	npm outdated

@@ -27,4 +27,3 @@ package = "netlify-plugin-minify-html"
     minifyJS = true
     sortAttributes = true
     sortClassName = true
-

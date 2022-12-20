@@ -12,7 +12,8 @@ import {
 
 
 const createGenerateId = (rule, sheet) => {
-    return `ToS--${sheet.options.classNamePrefix}_-${rule.key}`
+    const id = sheet.options.jss.id ? sheet.options.jss.id : 0
+    return `${sheet.options.classNamePrefix}${rule.key}-${id}`
 }
 
 export default class MyDocument extends Document {

@@ -126,25 +126,21 @@ export default function Scastie({ scastieId }) {
     const launchScastie = () => {
         if (isLaunch || isLaunchedLive) return
 
-        setIsLaunch(true)
-        isLaunchedLive = true
-
         window.scastie.EmbeddedResource({
             base64UUID: scastieId,
             injectId: divId,
             serverUrl: 'https://scastie.scala-lang.org'
-        });
+        })
 
         setTimeout(() => {
             const $ = require('jquery')
 
-            $(".switcher-hide").click();
-            $('.console-open').removeClass('console-open');
+            $(".switcher-hide").trigger("click")
+            $('.console-open').removeClass('console-open')
 
-            let errorMessage = $(".runtime-error pre")
-            if (errorMessage.text().includes("NotImplementedError")) {
-                errorMessage.text("Replace '???' by your code.")
-            }
+
+            setIsLaunch(true)
+            isLaunchedLive = true
         }, 1000);
     }
 

@@ -10,5 +10,8 @@
         "next-env.d.ts": true,
         "out": true,
         "netlify": true
-    }
+    },
+    "cSpell.words": [
+        "scastie"
+    ]
 }

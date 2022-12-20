@@ -10,7 +10,6 @@ const config = {
     exclude: [
         '/404*',
         '/legalNotice*',
-        '/nda*',
         '/privacyPolicy*',
     ]
 }

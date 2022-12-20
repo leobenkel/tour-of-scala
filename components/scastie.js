@@ -1,10 +1,10 @@
 import {
   useEffect,
+  useRef,
   useState,
 } from 'react'
 
-import Head from 'next/head'
-
+// import Head from 'next/head'
 import { createUseStyles } from 'react-jss'
 
 
@@ -113,19 +113,28 @@ const scastieLibUrl = "https://scastie.scala-lang.org/embedded.js"
 export default function Scastie({ scastieId }) {
     const styles = useStyles()
 
-    const [isClient, setIsClient] = useState(false)
     const [isLaunch, setIsLaunch] = useState(false)
-    const divId = `id-${scastieId}`
+    const containerRef = useRef()
+
+    const divId = `id-scastie-${scastieId}`
 
     let isLaunchedLive = false
 
     useEffect(() => {
-        setIsClient(true)
-    }, [])
+        // https://betterprogramming.pub/4-ways-of-adding-external-js-files-in-reactjs-823f85de3668
+        const script = document.createElement("script")
+        script.src = scastieLibUrl
+        script.crossOrigin = "anonymous"
+        script.async = true
+        containerRef.current.appendChild(script)
+
+        return () => {
+            containerRef.current.removeChild(script)
+        }
+    }, [containerRef])
 
     const launchScastie = () => {
         if (isLaunch || isLaunchedLive) return
-
         setIsLaunch(true)
         isLaunchedLive = true
 
@@ -133,39 +142,29 @@ export default function Scastie({ scastieId }) {
             base64UUID: scastieId,
             injectId: divId,
             serverUrl: 'https://scastie.scala-lang.org'
-        });
+        })
 
         setTimeout(() => {
             const $ = require('jquery')
 
-            $(".switcher-hide").click();
-            $('.console-open').removeClass('console-open');
-
-            let errorMessage = $(".runtime-error pre")
-            if (errorMessage.text().includes("NotImplementedError")) {
-                errorMessage.text("Replace '???' by your code.")
-            }
-        }, 1000);
+            $(".switcher-hide").trigger("click")
+            $('.console-open').removeClass('console-open')
+        }, 1000)
     }
 
-    return <>
-        {isClient ? <Head>
-            <script crossorigin async src={scastieLibUrl} />
-        </Head> : null}
+    return <div
+        className={styles.scastieContainer}
+        onClick={launchScastie}
+        ref={containerRef}
+    >
+        <div className={styles.fullScastie} id={divId} />
 
-        <div className={styles.scastieContainer} onClick={launchScastie}>
-            <div className={styles.fullScastie} id={divId}></div>
-            {isLaunch ?
-                <>
-                    {isLaunch ? null : <div className={styles.scastieLoading}>Loading...</div>}
-                </>
-                :
-                <div className={styles.loadScastie}>
-                    <div id="load-scastie-text">
-                        Load Exercise
-                    </div>
-                </div>
-            }
-        </div>
-    </>
+        {isLaunch ?
+            <div className={styles.scastieLoading}>Loading...</div>
+            :
+            <div className={styles.loadScastie}>
+                <div id="load-scastie-text">Load Exercise</div>
+            </div>
+        }
+    </div>
 }

@@ -12,7 +12,8 @@ import {
 
 
 const createGenerateId = (rule, sheet) => {
-    return `ToS--${sheet.options.classNamePrefix}_-${rule.key}`
+    const id = sheet.options.jss.id ? sheet.options.jss.id : 0
+    return `${sheet.options.classNamePrefix}${rule.key}-${id}`
 }
 
 export default class MyDocument extends Document {
@@ -45,7 +46,17 @@ export default class MyDocument extends Document {
     render() {
         return (
             <Html lang="en">
-                <Head />
+                <Head>
+                    {/* <!-- CSS --> */}
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" />
+
+                    {/* <!-- fonts --> */}
+                    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@500&display=swap"
+                        rel="stylesheet" />
+
+                    {/* <!-- icons --> */}
+                    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+                </Head>
                 <body>
                     <Main />
                     <NextScript />

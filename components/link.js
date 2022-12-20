@@ -30,9 +30,7 @@ export default function L({ children, to, prefetch, ref, className, ...props }) 
                 {...props}
                 ref={ref}
                 className={className}
-            >
-                {children}
-            </Link>
+            >{children}</Link>
         )
     }
 }

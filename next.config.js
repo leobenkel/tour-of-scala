@@ -1,25 +1,18 @@
+// https://github.com/shadowwalker/next-pwa/issues/392#issuecomment-1224458436
 
-const withPWA = require('next-pwa')
+const withPWA = require("next-pwa")({
+    dest: "public",
+    // put other next-pwa options here
+    publicExcludes: [],
+    cacheOnFrontEndNav: true,
+    skipWaiting: false,
+    register: false,
+});
 
-module.exports = withPWA({
-    target: "serverless",
-    webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-        // https://github.com/jsdom/jsdom/issues/3042#issuecomment-879142195
-        // https://github.com/konvajs/react-konva/issues/102#issuecomment-308000612
-        // https://nextjs.org/docs/api-reference/next.config.js/custom-webpack-config
-        // Important: return the modified config
-        config.plugins.push(new webpack.IgnorePlugin(/canvas/, /jsdom$/))
-        return config
-    },
+const nextConfig = withPWA({
+    reactStrictMode: true,
+    // put other next js options here
 
-    pwa: {
-        dest: 'public',
-        //disable: process.env.NODE_ENV === 'development',
-        publicExcludes: [
+});
 
-        ],
-        cacheOnFrontEndNav: true,
-        skipWaiting: false,
-        register: false,
-    },
-})
+module.exports = nextConfig;

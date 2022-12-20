@@ -24,12 +24,14 @@ export default function L({ children, to, prefetch, ref, className, ...props }) 
         }
 
         return (
-            <Link href={to} {...attributes}>
-                <a
-                    {...props}
-                    ref={ref}
-                    className={className}
-                >{children}</a>
+            <Link
+                href={to}
+                {...attributes}
+                {...props}
+                ref={ref}
+                className={className}
+            >
+                {children}
             </Link>
         )
     }

@@ -64,7 +64,9 @@ export default function RefreshPopUp() {
 
     const [visible, setVisible] = useState(false)
 
-    useEffect(() => initSW(() => setVisible(true)), [])
+    useEffect(() => {
+        initSW(() => setVisible(true))
+    }, [])
 
     if (visible) {
         return <PopUp

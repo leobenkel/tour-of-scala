@@ -114,6 +114,7 @@ export default function Scastie({ scastieId }) {
     const styles = useStyles()
 
     const [isLaunch, setIsLaunch] = useState(false)
+    const [isReady, setIsReady] = useState(false)
     const containerRef = useRef()
 
     const divId = `id-scastie-${scastieId}`
@@ -134,7 +135,7 @@ export default function Scastie({ scastieId }) {
     }, [containerRef])
 
     const launchScastie = () => {
-        if (isLaunch || isLaunchedLive) return
+        if (isLaunch || isLaunchedLive || isReady) return
         setIsLaunch(true)
         isLaunchedLive = true
 
@@ -149,6 +150,8 @@ export default function Scastie({ scastieId }) {
 
             $(".switcher-hide").trigger("click")
             $('.console-open').removeClass('console-open')
+
+            setIsReady(true)
         }, 1000)
     }
 
@@ -160,7 +163,7 @@ export default function Scastie({ scastieId }) {
         <div className={styles.fullScastie} id={divId} />
 
         {isLaunch ?
-            <div className={styles.scastieLoading}>Loading...</div>
+            <>{isReady ? null : <div className={styles.scastieLoading}>Loading...</div>}</>
             :
             <div className={styles.loadScastie}>
                 <div id="load-scastie-text">Load Exercise</div>

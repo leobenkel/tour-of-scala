@@ -25,5 +25,5 @@ update_netlify:
 	npm i -g netlify-cli
 	npm audit fix
 
-check_versions: install
+check_versions:
 	npm outdated

@@ -109,6 +109,7 @@ const useStyles = createUseStyles(
 )
 
 const scastieLibUrl = "https://scastie.scala-lang.org/embedded.js"
+const scastieCSS = "https://scastie.scala-lang.org/public/embedded.css"
 
 export default function Scastie({ scastieId }) {
     const styles = useStyles()
@@ -122,15 +123,19 @@ export default function Scastie({ scastieId }) {
     let isLaunchedLive = false
 
     useEffect(() => {
-        // https://betterprogramming.pub/4-ways-of-adding-external-js-files-in-reactjs-823f85de3668
-        const script = document.createElement("script")
-        script.src = scastieLibUrl
-        script.crossOrigin = "anonymous"
-        script.async = true
-        containerRef.current.appendChild(script)
+        if (containerRef.current && !isLaunch && !isReady) {
+            // https://betterprogramming.pub/4-ways-of-adding-external-js-files-in-reactjs-823f85de3668
+            const script = document.createElement("script")
+            script.src = scastieLibUrl
+            script.crossOrigin = "anonymous"
+            script.async = true
+            containerRef.current.appendChild(script)
 
-        return () => {
-            containerRef.current.removeChild(script)
+            return () => {
+                const cssLink = document.querySelector(`link[href="${scastieCSS}"]`)
+                script.remove()
+                if (cssLink) cssLink.remove()
+            }
         }
     }, [containerRef])
 

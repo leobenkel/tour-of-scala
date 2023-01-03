@@ -42,3 +42,5 @@ public/workbox*.js
 public/workbox*.js.map
 
 .sass-cache
+
+*.log

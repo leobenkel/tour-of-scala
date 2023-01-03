@@ -13,64 +13,25 @@ const useStyles = createUseStyles(
         scastieContainer: {
             position: 'relative',
             height: '100%',
+            margin: '0',
             width: '100%',
-            '& .scastie.embedded,& .scastie.embedded .main-panel,& .scastie.embedded .main-panel .content,& .scastie.embedded .main-panel .content .editor-container.inner-container,& .scastie.embedded .main-panel .content .editor-container.inner-container .code': {
+            '& .scastie.embedded,& .scastie.embedded .app, & .scastie.embedded  .main-panel,& .scastie.embedded .content,& .scastie.embedded .code': {
                 display: 'inline-block',
                 width: '100%',
                 minWidth: '100%',
                 maxWidth: '100%',
                 height: '100%',
-                minHeight: '100%',
-                maxHeight: '100%',
                 boxSizing: 'border-box'
             },
-            '& .scastie.embedded, & .scastie.embedded .app': {
-                display: 'inline-block',
-                width: '100%',
-                minWidth: '100%',
-                maxWidth: '100%',
-                height: '100%',
-                minHeight: '100%',
-                maxHeight: '100%',
-                boxSizing: 'border-box',
-                margin: '0',
-                padding: '0'
+            '& .editor-container': {
+              display: 'flex !important',
+              flexDirection: 'column',
+              height: '100%',
+              width: '100%',
             },
-            '& .scastie.embedded .main-panel .content .editor-container .editor-wrapper': {
-                height: 'calc(100% - 50px)',
-                paddingTop: '8px',
-                boxSizing: 'border-box'
-            },
-
-            '& .scastie.embedded .main-panel .content .editor-container.inner-container .code': {
-                height: '100%'
-            },
-            '& .scastie.embedded .main-panel .content .editor-container.inner-container .code.console-open': {
-                height: '65%',
-                minHeight: 'auto'
-            },
-            '& .scastie.embedded .console-container.console-open': {
-                height: '35%'
-            },
-            '& .scastie ul.embedded-menu': {
-                position: 'inherit',
-                display: 'inline-block',
-                margin: '0px auto'
-            },
-            '& .scastie ul.embedded-menu li': {
-                display: 'inline-block',
-                margin: '5px 5px',
-                width: '120px',
-                padding: '6px'
-            },
-            '& .scastie .runtime-error, & .scastie .runtime-error pre': {
-                width: 'auto',
-            },
-            '& .scastie.embedded .output-console pre': {
-                backgroundColor: 'unset'
-            },
-            '& .scastie.embedded pre.inline[title = "Unit"]': {
-                display: 'none'
+            '& .scastie.embedded': {
+              margin: '0',
+              padding: '0',
             }
         },
         scastieLoading: {

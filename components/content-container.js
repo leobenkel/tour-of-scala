@@ -23,5 +23,5 @@ const useStyles = createUseStyles(
 export default function ContentContainer({ children, fullscreen }) {
     const styles = useStyles()
 
-    return <div className={cn(styles.skbInstructions, { [styles.fullscreen]: fullscreen })}>{children}</div>
+    return <div className={cn('skbContent', styles.skbInstructions, { [styles.fullscreen]: fullscreen })}>{children}</div>
 }

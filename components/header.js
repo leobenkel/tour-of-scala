@@ -63,9 +63,10 @@ export default function Header({ title, sourceLink }) {
                 <L to={discordLink} className={styles.discordLink}>
                     <ImageFull src="/assets/Discord-Logo+Wordmark-Black.svg" />
                 </L>
-                <L to={sourceLink ? sourceLink : "https://leobenkel.com/category/scala/knowledge-bits/"} className={styles.sourceLink}>
-                    <i className={cn("material-icons", styles.sourceLinkIcon)}>link</i>
-                </L>
+                {sourceLink ?
+                    <L to={sourceLink} className={styles.sourceLink}>
+                        <i className={cn("material-icons", styles.sourceLinkIcon)}>link</i>
+                    </L> : null}
             </div>
         </div>
     </div>

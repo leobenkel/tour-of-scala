@@ -1,4 +1,3 @@
-import cn from 'classnames'
 import { createUseStyles } from 'react-jss'
 
 import ImageFull from 'components/image-full'
@@ -47,12 +46,6 @@ export default function MadeBy() {
             </L>
             <L to="https://github.com/leobenkel/" className={styles.madeByIconLink} >
                 <ImageFull className={styles.iconImgIcon} src="/assets/GitHub-Mark-64px.png" alt="Github Logo" />
-            </L>
-            <L to="https://medium.com/scala-knowledge-bits" className={styles.madeByIconLink} >
-                <ImageFull className={styles.iconImgIcon} src="/assets/medium-logo.png" alt="Medium Logo" />
-            </L>
-            <L to="https://leobenkel.com" className={styles.madeByIconLink} >
-                <i className={cn("material-icons", styles.iconImgIconMaterial)}>link</i>
             </L>
         </div>
     </div>

@@ -133,10 +133,7 @@ function SearchBar({ allLessons, setDisplayedLessons }) {
                     allLessons
                         .filter(skb => {
                             return skb.title.toLowerCase().includes(search.toLowerCase()) ||
-                                skb.mainInfoBox.toLowerCase().includes(search.toLowerCase()) ||
-                                skb.detailedInfoBox.toLowerCase().includes(search.toLowerCase()) ||
-                                skb.description.toLowerCase().includes(search.toLowerCase()) ||
-                                skb.slug.toLowerCase().includes(search.toLowerCase())
+                                skb.id.toLowerCase().includes(search.toLowerCase())
                         }) :
                     allLessons
                 )

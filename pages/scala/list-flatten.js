@@ -1,6 +1,5 @@
-
-
 import Skb from 'components/skb-page'
+
 
 export const id = "list-flatten"
 export const title = "Scala List Flatten"
@@ -12,26 +11,28 @@ const scastieId = "fGhtslb9TiiTQ5brcXpgLg"
 const mainInfoBox = <>
   <p>Do you remember the <code>map</code>, from few SKBs ago ?</p>
 
-<p>As a reminder, <code>map</code> allows you to transform a <code>List[A]</code> into a <code>List[B]</code>.</p>
+  <p>As a reminder, <code>map</code> allows you to transform a <code>List[A]</code> into a <code>List[B]</code>.</p>
 
-<p>What will happen if <code>B</code> is a <code>List</code> as well ?</p>
+  <p>What will happen if <code>B</code> is a <code>List</code> as well ?</p>
 </>
 
 const detailedInfoBox = <>
   <p>
-<code>flatten</code> allows you to turn a <code>List[List[A]]</code> into a <code>List[A]</code>.</p>
+    <code>flatten</code> allows you to turn a <code>List[List[A]]</code> into a <code>List[A]</code>.</p>
 
-<p>
-Try to experiment with other <i>containers</i> such as <code>Option</code> we saw in the past.
-</p>
+  <p>
+    Try to experiment with other <i>containers</i> such as <code>Option</code> we saw in the past.
+  </p>
 
-<p>What happen if you do </p><pre>val a: Option[Int] = Some(12)
+  <p>What happen if you do </p>
+  <pre>
+    <p>val a: Option[Int] = Some(12)</p>
 
-val aa: Option[Option[Int]] = a.map(x =&gt; Some(x))
+    <p>val aa: Option[Option[Int]] = a.map(x =&gt; Some(x))</p>
 
-val flattenA: Option[Int] = aa.flatten
-</pre>
-<p></p>
+    <p>val flattenA: Option[Int] = aa.flatten</p>
+  </pre>
+  <p></p>
 
 </>
 
@@ -58,4 +59,3 @@ export const pageData = {
 export default function Page() {
   return <Skb lesson={pageData} />
 }
- 

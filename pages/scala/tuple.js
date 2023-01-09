@@ -1,6 +1,5 @@
-
-
 import Skb from 'components/skb-page'
+
 
 export const id = "tuple"
 export const title = "Scala Tuple"
@@ -11,20 +10,20 @@ const scastieId = "TUuvqIPHTc2A3jHNSYMBBQ"
 
 const mainInfoBox = <>
   <p>Imagine, for instance, you would like to pair together an identification number (<code>Int</code>) and a name (<code>String</code>).
-</p>
-<p>Let’s see how to do that in Scala.</p>
+  </p>
+  <p>Let's see how to do that in Scala.</p>
 </>
 
 const detailedInfoBox = <>
   <p>
-By now, you probably have understood that a Tuple is a way to combine two or more types into one. For instance you can combine a <code>Int</code> and a <code>String</code> into a tuple <code>(Int, String)</code>. You can combine up to 22 Types ! ( You can read more why <a href="https://stackoverflow.com/questions/4152223/why-are-scala-functions-limited-to-22-parameters" target="_blank">on here</a> )
-</p>
+    By now, you probably have understood that a Tuple is a way to combine two or more types into one. For instance you can combine a <code>Int</code> and a <code>String</code> into a tuple <code>(Int, String)</code>. You can combine up to 22 Types ! ( You can read more why <a href="https://stackoverflow.com/questions/4152223/why-are-scala-functions-limited-to-22-parameters" target="_blank">on here</a> )
+  </p>
 
-<p>The other important aspect is the accessors. For instance, if you have a Tuple <code>(Double, Int, String)</code>, to access the first element you have to use <code>_1</code>, the second with <code>_2</code>, etc…</p>
+  <p>The other important aspect is the accessors. For instance, if you have a Tuple <code>(Double, Int, String)</code>, to access the first element you have to use <code>_1</code>, the second with <code>_2</code>, etc…</p>
 
-<p>Tuples are also involved in the concept of <i>pattern matching</i> that we are going to learn more about later.</p>
+  <p>Tuples are also involved in the concept of <i>pattern matching</i> that we are going to learn more about later.</p>
 
-<p>As a note about good practices: whenever possible, you should use a <code>case class</code> rather than a Tuple. In the long run, it makes things much easier to manage and maintain.</p>
+  <p>As a note about good practices: whenever possible, you should use a <code>case class</code> rather than a Tuple. In the long run, it makes things much easier to manage and maintain.</p>
 
 
 </>
@@ -52,4 +51,3 @@ export const pageData = {
 export default function Page() {
   return <Skb lesson={pageData} />
 }
- 

@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "range"
-const title = " Scala Range"
+export const title = "Scala Range"
 
-const date = "2020-09-09T17:06:05"
+export const date = "2020-09-09T17:06:05"
 
 const scastieId = "3mkgQBbsRAKu0Yqo3tzoxA"
 

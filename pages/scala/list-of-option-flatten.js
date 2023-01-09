@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "list-of-option-flatten"
-const title = " Scala List of Option flatten"
+export const title = "Scala List of Option flatten"
 
-const date = "2020-12-25T17:02:53"
+export const date = "2020-12-25T17:02:53"
 
 const scastieId = "WU5TCyfhTLKRPcvMccymZg"
 

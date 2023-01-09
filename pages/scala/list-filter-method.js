@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "list-filter-method"
-const title = " Scala List Filter Method"
+export const title = "Scala List Filter Method"
 
-const date = "2020-08-05T17:00:53"
+export const date = "2020-08-05T17:00:53"
 
 const scastieId = "EVfJS5WZRDWtIdzPHXOs6w"
 

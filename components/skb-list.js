@@ -102,17 +102,17 @@ const useStyles = createUseStyles(
     }
 )
 
-function SkbRow({ slug, title }) {
+function SkbRow({ id, title }) {
     const styles = useStyles()
     const { hover, hoverProps } = useHover()
     const activeLesson = useActiveLesson()
 
     return <L
-        to={Routes.skbFromSlug(slug)}
+        to={Routes.skbFromSlug(id)}
         className={styles.linkToSkb}
         {...hoverProps}
     >
-        <span className={styles.activeSkb}> {activeLesson == slug ? <i className="material-icons">play_arrow</i> : null}</span>
+        <span className={styles.activeSkb}> {activeLesson == id ? <i className="material-icons">play_arrow</i> : null}</span>
         <span className={cn(styles.skbListTitle, { [styles.titleHovered]: hover })}>{title}</span>
     </L>
 }

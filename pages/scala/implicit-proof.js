@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "implicit-proof"
-const title = " Scala implicit proof"
+export const title = "Scala implicit proof"
 
-const date = "2020-11-30T17:00:00"
+export const date = "2020-11-30T17:00:00"
 
 const scastieId = "rPQxPMehSye8cwfa4VU9zg"
 

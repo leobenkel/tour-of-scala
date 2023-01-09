@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "map-for-list"
-const title = " Scala Map for List"
+export const title = "Scala Map for List"
 
-const date = "2020-07-29T17:00:13"
+export const date = "2020-07-29T17:00:13"
 
 const scastieId = "mqPBMWVGR5OIpa1J9etlYw"
 

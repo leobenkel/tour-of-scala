@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "case-object"
-const title = " Scala case object"
+export const title = "Scala case object"
 
-const date = "2020-10-28T17:06:44"
+export const date = "2020-10-28T17:06:44"
 
 const scastieId = "vzjyjr0WSTOskKtlV1EoDQ"
 

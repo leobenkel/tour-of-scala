@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "enumeration"
-const title = " Scala Enumeration for 2.x"
+export const title = "Scala Enumeration for 2.x"
 
-const date = "2020-10-30T17:00:57"
+export const date = "2020-10-30T17:00:57"
 
 const scastieId = "RpzCdEpvSnKsBpI1TsckHw"
 

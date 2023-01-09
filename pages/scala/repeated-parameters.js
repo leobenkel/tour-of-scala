@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "repeated-parameters"
-const title = " Scala Repeated Parameters"
+export const title = "Scala Repeated Parameters"
 
-const date = "2020-10-21T17:02:40"
+export const date = "2020-10-21T17:02:40"
 
 const scastieId = "t4txyXUBQ16HDTrla2PhZw"
 

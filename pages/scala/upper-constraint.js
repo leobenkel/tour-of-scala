@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "upper-constraint"
-const title = " Scala upper constraint"
+export const title = "Scala upper constraint"
 
-const date = "2020-11-13T17:04:31"
+export const date = "2020-11-13T17:04:31"
 
 const scastieId = "wYG9m3B3T1qBOuvy5vLjAQ"
 

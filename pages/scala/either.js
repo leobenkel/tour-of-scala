@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "either"
-const title = " Scala Either"
+export const title = "Scala Either"
 
-const date = "2020-10-12T17:00:24"
+export const date = "2020-10-12T17:00:24"
 
 const scastieId = "bzjEzMzhQmSOiJm2bejFkw"
 

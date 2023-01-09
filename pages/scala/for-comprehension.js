@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "for-comprehension"
-const title = " Scala for-comprehension"
+export const title = "Scala for-comprehension"
 
-const date = "2020-09-28T17:00:25"
+export const date = "2020-09-28T17:00:25"
 
 const scastieId = "Ghu5hkwTQsyazXKdcNujTw"
 

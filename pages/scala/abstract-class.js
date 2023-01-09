@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "abstract-class"
-const title = " Scala abstract class"
+export const title = "Scala abstract class"
 
-const date = "2020-10-16T17:00:18"
+export const date = "2020-10-16T17:00:18"
 
 const scastieId = "fwuSQ1sSRhC5rURpo5vdvw"
 

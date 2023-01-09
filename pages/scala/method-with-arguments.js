@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "method-with-arguments"
-const title = " Scala Method with Arguments"
+export const title = "Scala Method with Arguments"
 
-const date = "2020-07-20T17:00:01"
+export const date = "2020-07-20T17:00:01"
 
 const scastieId = "P7T6QckdSIKzUFdCdawLEg"
 

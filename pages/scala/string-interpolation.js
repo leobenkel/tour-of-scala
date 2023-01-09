@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "string-interpolation"
-const title = " Scala String Interpolation"
+export const title = "Scala String Interpolation"
 
-const date = "2020-07-15T17:01:28"
+export const date = "2020-07-15T17:01:28"
 
 const scastieId = "YvHTOaC8SFCFpKzQLmd9ag"
 

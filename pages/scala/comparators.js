@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "comparators"
-const title = " Scala Comparators"
+export const title = "Scala Comparators"
 
-const date = "2020-08-03T17:01:36"
+export const date = "2020-08-03T17:01:36"
 
 const scastieId = "5MhccpxLQiSzOQ8CWjqjwQ"
 

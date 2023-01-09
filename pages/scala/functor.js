@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "functor"
-const title = " Scala Functor"
+export const title = "Scala Functor"
 
-const date = "2021-01-04T17:00:29"
+export const date = "2021-01-04T17:00:29"
 
 const scastieId = "lPfrjWhhQUew9oxzlD0nSw"
 

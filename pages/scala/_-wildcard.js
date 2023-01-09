@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "_-wildcard"
-const title = " Scala _ wildcard"
+export const title = "Scala _ wildcard"
 
-const date = "2020-12-11T17:00:41"
+export const date = "2020-12-11T17:00:41"
 
 const scastieId = "VJneetExT8uloX6bomOZ7g"
 

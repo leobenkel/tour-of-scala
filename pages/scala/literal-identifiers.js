@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "literal-identifiers"
-const title = " Scala literal identifiers"
+export const title = "Scala literal identifiers"
 
-const date = "2020-12-30T17:03:03"
+export const date = "2020-12-30T17:03:03"
 
 const scastieId = "PpMpUMxaSQyPHkYRKmbRIw"
 

@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "multiple-inheritance"
-const title = " Scala multiple inheritance"
+export const title = "Scala multiple inheritance"
 
-const date = "2020-12-04T17:01:30"
+export const date = "2020-12-04T17:01:30"
 
 const scastieId = "QpCO0GjsTrKBo4wGdIpEJA"
 

@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "implicit-class"
-const title = " Scala implicit class"
+export const title = "Scala implicit class"
 
-const date = "2020-09-30T17:02:01"
+export const date = "2020-09-30T17:02:01"
 
 const scastieId = "pDE2WSbNTtWv2MetlCCumw"
 

@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "recursion"
-const title = " Scala Recursion"
+export const title = "Scala Recursion"
 
-const date = "2020-10-19T17:00:47"
+export const date = "2020-10-19T17:00:47"
 
 const scastieId = "Cnic9MRTRE2BgIR3NAC5Zg"
 

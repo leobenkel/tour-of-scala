@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "option-pattern-matching"
-const title = " Scala Option pattern matching"
+export const title = "Scala Option pattern matching"
 
-const date = "2020-12-21T17:02:35"
+export const date = "2020-12-21T17:02:35"
 
 const scastieId = "PDLP0wHGQKqN5oS2yt6R4g"
 

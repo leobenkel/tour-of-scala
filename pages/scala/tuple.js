@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "tuple"
-const title = " Scala Tuple"
+export const title = "Scala Tuple"
 
-const date = "2020-08-26T17:02:11"
+export const date = "2020-08-26T17:02:11"
 
 const scastieId = "TUuvqIPHTc2A3jHNSYMBBQ"
 

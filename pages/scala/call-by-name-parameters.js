@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "call-by-name-parameters"
-const title = " Scala Call-by-name Parameters"
+export const title = "Scala Call-by-name Parameters"
 
-const date = "2020-08-07T17:01:43"
+export const date = "2020-08-07T17:01:43"
 
 const scastieId = "XkgpvxRaQdSnfdO2yWuSOg"
 

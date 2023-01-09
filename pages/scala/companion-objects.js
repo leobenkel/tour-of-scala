@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "companion-objects"
-const title = " Scala companion objects"
+export const title = "Scala companion objects"
 
-const date = "2020-08-17T17:00:05"
+export const date = "2020-08-17T17:00:05"
 
 const scastieId = "cwwIb13GTha0xT9adIjMqw"
 

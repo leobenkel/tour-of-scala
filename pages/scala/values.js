@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "values"
-const title = " Scala Values"
+export const title = "Scala Values"
 
-const date = "2020-07-13T17:00:26"
+export const date = "2020-07-13T17:00:26"
 
 const scastieId = "6EuSjLIMT7KQhdUiB7Nf8Q"
 
@@ -23,7 +23,7 @@ const description = "Scala Knowledge Bits - Scala Values - Periodic exercise to 
 
 const canonical_url = "https://leobenkel.com/2020/07/skb-scala-values/"
 
-const prevUrl = "null"
+const prevUrl = null
 const nextUrl = "string-interpolation"
 
 export const pageData = {

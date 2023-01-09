@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "unapply-magic"
-const title = " Scala unapply magic"
+export const title = "Scala unapply magic"
 
-const date = "2020-12-02T17:00:24"
+export const date = "2020-12-02T17:00:24"
 
 const scastieId = "3dUlzSLfRMqUFGOQ1Ms8vA"
 

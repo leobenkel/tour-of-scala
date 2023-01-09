@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "pattern-matching-or"
-const title = " Scala pattern matching OR"
+export const title = "Scala pattern matching OR"
 
-const date = "2020-11-09T17:00:54"
+export const date = "2020-11-09T17:00:54"
 
 const scastieId = "L2xDjw3yTfeVu8BvTlvJuw"
 

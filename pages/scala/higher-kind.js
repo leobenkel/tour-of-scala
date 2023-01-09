@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "higher-kind"
-const title = " Scala higher kind"
+export const title = "Scala higher kind"
 
-const date = "2020-12-09T17:00:01"
+export const date = "2020-12-09T17:00:01"
 
 const scastieId = "fC18HjQmT6Gbh5mTox5zbw"
 

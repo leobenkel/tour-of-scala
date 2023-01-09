@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "flatmap"
-const title = " Scala flatMap"
+export const title = "Scala flatMap"
 
-const date = "2020-09-02T17:10:15"
+export const date = "2020-09-02T17:10:15"
 
 const scastieId = "ldCLOORGSEGwvfDOlUKDWA"
 

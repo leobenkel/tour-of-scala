@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "list-sum-method"
-const title = " Scala List Sum Method"
+export const title = "Scala List Sum Method"
 
-const date = "2020-07-22T17:01:35"
+export const date = "2020-07-22T17:01:35"
 
 const scastieId = "WkXaFPHSR7q1M4I7xncZFg"
 

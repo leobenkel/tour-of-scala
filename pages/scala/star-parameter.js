@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "star-parameter"
-const title = " Scala *-parameter"
+export const title = "Scala *-parameter"
 
-const date = "2020-12-16T17:00:54"
+export const date = "2020-12-16T17:00:54"
 
 const scastieId = "uhVWCfgeREWEbRKVUX639w"
 

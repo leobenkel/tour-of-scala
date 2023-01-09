@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "option-map"
-const title = " Scala Option map"
+export const title = "Scala Option map"
 
-const date = "2020-08-21T17:00:44"
+export const date = "2020-08-21T17:00:44"
 
 const scastieId = "Zn7rGMlnSVWfCH3hCnKEhA"
 

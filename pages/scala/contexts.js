@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "contexts"
-const title = " Scala contexts"
+export const title = "Scala contexts"
 
-const date = "2020-11-02T17:01:11"
+export const date = "2020-11-02T17:01:11"
 
 const scastieId = "IpAmRkEzSOGRRDEFuAp5RA"
 

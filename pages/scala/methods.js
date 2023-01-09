@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "methods"
-const title = " Scala Methods"
+export const title = "Scala Methods"
 
-const date = "2020-07-17T17:00:40"
+export const date = "2020-07-17T17:00:40"
 
 const scastieId = "WAa2MFWwQBW2rIPjVNBgEw"
 

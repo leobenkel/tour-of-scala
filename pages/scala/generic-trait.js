@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "generic-trait"
-const title = " Scala Generic Trait"
+export const title = "Scala Generic Trait"
 
-const date = "2020-10-23T17:01:26"
+export const date = "2020-10-23T17:01:26"
 
 const scastieId = "1KailbBGTNCH2CDwVFK4fA"
 

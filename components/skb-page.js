@@ -97,7 +97,7 @@ function HiddenClues({ children }) {
 
 export default function Skb({ lesson }) {
     const styles = useStyles()
-    registerLastSeenLesson(lesson.slug)
+    registerLastSeenLesson(lesson.id)
 
     return <Layout
         title={lesson.title}

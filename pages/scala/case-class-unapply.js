@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "case-class-unapply"
-const title = " Scala case class unapply"
+export const title = "Scala case class unapply"
 
-const date = "2020-11-20T17:00:41"
+export const date = "2020-11-20T17:00:41"
 
 const scastieId = "pDSJjw7QQpSvUqFxWxQDlQ"
 

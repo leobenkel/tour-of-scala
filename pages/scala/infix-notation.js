@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "infix-notation"
-const title = " Scala infix notation"
+export const title = "Scala infix notation"
 
-const date = "2020-11-04T17:03:46"
+export const date = "2020-11-04T17:03:46"
 
 const scastieId = "5YZMNrc1R5WjgZlBc772Kw"
 

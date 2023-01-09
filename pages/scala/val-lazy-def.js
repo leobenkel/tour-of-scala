@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "val-lazy-def"
-const title = " Scala difference between val, lazy val and def"
+export const title = "Scala difference between val, lazy val and def"
 
-const date = "2020-07-27T17:01:27"
+export const date = "2020-07-27T17:01:27"
 
 const scastieId = "fRqDtrL9Q22S2aB2Pue9mg"
 

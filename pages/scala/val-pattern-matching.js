@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "val-pattern-matching"
-const title = " Scala val pattern matching"
+export const title = "Scala val pattern matching"
 
-const date = "2020-12-14T17:00:25"
+export const date = "2020-12-14T17:00:25"
 
 const scastieId = "aLWSbioJT0ir0qACbt6yCg"
 

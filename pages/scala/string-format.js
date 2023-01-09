@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "string-format"
-const title = " Scala String Format"
+export const title = "Scala String Format"
 
-const date = "2020-10-14T17:01:13"
+export const date = "2020-10-14T17:01:13"
 
 const scastieId = "G0GDlJ2GQ2O9w05HPQycGA"
 

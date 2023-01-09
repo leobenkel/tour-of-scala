@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "typeclass"
-const title = " Scala Typeclass"
+export const title = "Scala Typeclass"
 
-const date = "2021-01-15T17:02:53"
+export const date = "2021-01-15T17:02:53"
 
 const scastieId = "UtjWBavyRMWd7mpfLiXlfQ"
 

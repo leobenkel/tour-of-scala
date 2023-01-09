@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "regex"
-const title = " Scala Regex"
+export const title = "Scala Regex"
 
-const date = "2020-10-02T17:00:02"
+export const date = "2020-10-02T17:00:02"
 
 const scastieId = "I7Vt5quwT2OLFVHbrpyHlw"
 

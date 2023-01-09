@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "monad"
-const title = " Scala Monad"
+export const title = "Scala Monad"
 
-const date = "2021-01-18T17:00:24"
+export const date = "2021-01-18T17:00:24"
 
 const scastieId = "JB0wl7zzQxiefAf4EwfzBA"
 
@@ -58,7 +58,7 @@ const description = "Scala Knowledge Bits - Scala Monad - Periodic exercise to l
 const canonical_url = "https://leobenkel.com/2021/01/skb-scala-monad/"
 
 const prevUrl = "typeclass"
-const nextUrl = "null"
+const nextUrl = null
 
 export const pageData = {
   id,

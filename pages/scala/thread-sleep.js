@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "thread-sleep"
-const title = " Scala Thread Sleep"
+export const title = "Scala Thread Sleep"
 
-const date = "2020-08-28T17:04:15"
+export const date = "2020-08-28T17:04:15"
 
 const scastieId = "W8rybNOdRk29mQwdFVjqNg"
 

@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "covariance"
-const title = " Scala Covariance"
+export const title = "Scala Covariance"
 
-const date = "2021-01-11T17:00:00"
+export const date = "2021-01-11T17:00:00"
 
 const scastieId = "iFi9nYjrT7OfSifQngJZlw"
 

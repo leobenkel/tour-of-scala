@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "list-zip"
-const title = " Scala List zip"
+export const title = "Scala List zip"
 
-const date = "2020-11-25T17:01:50"
+export const date = "2020-11-25T17:01:50"
 
 const scastieId = "lMLBr2JBQZGtHCaAoZnlRg"
 

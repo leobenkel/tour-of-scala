@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "stream"
-const title = " Scala Stream"
+export const title = "Scala Stream"
 
-const date = "2020-09-25T17:00:35"
+export const date = "2020-09-25T17:00:35"
 
 const scastieId = "HXLsbXJQSVSKmS333hXm6w"
 

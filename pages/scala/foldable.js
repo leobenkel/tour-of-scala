@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "foldable"
-const title = " Scala Foldable"
+export const title = "Scala Foldable"
 
-const date = "2021-01-06T17:00:48"
+export const date = "2021-01-06T17:00:48"
 
 const scastieId = "q7avzZbtSreqhyrrdrp1kA"
 

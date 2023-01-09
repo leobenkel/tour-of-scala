@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "constraint-inheritance"
-const title = " Scala constraint inheritance"
+export const title = "Scala constraint inheritance"
 
-const date = "2020-12-07T17:01:22"
+export const date = "2020-12-07T17:01:22"
 
 const scastieId = "1rovwDJFTRaHBS7e2c2ofg"
 

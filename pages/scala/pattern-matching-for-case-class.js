@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "pattern-matching-for-case-class"
-const title = " Scala pattern matching for case class"
+export const title = "Scala pattern matching for case class"
 
-const date = "2020-11-11T17:01:22"
+export const date = "2020-11-11T17:01:22"
 
 const scastieId = "v70vPtVcTWmJb6NBzSAnDg"
 

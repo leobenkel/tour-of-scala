@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "traversable"
-const title = " Scala Traversable"
+export const title = "Scala Traversable"
 
-const date = "2021-01-13T17:00:07"
+export const date = "2021-01-13T17:00:07"
 
 const scastieId = "ntaMRDzYQ3uMMgXbQZcECg"
 

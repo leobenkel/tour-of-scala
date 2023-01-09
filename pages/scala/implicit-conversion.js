@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "implicit-conversion"
-const title = " Scala implicit conversion"
+export const title = "Scala implicit conversion"
 
-const date = "2020-11-18T17:00:02"
+export const date = "2020-11-18T17:00:02"
 
 const scastieId = "2UnR8tnRRky1rrfT1MNDzw"
 

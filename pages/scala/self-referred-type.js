@@ -3,9 +3,9 @@
 import Skb from 'components/skb-page'
 
 export const id = "self-referred-type"
-const title = " Scala self-referred type"
+export const title = "Scala self-referred type"
 
-const date = "2020-12-18T17:00:02"
+export const date = "2020-12-18T17:00:02"
 
 const scastieId = "9fDW3IfPTParnRzONDXkkA"
 

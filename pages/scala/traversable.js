@@ -12,7 +12,7 @@ const mainInfoBox = <>
   <p>Going a bit further in Functional Programming concepts with <i>Traversable</i></p>
 
   <p>
-    We already saw a few concepts so far such as <code>Functor</code> and <code>Applicative</code>.<br>Let's dig deeper !
+    We already saw a few concepts so far such as <code>Functor</code> and <code>Applicative</code>.<br />Let's dig deeper !
   </p>
 </>
 
@@ -23,10 +23,11 @@ const detailedInfoBox = <>
     Without <i>Traversable</i>, we would have to perform something like this:
   </p>
 
-  <pre>val input: List[Int] = List(1,2,3)
-    val operation: Int =&gt; F[Int] = ???
+  <pre>
+    <p>val input: List[Int] = List(1,2,3)</p>
+    <p>val operation: Int =&gt; F[Int] = ???</p>
 
-    val output: List[F[Int]] = input.map( i =&gt; operation(i))
+    <p>val output: List[F[Int]] = input.map( i =&gt; operation(i))</p>
   </pre>
 
   <p>

@@ -29,10 +29,11 @@ const detailedInfoBox = <>
   <p>
     It is also very convenient in cases with <code>Option</code>:
   </p>
-  <pre>opt match {
-    case s @ Some("abc") =&gt; s
-    case _ =&gt; Some(default)
-}
+  <pre>
+    <p>opt match &#123;</p>
+    <p>  case s @ Some("abc") =&gt; s</p>
+    <p>  case _ =&gt; Some(default)</p>
+    <p>&#125;</p>
   </pre>
 
   <p>
@@ -40,7 +41,7 @@ const detailedInfoBox = <>
   </p>
 </>
 
-const description = "Scala Knowledge Bits - pattern matching ‘@' - Periodic exercise to learn bits of knowledge about Scala. pattern matching ‘@' here."
+const description = "Scala Knowledge Bits - pattern matching '@' - Periodic exercise to learn bits of knowledge about Scala. pattern matching '@' here."
 
 const canonical_url = "https://leobenkel.com/2020/11/skb-scala-pattern-matching-at/"
 

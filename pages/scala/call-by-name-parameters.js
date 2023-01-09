@@ -9,8 +9,8 @@ export const date = "2020-08-07T17:01:43"
 const scastieId = "XkgpvxRaQdSnfdO2yWuSOg"
 
 const mainInfoBox = <>
-  <p>There are two ways to give parameters to a function in most programming languages: ‘by-value' and ‘call-by-name'.</p>
-  <p>The ‘by-value' way is what we have seen in previous SKBs when we used functions and methods.</p>
+  <p>There are two ways to give parameters to a function in most programming languages: 'by-value' and 'call-by-name'.</p>
+  <p>The 'by-value' way is what we have seen in previous SKBs when we used functions and methods.</p>
   <p>In this SKB, focus your attention on the way the parameters of the function are being declared and the syntax, notice anything?</p>
 </>
 

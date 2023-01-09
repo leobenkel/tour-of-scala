@@ -39,7 +39,7 @@ const detailedInfoBox = <>
     }
 }
   </pre>
-  <p>We are going to see the notion of ‘pass' in a later SKB</p>
+  <p>We are going to see the notion of 'pass' in a later SKB</p>
 
   <p>How it is used:</p>
   <pre>val input: [INPUT_TYPE] = ???

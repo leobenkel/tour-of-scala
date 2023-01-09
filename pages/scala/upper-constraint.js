@@ -31,17 +31,18 @@ const detailedInfoBox = <>
   <p>
     Extra note, when defining a custom type using <code>type</code>, it is possible to describe in a parent class as <code>type MYTYPE &lt;: CONSTRAINT</code> so that child class has to implement it with a type that is a child of <code>CONSTRAINT</code>.
   </p>
-  <pre>trait ParentClassOfConstraint
+  <pre>
+    <p>trait ParentClassOfConstraint</p>
 
-    class ChildClassOfConstraint extends ParentClassOfConstraint
+    <p>class ChildClassOfConstraint extends ParentClassOfConstraint</p>
 
-    trait Foo {
-      type MYTYPE &lt;: ParentClassOfConstraint
-}
+    <p>trait Foo &#123;</p>
+    <p>  type MYTYPE &lt;: ParentClassOfConstraint</p>
+    <p>&#125;</p>
 
-    class Bar extends Foo {
-      override type MYTYPE = ChildClassOfConstraint
-}
+    <p>class Bar extends Foo &#123;</p>
+    <p>  override type MYTYPE = ChildClassOfConstraint</p>
+    <p>&#125;</p>
   </pre>
 
   <p> It is a bit advanced but I thought you should know about it.</p>

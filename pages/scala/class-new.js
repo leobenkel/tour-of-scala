@@ -32,7 +32,7 @@ const detailedInfoBox = <>
   <p></p>
 </>
 
-const description = "Scala Knowledge Bits - Scala Class ‘new' - Periodic exercise to learn bits of knowledge about Scala. Scala Class ‘new' here."
+const description = "Scala Knowledge Bits - Scala Class 'new' - Periodic exercise to learn bits of knowledge about Scala. Scala Class 'new' here."
 
 const canonical_url = "https://leobenkel.com/2020/07/skb-scala-class-new/"
 

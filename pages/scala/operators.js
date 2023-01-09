@@ -23,7 +23,7 @@ const detailedInfoBox = <>
   </p>
 
   <p>
-    The first section (<code>{...}</code>) is about traditional, easy operator such as <code>+</code> and <code>*</code>. In Scala, you can use pretty much any characters to create a method name so it is not too hard at this point. Sorry for the math about complex numbers !
+    The first section (<code>&#123;...&#125;</code>) is about traditional, easy operator such as <code>+</code> and <code>*</code>. In Scala, you can use pretty much any characters to create a method name so it is not too hard at this point. Sorry for the math about complex numbers !
   </p>
 
   <p>
@@ -35,17 +35,15 @@ const detailedInfoBox = <>
   </p>
 
   <pre>
-    class MyClass(...) {
-      // ... other fields and methods ...
+    <p>class MyClass(...) &#123;</p>
+    <p>  // ... other fields and methods ...</p>
+    <p>  def unary_[prefix_name] = ???</p>
+    <p>  // ... more things ...</p>
+    <p>&#125;</p>
 
-      def unary_[prefix_name] = ???
+    <p>val a : MyClass = ???</p>
 
-   // ... more things ...
-}
-
-    val a : MyClass = ???
-
-    [prefix_name] a
+    <p>[prefix_name] a</p>
   </pre>
 
   <p>

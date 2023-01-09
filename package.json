@@ -9,11 +9,11 @@
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.29.4",
-    "axios": "^1.2.1",
+    "axios": "^1.2.2",
     "classnames": "^2.3.2",
     "html-to-react": "^1.5.0",
-    "jquery": "^3.6.2",
-    "jsdom": "^20.0.3",
+    "jquery": "^3.6.3",
+    "jsdom": "^21.0.0",
     "lodash": "^4.17.21",
     "netlify-plugin-inline-source": "^1.0.4",
     "netlify-plugin-minify-html": "^0.3.1",
@@ -26,7 +26,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-jss": "^10.9.2",
-    "react-svg": "15.1.16",
+    "react-svg": "15.1.18",
     "sass": "^1.57.1",
     "webpack": "^5.9.0"
   }

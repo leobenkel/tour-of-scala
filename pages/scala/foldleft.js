@@ -18,9 +18,12 @@ const detailedInfoBox = <>
   <p>
     In this exercise, you can see two use cases of <code>foldLeft</code>.
     But first let's explain the syntax:
-  </p><pre>foldLeft(initialValue) { case (accumulator, currentElement) =&gt;
-    // return the new value of the accumulator
-}
+  </p>
+  <pre>
+    <p>foldLeft(initialValue) &#123;</p>
+    <p>  case (accumulator, currentElement) =&gt;</p>
+    <p>    // return the new value of the accumulator</p>
+    <p>&#125;</p>
   </pre>
 
   Note that when <code>currentElement</code> is the first element of the <code>List</code>, then <code>accumulator</code> is equal to <code>initialValue</code>. Also, if the the list is empty, then the returned value will be the <code>initialValue</code>.
@@ -28,17 +31,23 @@ const detailedInfoBox = <>
 
   <p>
     The returned value can be anything, for instance:
-  </p><pre>foldLeft(List.empty) { case (accumulator, currentElement) =&gt;
-    accumulator :+ currentElement 
-}
+  </p>
+  <pre>
+    <p>foldLeft(List.empty) &#123;</p>
+    <p>  case (accumulator, currentElement) =&gt;</p>
+    <p>    accumulator :+ currentElement</p>
+    <p>&#125;</p>
   </pre>
   would return a new <code>List</code> with the same content as the input list.
   <p></p>
   <p>
     An other example:
-  </p><pre>foldLeft(0) { case (accumulator, currentElement) =&gt;
-    accumulator + currentElement 
-}
+  </p>
+  <pre>
+    <p>foldLeft(0) &#123;</p>
+    <p>  case (accumulator, currentElement) =&gt;</p>
+    <p>    accumulator + currentElement</p>
+    <p>&#125;</p>
   </pre>
   would return the total sum of the item of the <code>List</code>. This is similar to the first example in today's exercise. And scala provide a shortcut for it: <code>.sum</code>, this would be a special case of the exercise when the initial value is <code>0</code>.
   <p></p>

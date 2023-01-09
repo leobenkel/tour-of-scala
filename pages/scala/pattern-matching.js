@@ -17,17 +17,20 @@ const detailedInfoBox = <>
 
   <p>The overall syntax is:
 
-  </p><pre>value match {
-    case holder =&gt; action
-    case _ =&gt; default case
-}
+  </p>
+  <pre>
+    <p>value match &#123;</p>
+    <p>  case holder =&gt; action</p>
+    <p>  case _ =&gt; default case</p>
+    <p>&#125;</p>
   </pre>
   And similar inside a <code>map</code> or other:
 
-  <pre>list.map {
-    case holder =&gt; action
-    case _ =&gt; default case
-}
+  <pre>
+    <p>list.map &#123;</p>
+    <p>  case holder =&gt; action</p>
+    <p>  case _ =&gt; default case</p>
+    <p>&#125;</p>
   </pre>
   <p></p>
 

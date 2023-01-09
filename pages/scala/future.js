@@ -19,7 +19,7 @@ const detailedInfoBox = <>
 
   <p>First of all, to use <code>Future</code>, you have to define an <code>ExecutionContext</code>. There are plenty of ways to do it but to stay simple, we are going to be using the default <code>global</code> one.</p>
 
-  <p>Then, let's start with the first part. In this part, we are discovering <code>Future</code>. Simply create then using <code>Future {... }</code> and you can have any code in there. The return type will be <code>Future[A]</code>, where <code>A</code> is the return type of what is inside the <code>{ }</code>.</p>
+  <p>Then, let's start with the first part. In this part, we are discovering <code>Future</code>. Simply create then using <code>Future &#123;...&#125;</code> and you can have any code in there. The return type will be <code>Future[A]</code>, where <code>A</code> is the return type of what is inside the <code>&#123;...&#125;</code>.</p>
 
   <p>You can chain futures together using <i>for-comprehension</i>, like we saw in previous episode. As well as the traditional <code>map</code>, <code>flatMap</code>, etc…</p>
 

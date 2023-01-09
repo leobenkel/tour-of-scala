@@ -34,9 +34,10 @@ const detailedInfoBox = <>
   <p>
     What is called <code>generic</code> in this context is the <code>[A]</code>. It means that this will have some kind of type parameter that will be needed at <i>compiled time</i> to create the class. For instance, if you were to create a <code>Combine[Int]</code>, you can imagine the compiler writing code for you and creating a whole new class :
 
-  </p><pre>trait CombineInt {
-    def combineWith(a: Int): Int
-}
+  </p><pre>
+    <p>trait CombineInt &#123;</p>
+    <p>  def combineWith(a: Int): Int</p>
+    <p>&#125;</p>
   </pre>
 
   It is an other way to not have to write almost similar code several times.

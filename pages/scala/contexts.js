@@ -13,13 +13,13 @@ const mainInfoBox = <>
     We are going to formalize something we saw before but without stopping and looking at it.
   </p>
   <p>
-    Contexts are defined by <code>{... }</code>.
+    Contexts are defined by <code>&#123;...&#125;</code>.
   </p>
 </>
 
 const detailedInfoBox = <>
   <p>
-    You realize that we saw <i>context</i> before. We saw the characters <code>{</code> and <code>}</code> in the previous SKBs.
+    You realize that we saw <i>context</i> before. We saw the characters <code>&#123;</code> and <code>&#125;</code> in the previous SKBs.
   </p>
 
   <p>
@@ -32,20 +32,24 @@ const detailedInfoBox = <>
 
   <p>
     Context always return a value. You can see that in the very first context defined by
-  </p><pre>1
+  </p>
+  <pre>
+    1
   </pre>
   This context is implicit, and could be re-written to:
-  <pre>{
-    1
-  }
+  <pre>
+    <p>&#123;</p>
+    <p>  1</p>
+    <p>&#125;</p>
   </pre>
   This is the same concept for each <code>val</code>:
   <pre>val a: Int = 1
   </pre>
   can be read as
-  <pre>val a: Int = {
-    1
-  }
+  <pre>
+    <p>val a: Int = &#123;</p>
+    <p>  1</p>
+    <p>&#125;</p>
   </pre>
   <p></p>
   <p>

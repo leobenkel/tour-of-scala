@@ -99,9 +99,12 @@ export default function Skb({ lesson }) {
     const styles = useStyles()
     registerLastSeenLesson(lesson.id)
 
+    const gitHubLink = `https://github.com/leobenkel/tour-of-scala/blob/main/pages/scala/${lesson.id}.js`
+
     return <Layout
         title={lesson.title}
-        key={`Layout-${lesson.scastieId}`}
+        key={`Layout-${lesson.scastieId}`
+        }
         description={lesson.description}
     >
         <Head>
@@ -110,7 +113,11 @@ export default function Skb({ lesson }) {
 
         <LeftSide key={`Left-${lesson.scastieId}`}>
             <Top>
-                <Header title={lesson.title} sourceLink={lesson.canonical_url} />
+                <Header
+                    title={lesson.title}
+                    sourceLink={lesson.canonical_url}
+                    githubLink={gitHubLink}
+                />
                 <div className={styles.skbContent}>
                     <SkbContent>{lesson.mainInfoBox}</SkbContent>
                     <HiddenClues>{lesson.detailedInfoBox}</HiddenClues>
@@ -122,5 +129,5 @@ export default function Skb({ lesson }) {
         <RightSide key={`Right-${lesson.scastieId}`} >
             <Scastie scastieId={lesson.scastieId} key={`Scastie-${lesson.scastieId}`} />
         </RightSide>
-    </Layout>
+    </Layout >
 }

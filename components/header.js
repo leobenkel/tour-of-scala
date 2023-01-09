@@ -44,13 +44,16 @@ const useStyles = createUseStyles(
             fontSize: '2em',
             transform: 'rotate(-45deg)'
         },
+        iconImgIcon: {
+            height: '1.7em'
+        },
     },
     {
         name: "Header"
     }
 )
 
-export default function Header({ title, sourceLink }) {
+export default function Header({ title, sourceLink, githubLink }) {
     const styles = useStyles()
     const discordLink = useDiscordLink()
 
@@ -66,6 +69,10 @@ export default function Header({ title, sourceLink }) {
                 {sourceLink ?
                     <L to={sourceLink} className={styles.sourceLink}>
                         <i className={cn("material-icons", styles.sourceLinkIcon)}>link</i>
+                    </L> : null}
+                {githubLink ?
+                    <L to={githubLink} className={styles.sourceLink}>
+                        <ImageFull className={styles.iconImgIcon} src="/assets/GitHub-Mark-64px.png" alt="Github Logo" />
                     </L> : null}
             </div>
         </div>

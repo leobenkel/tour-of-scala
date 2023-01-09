@@ -49,7 +49,7 @@ const canonical_url = "https://leobenkel.com/2020/08/skb-scala-option-map/"
 const prevUrl = "apply"
 const nextUrl = "list-flatten"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

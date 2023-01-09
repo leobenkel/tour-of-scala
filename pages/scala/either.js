@@ -44,7 +44,7 @@ const canonical_url = "https://leobenkel.com/2020/10/skb-scala-either/"
 const prevUrl = "trait"
 const nextUrl = "string-format"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

@@ -36,7 +36,7 @@ const canonical_url = "https://leobenkel.com/2020/08/skb-scala-tuple/"
 const prevUrl = "list-flatten"
 const nextUrl = "thread-sleep"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

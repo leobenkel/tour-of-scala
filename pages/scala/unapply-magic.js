@@ -88,7 +88,7 @@ const canonical_url = "https://leobenkel.com/2020/12/skb-scala-unapply-magic/"
 const prevUrl = "implicit-proof"
 const nextUrl = "multiple-inheritance"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

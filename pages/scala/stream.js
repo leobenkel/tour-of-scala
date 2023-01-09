@@ -39,7 +39,7 @@ const canonical_url = "https://leobenkel.com/2020/09/skb-scala-stream/"
 const prevUrl = "foldleft"
 const nextUrl = "for-comprehension"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

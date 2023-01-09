@@ -1,5 +1,7 @@
 // https://github.com/shadowwalker/next-pwa/issues/392#issuecomment-1224458436
 
+// const { fetchLessons } = require("./lib/fetch-local-lessons");
+
 const withPWA = require("next-pwa")({
     dest: "public",
     // put other next-pwa options here
@@ -13,6 +15,9 @@ const nextConfig = withPWA({
     reactStrictMode: true,
     // put other next js options here
 
+    // env: {
+    //     pageList: fetchLessons
+    // }
 });
 
 module.exports = nextConfig;

@@ -25,7 +25,7 @@ const canonical_url = "https://leobenkel.com/2020/08/skb-scala-list-filter-metho
 const prevUrl = "comparators"
 const nextUrl = "call-by-name-parameters"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

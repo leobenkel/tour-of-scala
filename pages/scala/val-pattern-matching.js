@@ -43,7 +43,7 @@ const canonical_url = "https://leobenkel.com/2020/12/skb-scala-val-pattern-match
 const prevUrl = "_-wildcard"
 const nextUrl = "star-parameter"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

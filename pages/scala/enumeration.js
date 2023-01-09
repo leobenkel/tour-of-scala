@@ -48,7 +48,7 @@ const canonical_url = "https://leobenkel.com/2020/10/skb-scala-enumeration/"
 const prevUrl = "case-object"
 const nextUrl = "contexts"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

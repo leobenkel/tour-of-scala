@@ -54,7 +54,7 @@ const canonical_url = "https://leobenkel.com/2021/01/skb-scala-traversable/"
 const prevUrl = "covariance"
 const nextUrl = "typeclass"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

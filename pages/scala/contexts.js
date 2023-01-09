@@ -70,7 +70,7 @@ const canonical_url = "https://leobenkel.com/2020/11/skb-scala-contexts/"
 const prevUrl = "enumeration"
 const nextUrl = "infix-notation"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

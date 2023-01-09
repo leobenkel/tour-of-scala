@@ -51,7 +51,7 @@ const canonical_url = "https://leobenkel.com/2020/12/skb-scala-higher-kind/"
 const prevUrl = "constraint-inheritance"
 const nextUrl = "_-wildcard"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

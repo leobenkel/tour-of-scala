@@ -61,7 +61,7 @@ const canonical_url = "https://leobenkel.com/2020/12/skb-scala-operators/"
 const prevUrl = "list-of-option-flatten"
 const nextUrl = "literal-identifiers"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

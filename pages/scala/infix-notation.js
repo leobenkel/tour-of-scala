@@ -55,7 +55,7 @@ const canonical_url = "https://leobenkel.com/2020/11/skb-scala-infix-notation/"
 const prevUrl = "contexts"
 const nextUrl = "pattern-matching-at"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

@@ -35,7 +35,7 @@ const canonical_url = "https://leobenkel.com/2020/12/skb-scala-option-pattern-ma
 const prevUrl = "self-referred-type"
 const nextUrl = "list-pattern-matching"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

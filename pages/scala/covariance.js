@@ -68,7 +68,7 @@ const canonical_url = "https://leobenkel.com/2021/01/skb-scala-covariance/"
 const prevUrl = "applicative"
 const nextUrl = "traversable"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

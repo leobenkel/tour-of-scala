@@ -48,7 +48,7 @@ const canonical_url = "https://leobenkel.com/2020/09/skb-scala-implicit-class/"
 const prevUrl = "for-comprehension"
 const nextUrl = "regex"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

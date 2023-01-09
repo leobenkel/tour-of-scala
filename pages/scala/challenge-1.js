@@ -54,7 +54,7 @@ const canonical_url = "https://leobenkel.com/2020/11/skb-scala-challenge-1/"
 const prevUrl = "case-class-unapply"
 const nextUrl = "list-zip"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

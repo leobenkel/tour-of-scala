@@ -63,7 +63,7 @@ const canonical_url = "https://leobenkel.com/2020/09/skb-scala-foldleft/"
 const prevUrl = "pattern-matching"
 const nextUrl = "stream"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

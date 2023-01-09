@@ -58,7 +58,7 @@ const canonical_url = "https://leobenkel.com/2020/12/skb-scala-star-parameter/"
 const prevUrl = "val-pattern-matching"
 const nextUrl = "self-referred-type"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

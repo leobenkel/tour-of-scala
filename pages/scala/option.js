@@ -27,7 +27,7 @@ const canonical_url = "https://leobenkel.com/2020/07/skb-scala-option/"
 const prevUrl = "list-sum-method"
 const nextUrl = "val-lazy-def"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

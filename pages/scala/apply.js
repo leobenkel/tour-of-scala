@@ -50,7 +50,7 @@ const canonical_url = "https://leobenkel.com/2020/08/skb-scala-apply/"
 const prevUrl = "companion-objects"
 const nextUrl = "option-map"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

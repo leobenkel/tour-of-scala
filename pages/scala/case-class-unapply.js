@@ -72,7 +72,7 @@ const canonical_url = "https://leobenkel.com/2020/11/skb-scala-case-class-unappl
 const prevUrl = "implicit-conversion"
 const nextUrl = "challenge-1"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

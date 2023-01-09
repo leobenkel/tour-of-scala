@@ -39,7 +39,7 @@ const canonical_url = "https://leobenkel.com/2021/01/skb-scala-foldable/"
 const prevUrl = "functor"
 const nextUrl = "applicative"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

@@ -26,7 +26,7 @@ const canonical_url = "https://leobenkel.com/2020/07/skb-scala-string-interpolat
 const prevUrl = "values"
 const nextUrl = "methods"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

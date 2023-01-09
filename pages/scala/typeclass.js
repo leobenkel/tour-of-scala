@@ -36,7 +36,7 @@ const canonical_url = "https://leobenkel.com/2021/01/skb-scala-typeclass/"
 const prevUrl = "traversable"
 const nextUrl = "monad"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

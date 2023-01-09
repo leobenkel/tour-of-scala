@@ -87,7 +87,7 @@ const canonical_url = "https://leobenkel.com/2020/12/skb-scala-multiple-inherita
 const prevUrl = "unapply-magic"
 const nextUrl = "constraint-inheritance"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

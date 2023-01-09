@@ -35,7 +35,7 @@ const canonical_url = "https://leobenkel.com/2020/09/skb-scala-defined-type/"
 const prevUrl = "set"
 const nextUrl = "pattern-matching"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

@@ -46,7 +46,7 @@ const canonical_url = "https://leobenkel.com/2020/12/skb-scala-literal-identifie
 const prevUrl = "operators"
 const nextUrl = "extractor-pattern"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

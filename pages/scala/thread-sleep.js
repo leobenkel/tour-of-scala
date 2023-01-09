@@ -46,7 +46,7 @@ const canonical_url = "https://leobenkel.com/2020/08/skb-scala-thread-sleep/"
 const prevUrl = "tuple"
 const nextUrl = "random"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

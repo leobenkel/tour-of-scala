@@ -37,7 +37,7 @@ const canonical_url = "https://leobenkel.com/2020/08/skb-scala-companion-objects
 const prevUrl = "visibility"
 const nextUrl = "apply"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

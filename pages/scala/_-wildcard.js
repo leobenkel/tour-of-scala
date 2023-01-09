@@ -64,7 +64,7 @@ const canonical_url = "https://leobenkel.com/2020/12/skb-scala-_-wildcard/"
 const prevUrl = "higher-kind"
 const nextUrl = "val-pattern-matching"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

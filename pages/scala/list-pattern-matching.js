@@ -68,7 +68,7 @@ const canonical_url = "https://leobenkel.com/2020/12/skb-scala-list-pattern-matc
 const prevUrl = "option-pattern-matching"
 const nextUrl = "list-of-option-flatten"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

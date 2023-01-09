@@ -40,7 +40,7 @@ const canonical_url = "https://leobenkel.com/2020/09/skb-scala-list-parallel/"
 const prevUrl = "range"
 const nextUrl = "main"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

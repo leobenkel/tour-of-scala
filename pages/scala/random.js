@@ -60,7 +60,7 @@ const canonical_url = "https://leobenkel.com/2020/08/skb-scala-random/"
 const prevUrl = "thread-sleep"
 const nextUrl = "flatmap"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

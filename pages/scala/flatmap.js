@@ -34,7 +34,7 @@ const canonical_url = "https://leobenkel.com/2020/09/skb-scala-flatmap/"
 const prevUrl = "random"
 const nextUrl = "curry"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

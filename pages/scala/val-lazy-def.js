@@ -36,7 +36,7 @@ const canonical_url = "https://leobenkel.com/2020/07/skb-scala-val-lazy-def/"
 const prevUrl = "option"
 const nextUrl = "map-for-list"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

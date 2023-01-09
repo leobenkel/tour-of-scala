@@ -69,7 +69,7 @@ const canonical_url = "https://leobenkel.com/2020/12/skb-scala-list-of-option-fl
 const prevUrl = "list-pattern-matching"
 const nextUrl = "operators"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

@@ -60,7 +60,7 @@ const canonical_url = "https://leobenkel.com/2021/01/skb-scala-monad/"
 const prevUrl = "typeclass"
 const nextUrl = "null"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

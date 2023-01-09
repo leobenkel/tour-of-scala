@@ -38,7 +38,7 @@ const canonical_url = "https://leobenkel.com/2020/10/skb-scala-string-format/"
 const prevUrl = "either"
 const nextUrl = "abstract-class"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

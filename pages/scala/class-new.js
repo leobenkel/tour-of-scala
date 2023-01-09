@@ -40,7 +40,7 @@ const canonical_url = "https://leobenkel.com/2020/07/skb-scala-class-new/"
 const prevUrl = "map-for-list"
 const nextUrl = "comparators"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

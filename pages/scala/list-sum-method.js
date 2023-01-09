@@ -26,7 +26,7 @@ const canonical_url = "https://leobenkel.com/2020/07/skb-scala-list-sum-method/"
 const prevUrl = "method-with-arguments"
 const nextUrl = "option"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

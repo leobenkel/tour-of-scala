@@ -61,7 +61,7 @@ const canonical_url = "https://leobenkel.com/2020/09/skb-scala-for-comprehension
 const prevUrl = "stream"
 const nextUrl = "implicit-class"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

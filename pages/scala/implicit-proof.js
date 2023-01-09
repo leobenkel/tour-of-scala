@@ -76,7 +76,7 @@ const canonical_url = "https://leobenkel.com/2020/11/skb-scala-implicit-proof/"
 const prevUrl = "_-placeholder"
 const nextUrl = "unapply-magic"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

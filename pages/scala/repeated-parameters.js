@@ -53,7 +53,7 @@ const canonical_url = "https://leobenkel.com/2020/10/skb-scala-repeated-paramete
 const prevUrl = "recursion"
 const nextUrl = "generic-trait"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

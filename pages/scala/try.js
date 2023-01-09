@@ -42,7 +42,7 @@ const canonical_url = "https://leobenkel.com/2020/09/skb-scala-try/"
 const prevUrl = "curry"
 const nextUrl = "range"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

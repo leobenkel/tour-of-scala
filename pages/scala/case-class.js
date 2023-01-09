@@ -37,7 +37,7 @@ const canonical_url = "https://leobenkel.com/2020/08/skb-scala-case-class/"
 const prevUrl = "call-by-name-parameters"
 const nextUrl = "objects"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

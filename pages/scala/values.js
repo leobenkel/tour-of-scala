@@ -26,7 +26,7 @@ const canonical_url = "https://leobenkel.com/2020/07/skb-scala-values/"
 const prevUrl = "null"
 const nextUrl = "string-interpolation"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

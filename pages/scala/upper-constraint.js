@@ -55,7 +55,7 @@ const canonical_url = "https://leobenkel.com/2020/11/skb-scala-upper-constraint/
 const prevUrl = "pattern-matching-for-case-class"
 const nextUrl = "case-class-copy"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

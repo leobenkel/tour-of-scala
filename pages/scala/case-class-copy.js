@@ -47,7 +47,7 @@ const canonical_url = "https://leobenkel.com/2020/11/skb-scala-case-class-copy/"
 const prevUrl = "upper-constraint"
 const nextUrl = "implicit-conversion"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

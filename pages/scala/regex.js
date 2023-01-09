@@ -43,7 +43,7 @@ const canonical_url = "https://leobenkel.com/2020/10/skb-scala-regex/"
 const prevUrl = "implicit-class"
 const nextUrl = "implicit-val"
 
-const pageData = {
+export const pageData = {
   id,
   title,
   date,

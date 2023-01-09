@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
 
-import { fetchLessons } from 'lib/fetch-lessons'
+import { fetchLessons } from 'lib/fetch-local-lessons'
 
 import Layout from 'components/layout'
 import LeftSide from 'components/left-side'

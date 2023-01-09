@@ -85,8 +85,8 @@ body,
 //     height: 100%;
 // }
 
-code,
-pre {
+.skbContent code,
+.skbContent pre {
     display: inline-block;
     background-color: #d6d9db;
     font-family: "Roboto Mono", monospace;
@@ -95,7 +95,7 @@ pre {
     border-radius: 2px;
 }
 
-pre {
+.skbContent pre {
     display: block;
     padding: 16px;
     overflow-x: auto;

@@ -15,7 +15,8 @@ const useStyles = createUseStyles(
             height: '100%',
             margin: '0',
             width: '100%',
-            '& .scastie.embedded,& .scastie.embedded .app, & .scastie.embedded  .main-panel,& .scastie.embedded .content,& .scastie.embedded .code': {
+
+            '& .scastie.embedded, & .scastie.embedded .app, & .scastie.embedded .main-panel, & .scastie.embedded .content, & .scastie.embedded .code': {
                 display: 'inline-block',
                 width: '100%',
                 minWidth: '100%',
@@ -23,15 +24,24 @@ const useStyles = createUseStyles(
                 height: '100%',
                 boxSizing: 'border-box'
             },
-            '& .editor-container': {
-              display: 'flex !important',
-              flexDirection: 'column',
-              height: '100%',
-              width: '100%',
+            '& .scastie.embedded .editor-container': {
+                display: 'flex !important',
+                flexDirection: 'column',
+                height: '100%',
+                width: '100%',
             },
             '& .scastie.embedded': {
-              margin: '0',
-              padding: '0',
+                margin: '0',
+                padding: '0',
+            },
+            '& .scastie.embedded .cm-editor .cm-tooltip': {
+                fontSize: '12px',
+                zIndex: 999,
+                maxHeight: '60vh',
+                overflow: 'auto'
+            },
+            '& .scastie.embedded .embedded-overlay': {
+                display: 'none'
             }
         },
         scastieLoading: {
@@ -69,8 +79,9 @@ const useStyles = createUseStyles(
     }
 )
 
-const scastieLibUrl = "https://scastie.scala-lang.org/embedded.js"
-const scastieCSS = "https://scastie.scala-lang.org/public/embedded.css"
+const scastieHost = "https://scastie-dev.scala-lang.org"
+const scastieLibUrl = `${scastieHost}/embedded.js`
+const scastieCSS = `${scastieHost}/public/embedded.css`
 
 export default function Scastie({ scastieId }) {
     const styles = useStyles()
@@ -108,7 +119,7 @@ export default function Scastie({ scastieId }) {
         window.scastie.EmbeddedResource({
             base64UUID: scastieId,
             injectId: divId,
-            serverUrl: 'https://scastie.scala-lang.org'
+            serverUrl: scastieHost
         })
 
         setTimeout(() => {

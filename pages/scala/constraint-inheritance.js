@@ -35,9 +35,10 @@ const detailedInfoBox = <>
     It is possible in Scala to create a <code>trait</code> that cannot be used if not mixed in with a selection of other <code>trait</code>. Let's look at the syntax:
   </p>
 
-  <pre>trait MyTrait {name: DependencyTrait =&gt;
-    ...
-}
+  <pre>
+    <p>trait MyTrait &#123; name: DependencyTrait =&gt; </p>
+    <p>  // content of trait</p>
+    <p>&#125;</p>
   </pre>
 
   <p>

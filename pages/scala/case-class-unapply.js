@@ -30,23 +30,25 @@ const detailedInfoBox = <>
     The syntax can be very confusing. Let's look at it in details. Everything that needs to be replace for your specific use case is in between <code>[   ]</code>.
   </p>
   <p>Declaration:</p>
-  <pre>object [PATTERN_MATCHING_NAME] {
-    def unapply(input: [INPUT_TYPE]): Option[[OUTPUT_TYPE]] = {
-      // to match, must return:
-      Some([output_value])
-         // to 'pass'
-         None
-    }
-}
+  <pre>
+    <p>object [PATTERN_MATCHING_NAME] &#123;</p>
+    <p>  def unapply(input: [INPUT_TYPE]): Option[[OUTPUT_TYPE]] = &#123;</p>
+    <p>    // to match, must return:</p>
+    <p>    Some([output_value])</p>
+    <p>    // to 'pass'</p>
+    <p>    None</p>
+    <p>  &#125;</p>
+    <p>&#125;</p>
   </pre>
   <p>We are going to see the notion of 'pass' in a later SKB</p>
 
   <p>How it is used:</p>
-  <pre>val input: [INPUT_TYPE] = ???
+  <pre>
+    <p>val input: [INPUT_TYPE] = ???</p>
 
-    input match {
-    case [PATTERN_MATCHING_NAME]([OUTPUT_TYPE]) =&gt; ???
-}
+    <p>input match &#123;</p>
+    <p>  case [PATTERN_MATCHING_NAME]([OUTPUT_TYPE]) =&gt; ???</p>
+    <p>&#125;</p>
   </pre>
 
   <p>

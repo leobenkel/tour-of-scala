@@ -28,18 +28,20 @@ const detailedInfoBox = <>
   <p>
     The syntax is:</p>
 
-  <pre>object HANDLER {
-    def unapply(input: INPUT_TYPE): Option[OUTPUT_TYPE] = {
-      // when return value is "some", it is outputed
-      // when return value is "none", this match is pass
-    }
-}
+  <pre>
+    <p>object HANDLER &#123;</p>
+    <p>  def unapply(input: INPUT_TYPE): Option[OUTPUT_TYPE] = &#123;</p>
+    <p>    // when return value is "some", it is outputed</p>
+    <p>    // when return value is "none", this match is pass</p>
+    <p>  &#125;</p>
+    <p>&#125;</p>
   </pre>
 
   <p>And how it is used:</p>
-  <pre>input match {
-     case HANDLER(OUTPUT_TYPE) =&gt; ....
-}
+  <pre>
+    <p>input match &#123;</p>
+    <p>  case HANDLER(OUTPUT_TYPE) =&gt; ???</p>
+    <p>&#125;</p>
   </pre>
 
   <p>
@@ -61,12 +63,13 @@ const detailedInfoBox = <>
     It is a great tool to contain responsibilities. The <code>Option</code> output allows you to return something when you know what to do with it or return <code>None</code> when you don't know and the higher abstraction level will make decisions on how to handle the situation. It is really powerful to me because that allows you to “fail” without failing. And try several things before giving up. Let me go into details.
   </p>
 
-  <pre>    val output: OUTPUT_TYPE = input match {
-        case Attempt1(result) =&gt; result
-    case Attempt2(result) =&gt; result
-    case Attempt3(result) =&gt; result
-    case n =&gt; // when all else has failed
-    }
+  <pre>
+    <p>val output: OUTPUT_TYPE = input match &#123;</p>
+    <p>  case Attempt1(result) =&gt; result</p>
+    <p>  case Attempt2(result) =&gt; result</p>
+    <p>  case Attempt3(result) =&gt; result</p>
+    <p>  case n =&gt; // when all else has failed</p>
+    <p>&#125;</p>
   </pre>
 
   <p>

@@ -33,8 +33,9 @@ const detailedInfoBox = <>
   <p>
     Let's summaries the syntax:
   </p>
-  <pre>trait Name[A &lt;: Name[A]] {this: A =&gt; 
-}
+  <pre>
+    <p>trait Name[A &lt;: Name[A]]&#123; this: A =&gt;</p>
+    <p>&#125;</p>
   </pre>
   <p>
     Hopefully that will help you make the compiler your friend and catch more mistake at compile time rather than at runtime !

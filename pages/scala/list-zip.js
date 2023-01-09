@@ -44,7 +44,7 @@ const detailedInfoBox = <>
   </p>
   <p>
     And then try to combine it all with
-    <code>.map{ case ??? =&gt; }</code>
+    <code>.map &#123; case ??? =&gt; &#125;</code>
   </p>
   <p>
     What will be the case pattern here ?

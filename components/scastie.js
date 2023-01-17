@@ -79,7 +79,7 @@ const useStyles = createUseStyles(
     }
 )
 
-const scastieHost = "https://scastie-dev.scala-lang.org"
+const scastieHost = "https://scastie.scala-lang.org"
 const scastieLibUrl = `${scastieHost}/embedded.js`
 const scastieCSS = `${scastieHost}/public/embedded.css`
 

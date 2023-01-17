@@ -9,10 +9,6 @@ import cn from 'classnames'
 import HtmlToReact from 'html-to-react'
 import { createUseStyles } from 'react-jss'
 
-import {
-  fetchLessons,
-  getLessonBySlug,
-} from 'lib/fetch-lessons'
 import { registerLastSeenLesson } from 'lib/lesson-save'
 
 import Header from 'components/header'
@@ -81,40 +77,50 @@ const useStyles = createUseStyles(
     }
 )
 
-function SkbContent({ content, className, ...props }) {
-    return <div className={cn('skbContent', className)} {...props}>{htmlToReactParser.parse(content)}</div>
+function SkbContent({ children, className, ...props }) {
+    return <div className={cn('skbContent', className)} {...props}>{children}</div>
 }
 
-function HiddenClues({ content }) {
+function HiddenClues({ children }) {
     const styles = useStyles()
     const [isRevealed, setIsRevealed] = useState(false)
 
     useEffect(() => {
         setIsRevealed(false)
-    }, [content])
+    }, [children])
 
     return <div className={styles.skbClue} onClick={() => setIsRevealed(true)}>
-        <SkbContent content={content} className={isRevealed ? styles.skbContentVisible : styles.skbContentHidden} />
+        <SkbContent className={isRevealed ? styles.skbContentVisible : styles.skbContentHidden} >{children}</SkbContent>
         {isRevealed ? null : <div className={styles.learnMore}>Reveal more information and clues</div>}
     </div>
 }
 
 export default function Skb({ lesson }) {
-    // console.log(lesson)
     const styles = useStyles()
-    registerLastSeenLesson(lesson.slug)
+    registerLastSeenLesson(lesson.id)
 
-    return <Layout title={lesson.title} key={`Layout-${lesson.scastieId}`} description={lesson.description} >
+    const gitHubLink = `https://github.com/leobenkel/tour-of-scala/blob/main/pages/scala/${lesson.id}.js`
+
+    return <Layout
+        title={lesson.title}
+        key={`Layout-${lesson.scastieId}`
+        }
+        description={lesson.description}
+    >
         <Head>
-            <link rel="canonical" href={lesson.link} />
+            {lesson.canonical_url ? <link rel="canonical" href={lesson.canonical_url} /> : null}
         </Head>
 
         <LeftSide key={`Left-${lesson.scastieId}`}>
             <Top>
-                <Header title={lesson.title} sourceLink={lesson.link} />
+                <Header
+                    title={lesson.title}
+                    sourceLink={lesson.canonical_url}
+                    githubLink={gitHubLink}
+                />
                 <div className={styles.skbContent}>
-                    <SkbContent content={lesson.mainInfoBox} />
-                    <HiddenClues content={lesson.detailedInfoBox} />
+                    <SkbContent>{lesson.mainInfoBox}</SkbContent>
+                    <HiddenClues>{lesson.detailedInfoBox}</HiddenClues>
                 </div>
             </Top>
             <Nav navigation={[lesson.prevUrl, lesson.nextUrl]} />
@@ -123,27 +129,5 @@ export default function Skb({ lesson }) {
         <RightSide key={`Right-${lesson.scastieId}`} >
             <Scastie scastieId={lesson.scastieId} key={`Scastie-${lesson.scastieId}`} />
         </RightSide>
-    </Layout>
-}
-
-export async function getStaticProps({ params }) {
-    const data = await getLessonBySlug(params.slug)
-    return {
-        props: {
-            lesson: data,
-        }
-    }
-}
-
-export async function getStaticPaths() {
-    const allLessons = await fetchLessons()
-
-
-    return {
-        paths: allLessons
-            .map(({ slug }) => {
-                return { params: { slug } }
-            }),
-        fallback: false,
-    }
+    </Layout >
 }

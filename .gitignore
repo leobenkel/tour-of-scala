@@ -4,6 +4,7 @@
 /netlify
 sitemap.xml
 package-lock.json
+yarn.lock
 
 # dependencies
 /node_modules
@@ -41,3 +42,5 @@ public/workbox*.js
 public/workbox*.js.map
 
 .sass-cache
+
+*.log

@@ -1,10 +1,10 @@
 import {
   useEffect,
+  useRef,
   useState,
 } from 'react'
 
-import Head from 'next/head'
-
+// import Head from 'next/head'
 import { createUseStyles } from 'react-jss'
 
 
@@ -13,63 +13,34 @@ const useStyles = createUseStyles(
         scastieContainer: {
             position: 'relative',
             height: '100%',
+            margin: '0',
             width: '100%',
-            '& .scastie.embedded,& .scastie.embedded .main-panel,& .scastie.embedded .main-panel .content,& .scastie.embedded .main-panel .content .editor-container.inner-container,& .scastie.embedded .main-panel .content .editor-container.inner-container .code': {
-                display: 'inline-block',
-                width: '100%',
-                minWidth: '100%',
-                maxWidth: '100%',
-                height: '100%',
-                minHeight: '100%',
-                maxHeight: '100%',
-                boxSizing: 'border-box'
-            },
-            '& .scastie.embedded, & .scastie.embedded .app': {
-                display: 'inline-block',
-                width: '100%',
-                minWidth: '100%',
-                maxWidth: '100%',
-                height: '100%',
-                minHeight: '100%',
-                maxHeight: '100%',
-                boxSizing: 'border-box',
-                margin: '0',
-                padding: '0'
-            },
-            '& .scastie.embedded .main-panel .content .editor-container .editor-wrapper': {
-                height: 'calc(100% - 50px)',
-                paddingTop: '8px',
-                boxSizing: 'border-box'
-            },
 
-            '& .scastie.embedded .main-panel .content .editor-container.inner-container .code': {
-                height: '100%'
-            },
-            '& .scastie.embedded .main-panel .content .editor-container.inner-container .code.console-open': {
-                height: '65%',
-                minHeight: 'auto'
-            },
-            '& .scastie.embedded .console-container.console-open': {
-                height: '35%'
-            },
-            '& .scastie ul.embedded-menu': {
-                position: 'inherit',
+            '& .scastie.embedded, & .scastie.embedded .app, & .scastie.embedded .main-panel, & .scastie.embedded .content, & .scastie.embedded .code': {
                 display: 'inline-block',
-                margin: '0px auto'
+                width: '100%',
+                minWidth: '100%',
+                maxWidth: '100%',
+                height: '100%',
+                boxSizing: 'border-box'
             },
-            '& .scastie ul.embedded-menu li': {
-                display: 'inline-block',
-                margin: '5px 5px',
-                width: '120px',
-                padding: '6px'
+            '& .scastie.embedded .editor-container': {
+                display: 'flex !important',
+                flexDirection: 'column',
+                height: '100%',
+                width: '100%',
             },
-            '& .scastie .runtime-error, & .scastie .runtime-error pre': {
-                width: 'auto',
+            '& .scastie.embedded': {
+                margin: '0',
+                padding: '0',
             },
-            '& .scastie.embedded .output-console pre': {
-                backgroundColor: 'unset'
+            '& .scastie.embedded .cm-editor .cm-tooltip': {
+                fontSize: '12px',
+                zIndex: 999,
+                maxHeight: '60vh',
+                overflow: 'auto'
             },
-            '& .scastie.embedded pre.inline[title = "Unit"]': {
+            '& .scastie.embedded .embedded-overlay': {
                 display: 'none'
             }
         },
@@ -108,64 +79,72 @@ const useStyles = createUseStyles(
     }
 )
 
-const scastieLibUrl = "https://scastie.scala-lang.org/embedded.js"
+const scastieHost = "https://scastie.scala-lang.org"
+const scastieLibUrl = `${scastieHost}/embedded.js`
+const scastieCSS = `${scastieHost}/public/embedded.css`
 
 export default function Scastie({ scastieId }) {
     const styles = useStyles()
 
-    const [isClient, setIsClient] = useState(false)
     const [isLaunch, setIsLaunch] = useState(false)
-    const divId = `id-${scastieId}`
+    const [isReady, setIsReady] = useState(false)
+    const containerRef = useRef()
+
+    const divId = `id-scastie-${scastieId}`
 
     let isLaunchedLive = false
 
     useEffect(() => {
-        setIsClient(true)
-    }, [])
+        if (containerRef.current && !isLaunch && !isReady) {
+            // https://betterprogramming.pub/4-ways-of-adding-external-js-files-in-reactjs-823f85de3668
+            const script = document.createElement("script")
+            script.src = scastieLibUrl
+            script.crossOrigin = "anonymous"
+            script.async = true
+            containerRef.current.appendChild(script)
+
+            return () => {
+                const cssLink = document.querySelector(`link[href="${scastieCSS}"]`)
+                script.remove()
+                if (cssLink) cssLink.remove()
+            }
+        }
+    }, [containerRef])
 
     const launchScastie = () => {
-        if (isLaunch || isLaunchedLive) return
-
+        if (isLaunch || isLaunchedLive || isReady) return
         setIsLaunch(true)
         isLaunchedLive = true
 
         window.scastie.EmbeddedResource({
             base64UUID: scastieId,
             injectId: divId,
-            serverUrl: 'https://scastie.scala-lang.org'
-        });
+            serverUrl: scastieHost
+        })
 
         setTimeout(() => {
             const $ = require('jquery')
 
-            $(".switcher-hide").click();
-            $('.console-open').removeClass('console-open');
+            $(".switcher-hide").trigger("click")
+            $('.console-open').removeClass('console-open')
 
-            let errorMessage = $(".runtime-error pre")
-            if (errorMessage.text().includes("NotImplementedError")) {
-                errorMessage.text("Replace '???' by your code.")
-            }
-        }, 1000);
+            setIsReady(true)
+        }, 1000)
     }
 
-    return <>
-        {isClient ? <Head>
-            <script crossorigin async src={scastieLibUrl} />
-        </Head> : null}
+    return <div
+        className={styles.scastieContainer}
+        onClick={launchScastie}
+        ref={containerRef}
+    >
+        <div className={styles.fullScastie} id={divId} />
 
-        <div className={styles.scastieContainer} onClick={launchScastie}>
-            <div className={styles.fullScastie} id={divId}></div>
-            {isLaunch ?
-                <>
-                    {isLaunch ? null : <div className={styles.scastieLoading}>Loading...</div>}
-                </>
-                :
-                <div className={styles.loadScastie}>
-                    <div id="load-scastie-text">
-                        Load Exercise
-                    </div>
-                </div>
-            }
-        </div>
-    </>
+        {isLaunch ?
+            <>{isReady ? null : <div className={styles.scastieLoading}>Loading...</div>}</>
+            :
+            <div className={styles.loadScastie}>
+                <div id="load-scastie-text">Load Exercise</div>
+            </div>
+        }
+    </div>
 }

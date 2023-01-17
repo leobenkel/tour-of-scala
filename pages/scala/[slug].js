@@ -5,6 +5,7 @@ import React, {
 
 import Head from 'next/head'
 
+import cn from 'classnames'
 import HtmlToReact from 'html-to-react'
 import { createUseStyles } from 'react-jss'
 
@@ -80,8 +81,8 @@ const useStyles = createUseStyles(
     }
 )
 
-function SkbContent({ content, ...props }) {
-    return <div {...props}>{htmlToReactParser.parse(content)}</div>
+function SkbContent({ content, className, ...props }) {
+    return <div className={cn('skbContent', className)} {...props}>{htmlToReactParser.parse(content)}</div>
 }
 
 function HiddenClues({ content }) {

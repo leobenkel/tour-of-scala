@@ -86,16 +86,18 @@ const scastieCSS = `${scastieHost}/public/embedded.css`
 export default function Scastie({ scastieId }) {
     const styles = useStyles()
 
-    const [isLaunch, setIsLaunch] = useState(false)
-    const [isReady, setIsReady] = useState(false)
+    const NEUTRAL = 0
+    const IS_STARTING = 1
+    const IS_READY = 2
+
+    const [launchingState, setLaunchingState] = useState(NEUTRAL)
+
     const containerRef = useRef()
 
     const divId = `id-scastie-${scastieId}`
 
-    let isLaunchedLive = false
-
     useEffect(() => {
-        if (containerRef.current && !isLaunch && !isReady) {
+        if (containerRef.current) {
             // https://betterprogramming.pub/4-ways-of-adding-external-js-files-in-reactjs-823f85de3668
             const script = document.createElement("script")
             script.src = scastieLibUrl
@@ -104,32 +106,51 @@ export default function Scastie({ scastieId }) {
             containerRef.current.appendChild(script)
 
             return () => {
-                const cssLink = document.querySelector(`link[href="${scastieCSS}"]`)
                 script.remove()
+
+                const cssLink = document.querySelector(`link[href="${scastieCSS}"]`)
                 if (cssLink) cssLink.remove()
             }
         }
     }, [containerRef])
 
     const launchScastie = () => {
-        if (isLaunch || isLaunchedLive || isReady) return
-        setIsLaunch(true)
-        isLaunchedLive = true
+        if (launchingState != NEUTRAL) return
 
-        window.scastie.EmbeddedResource({
-            base64UUID: scastieId,
-            injectId: divId,
-            serverUrl: scastieHost
-        })
+        setLaunchingState(IS_STARTING)
 
-        setTimeout(() => {
-            const $ = require('jquery')
+        const launch = () => {
+            setTimeout(() => {
+                if (!window.scastie) return launch()
 
-            $(".switcher-hide").trigger("click")
-            $('.console-open').removeClass('console-open')
+                try {
+                    window.scastie.EmbeddedResource({
+                        base64UUID: scastieId,
+                        injectId: divId,
+                        serverUrl: scastieHost
+                    })
+                } catch {
+                    return launch()
+                }
 
-            setIsReady(true)
-        }, 1000)
+                setLaunchingState(IS_READY)
+            }, 500)
+        }
+
+        launch()
+    }
+
+    function renderScastieBlock() {
+        switch (launchingState) {
+            case 0: // NEUTRAL
+                return <div className={styles.loadScastie}>
+                    <div id="load-scastie-text">Load Exercise</div>
+                </div>
+            case 1: // IS_STARTING
+                return <div className={styles.scastieLoading}>Loading...</div>
+            case 2: // IS_READY
+                return null
+        }
     }
 
     return <div
@@ -139,12 +160,6 @@ export default function Scastie({ scastieId }) {
     >
         <div className={styles.fullScastie} id={divId} />
 
-        {isLaunch ?
-            <>{isReady ? null : <div className={styles.scastieLoading}>Loading...</div>}</>
-            :
-            <div className={styles.loadScastie}>
-                <div id="load-scastie-text">Load Exercise</div>
-            </div>
-        }
+        {renderScastieBlock()}
     </div>
 }

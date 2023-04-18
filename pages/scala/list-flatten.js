@@ -38,8 +38,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala List Flatten - Periodic exercise to learn bits of knowledge about Scala. Scala List Flatten here."
 
-const canonical_url = "https://leobenkel.com/2020/08/skb-scala-list-flatten/"
-
 const prevUrl = "option-map"
 const nextUrl = "tuple"
 
@@ -51,7 +49,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

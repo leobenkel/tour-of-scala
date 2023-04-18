@@ -40,8 +40,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Thread Sleep - Periodic exercise to learn bits of knowledge about Scala. Scala Scala Thread Sleep here."
 
-const canonical_url = "https://leobenkel.com/2020/08/skb-scala-thread-sleep/"
-
 const prevUrl = "tuple"
 const nextUrl = "random"
 
@@ -53,7 +51,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

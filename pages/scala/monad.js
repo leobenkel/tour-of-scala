@@ -55,8 +55,6 @@ As always, if you have any questions, reach out on Discord !
 
 const description = "Scala Knowledge Bits - Scala Monad - Periodic exercise to learn bits of knowledge about Scala. Scala Monad here."
 
-const canonical_url = "https://leobenkel.com/2021/01/skb-scala-monad/"
-
 const prevUrl = "typeclass"
 const nextUrl = null
 
@@ -68,7 +66,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

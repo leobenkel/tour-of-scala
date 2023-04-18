@@ -33,8 +33,6 @@ I also like using it for aesthetics, It allows to use <code>{ }</code>like in <c
 
 const description = "Scala Knowledge Bits - Scala Curry - Periodic exercise to learn bits of knowledge about Scala. Scala Curry here."
 
-const canonical_url = "https://leobenkel.com/2020/09/skb-scala-curry/"
-
 const prevUrl = "flatmap"
 const nextUrl = "try"
 
@@ -46,7 +44,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

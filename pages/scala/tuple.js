@@ -30,8 +30,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Tuple - Periodic exercise to learn bits of knowledge about Scala. Scala Tuple here."
 
-const canonical_url = "https://leobenkel.com/2020/08/skb-scala-tuple/"
-
 const prevUrl = "list-flatten"
 const nextUrl = "thread-sleep"
 
@@ -43,7 +41,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

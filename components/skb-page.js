@@ -107,9 +107,12 @@ export default function Skb({ lesson }) {
         }
         description={lesson.description}
     >
-        <Head>
-            {lesson.canonical_url ? <link rel="canonical" href={lesson.canonical_url} /> : null}
-        </Head>
+        
+        {lesson.canonical_url ? 
+            <Head><link rel="canonical" href={lesson.canonical_url} /></Head> 
+            : null
+        }
+        
 
         <LeftSide key={`Left-${lesson.scastieId}`}>
             <Top>

@@ -28,8 +28,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala flatMap - Periodic exercise to learn bits of knowledge about Scala. Scala flatMap here."
 
-const canonical_url = "https://leobenkel.com/2020/09/skb-scala-flatmap/"
-
 const prevUrl = "random"
 const nextUrl = "curry"
 
@@ -41,7 +39,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

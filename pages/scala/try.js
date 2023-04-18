@@ -37,8 +37,6 @@ Go back to the editor and try to make some code using <code>map</code> and <code
 
 const description = "Scala Knowledge Bits - Scala Try - Periodic exercise to learn bits of knowledge about Scala. Scala Try here."
 
-const canonical_url = "https://leobenkel.com/2020/09/skb-scala-try/"
-
 const prevUrl = "curry"
 const nextUrl = "range"
 
@@ -50,7 +48,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

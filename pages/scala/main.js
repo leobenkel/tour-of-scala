@@ -38,8 +38,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala main - Periodic exercise to learn bits of knowledge about Scala. Scala main here."
 
-const canonical_url = "https://leobenkel.com/2020/09/skb-scala-main/"
-
 const prevUrl = "list-parallel"
 const nextUrl = "set"
 
@@ -51,7 +49,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

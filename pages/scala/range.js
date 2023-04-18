@@ -31,8 +31,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Range - Periodic exercise to learn bits of knowledge about Scala. Scala Range here."
 
-const canonical_url = "https://leobenkel.com/2020/09/skb-scala-range/"
-
 const prevUrl = "try"
 const nextUrl = "list-parallel"
 
@@ -44,7 +42,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

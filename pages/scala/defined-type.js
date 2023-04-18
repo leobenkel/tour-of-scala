@@ -29,8 +29,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala defined type - Periodic exercise to learn bits of knowledge about Scala. Scala defined type here."
 
-const canonical_url = "https://leobenkel.com/2020/09/skb-scala-defined-type/"
-
 const prevUrl = "set"
 const nextUrl = "pattern-matching"
 
@@ -42,7 +40,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

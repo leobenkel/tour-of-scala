@@ -36,8 +36,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Set - Periodic exercise to learn bits of knowledge about Scala. Scala Set here."
 
-const canonical_url = "https://leobenkel.com/2020/09/skb-scala-set/"
-
 const prevUrl = "main"
 const nextUrl = "defined-type"
 
@@ -49,7 +47,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

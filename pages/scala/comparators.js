@@ -39,8 +39,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Comparators - Periodic exercise to learn bits of knowledge about Scala. Scala Comparators here."
 
-const canonical_url = "https://leobenkel.com/2020/08/skb-scala-comparators/"
-
 const prevUrl = "class-new"
 const nextUrl = "list-filter-method"
 
@@ -52,7 +50,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

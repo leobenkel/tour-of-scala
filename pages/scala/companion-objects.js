@@ -31,8 +31,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala companion objects - Periodic exercise to learn bits of knowledge about Scala. Scala companion objects here."
 
-const canonical_url = "https://leobenkel.com/2020/08/skb-scala-companion-objects/"
-
 const prevUrl = "visibility"
 const nextUrl = "apply"
 
@@ -44,7 +42,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

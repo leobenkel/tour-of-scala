@@ -45,8 +45,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala implicit conversion - Periodic exercise to learn bits of knowledge about Scala. Scala implicit conversion here."
 
-const canonical_url = "https://leobenkel.com/2020/11/skb-scala-implicit-conversion/"
-
 const prevUrl = "case-class-copy"
 const nextUrl = "case-class-unapply"
 
@@ -58,7 +56,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

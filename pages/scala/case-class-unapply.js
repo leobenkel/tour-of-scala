@@ -68,8 +68,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Scala case class unapply - Periodic exercise to learn bits of knowledge about Scala. Scala Scala case class unapply here."
 
-const canonical_url = "https://leobenkel.com/2020/11/skb-scala-case-class-unapply/"
-
 const prevUrl = "implicit-conversion"
 const nextUrl = "challenge-1"
 
@@ -81,7 +79,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

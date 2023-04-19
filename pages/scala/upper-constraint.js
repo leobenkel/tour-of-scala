@@ -50,8 +50,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala upper constraint - Periodic exercise to learn bits of knowledge about Scala. Scala upper constraint here."
 
-const canonical_url = "https://leobenkel.com/2020/11/skb-scala-upper-constraint/"
-
 const prevUrl = "pattern-matching-for-case-class"
 const nextUrl = "case-class-copy"
 
@@ -63,7 +61,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

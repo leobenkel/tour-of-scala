@@ -53,8 +53,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala List zip - Periodic exercise to learn bits of knowledge about Scala. Scala List zip here."
 
-const canonical_url = "https://leobenkel.com/2020/11/skb-scala-list-zip/"
-
 const prevUrl = "challenge-1"
 const nextUrl = "_-placeholder"
 
@@ -66,7 +64,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

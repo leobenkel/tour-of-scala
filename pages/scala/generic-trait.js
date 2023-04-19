@@ -59,8 +59,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Generic Trait - Periodic exercise to learn bits of knowledge about Scala. Scala Generic Trait here."
 
-const canonical_url = "https://leobenkel.com/2020/10/skb-scala-generic-trait/"
-
 const prevUrl = "repeated-parameters"
 const nextUrl = "sealed"
 
@@ -72,7 +70,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

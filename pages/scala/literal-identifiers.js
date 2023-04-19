@@ -40,8 +40,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala literal identifiers - Periodic exercise to learn bits of knowledge about Scala. Scala literal identifiers here."
 
-const canonical_url = "https://leobenkel.com/2020/12/skb-scala-literal-identifiers/"
-
 const prevUrl = "operators"
 const nextUrl = "extractor-pattern"
 
@@ -53,7 +51,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

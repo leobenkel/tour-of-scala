@@ -42,8 +42,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Applicative - Periodic exercise to learn bits of knowledge about Scala. Scala Applicative here."
 
-const canonical_url = "https://leobenkel.com/2021/01/skb-scala-applicative/"
-
 const prevUrl = "foldable"
 const nextUrl = "covariance"
 
@@ -55,7 +53,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

@@ -49,8 +49,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala infix notation - Periodic exercise to learn bits of knowledge about Scala. Scala infix notation here."
 
-const canonical_url = "https://leobenkel.com/2020/11/skb-scala-infix-notation/"
-
 const prevUrl = "contexts"
 const nextUrl = "pattern-matching-at"
 
@@ -62,7 +60,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

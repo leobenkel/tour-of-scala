@@ -58,8 +58,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala _ wildcard - Periodic exercise to learn bits of knowledge about Scala. Scala _ wildcard here."
 
-const canonical_url = "https://leobenkel.com/2020/12/skb-scala-_-wildcard/"
-
 const prevUrl = "higher-kind"
 const nextUrl = "val-pattern-matching"
 
@@ -71,7 +69,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

@@ -37,8 +37,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala val pattern matching - Periodic exercise to learn bits of knowledge about Scala. Scala val pattern matching here."
 
-const canonical_url = "https://leobenkel.com/2020/12/skb-scala-val-pattern-matching/"
-
 const prevUrl = "_-wildcard"
 const nextUrl = "star-parameter"
 
@@ -50,7 +48,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

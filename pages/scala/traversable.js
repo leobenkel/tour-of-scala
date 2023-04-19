@@ -49,8 +49,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Traversable - Periodic exercise to learn bits of knowledge about Scala. Scala Traversable here."
 
-const canonical_url = "https://leobenkel.com/2021/01/skb-scala-traversable/"
-
 const prevUrl = "covariance"
 const nextUrl = "typeclass"
 
@@ -62,7 +60,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

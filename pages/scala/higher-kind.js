@@ -45,8 +45,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala higher kind - Periodic exercise to learn bits of knowledge about Scala. Scala higher kind here."
 
-const canonical_url = "https://leobenkel.com/2020/12/skb-scala-higher-kind/"
-
 const prevUrl = "constraint-inheritance"
 const nextUrl = "_-wildcard"
 
@@ -58,7 +56,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

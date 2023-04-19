@@ -68,8 +68,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala contexts - Periodic exercise to learn bits of knowledge about Scala. Scala contexts here."
 
-const canonical_url = "https://leobenkel.com/2020/11/skb-scala-contexts/"
-
 const prevUrl = "enumeration"
 const nextUrl = "infix-notation"
 
@@ -81,7 +79,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

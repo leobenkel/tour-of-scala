@@ -68,8 +68,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala constraint inheritance - Periodic exercise to learn bits of knowledge about Scala. Scala constraint inheritance here."
 
-const canonical_url = "https://leobenkel.com/2020/12/skb-scala-constraint-inheritance/"
-
 const prevUrl = "multiple-inheritance"
 const nextUrl = "higher-kind"
 
@@ -81,7 +79,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

@@ -41,8 +41,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala case class copy - Periodic exercise to learn bits of knowledge about Scala. Scala case class copy here."
 
-const canonical_url = "https://leobenkel.com/2020/11/skb-scala-case-class-copy/"
-
 const prevUrl = "upper-constraint"
 const nextUrl = "implicit-conversion"
 
@@ -54,7 +52,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

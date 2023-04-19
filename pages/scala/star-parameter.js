@@ -52,8 +52,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala array as function argument - Periodic exercise to learn bits of knowledge about Scala. Scala array as function argument here."
 
-const canonical_url = "https://leobenkel.com/2020/12/skb-scala-star-parameter/"
-
 const prevUrl = "val-pattern-matching"
 const nextUrl = "self-referred-type"
 
@@ -65,7 +63,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

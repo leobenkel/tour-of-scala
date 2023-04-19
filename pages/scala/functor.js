@@ -66,8 +66,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Functor - Periodic exercise to learn bits of knowledge about Scala. Scala Functor here."
 
-const canonical_url = "https://leobenkel.com/2021/01/skb-scala-functor/"
-
 const prevUrl = "extractor-pattern"
 const nextUrl = "foldable"
 
@@ -79,7 +77,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

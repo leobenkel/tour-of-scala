@@ -62,8 +62,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala List pattern matching - Periodic exercise to learn bits of knowledge about Scala. Scala List pattern matching here."
 
-const canonical_url = "https://leobenkel.com/2020/12/skb-scala-list-pattern-matching/"
-
 const prevUrl = "option-pattern-matching"
 const nextUrl = "list-of-option-flatten"
 
@@ -75,7 +73,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

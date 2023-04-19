@@ -85,8 +85,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala unapply magic - Periodic exercise to learn bits of knowledge about Scala. Scala unapply magic here."
 
-const canonical_url = "https://leobenkel.com/2020/12/skb-scala-unapply-magic/"
-
 const prevUrl = "implicit-proof"
 const nextUrl = "multiple-inheritance"
 
@@ -98,7 +96,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

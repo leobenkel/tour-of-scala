@@ -46,8 +46,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala self-referred type - Periodic exercise to learn bits of knowledge about Scala. Scala self-referred type here."
 
-const canonical_url = "https://leobenkel.com/2020/12/skb-scala-self-referred-type/"
-
 const prevUrl = "star-parameter"
 const nextUrl = "option-pattern-matching"
 
@@ -59,7 +57,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

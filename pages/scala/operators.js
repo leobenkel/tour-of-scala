@@ -53,8 +53,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala operators - Periodic exercise to learn bits of knowledge about Scala. Scala operators here."
 
-const canonical_url = "https://leobenkel.com/2020/12/skb-scala-operators/"
-
 const prevUrl = "list-of-option-flatten"
 const nextUrl = "literal-identifiers"
 
@@ -66,7 +64,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

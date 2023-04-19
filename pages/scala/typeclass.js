@@ -30,8 +30,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala typeclass - Periodic exercise to learn bits of knowledge about Scala. Scala typeclass here."
 
-const canonical_url = "https://leobenkel.com/2021/01/skb-scala-typeclass/"
-
 const prevUrl = "traversable"
 const nextUrl = "monad"
 
@@ -43,7 +41,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

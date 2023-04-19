@@ -44,8 +44,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala pattern matching OR - Periodic exercise to learn bits of knowledge about Scala. Scala pattern matching OR here."
 
-const canonical_url = "https://leobenkel.com/2020/11/skb-scala-pattern-matching-or/"
-
 const prevUrl = "pattern-matching-at"
 const nextUrl = "pattern-matching-for-case-class"
 
@@ -57,7 +55,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

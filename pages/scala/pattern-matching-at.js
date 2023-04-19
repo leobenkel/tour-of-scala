@@ -43,8 +43,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - pattern matching '@' - Periodic exercise to learn bits of knowledge about Scala. pattern matching '@' here."
 
-const canonical_url = "https://leobenkel.com/2020/11/skb-scala-pattern-matching-at/"
-
 const prevUrl = "infix-notation"
 const nextUrl = "pattern-matching-or"
 
@@ -56,7 +54,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

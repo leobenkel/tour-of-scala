@@ -47,8 +47,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Repeated Parameters - Periodic exercise to learn bits of knowledge about Scala. Scala Repeated Parameters here."
 
-const canonical_url = "https://leobenkel.com/2020/10/skb-scala-repeated-parameters/"
-
 const prevUrl = "recursion"
 const nextUrl = "generic-trait"
 
@@ -60,7 +58,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

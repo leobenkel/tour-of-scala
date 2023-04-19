@@ -19,8 +19,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala List Filter Method - Periodic exercise to learn bits of knowledge about Scala. Scala List Filter Method here."
 
-const canonical_url = "https://leobenkel.com/2020/08/skb-scala-list-filter-method/"
-
 const prevUrl = "comparators"
 const nextUrl = "call-by-name-parameters"
 
@@ -32,7 +30,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

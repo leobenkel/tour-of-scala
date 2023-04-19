@@ -57,8 +57,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala for-comprehension - Periodic exercise to learn bits of knowledge about Scala. Scala for-comprehension here."
 
-const canonical_url = "https://leobenkel.com/2020/09/skb-scala-for-comprehension/"
-
 const prevUrl = "stream"
 const nextUrl = "implicit-class"
 
@@ -70,7 +68,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

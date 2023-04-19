@@ -66,8 +66,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala foldLeft - Periodic exercise to learn bits of knowledge about Scala. Scala foldLeft here."
 
-const canonical_url = "https://leobenkel.com/2020/09/skb-scala-foldleft/"
-
 const prevUrl = "pattern-matching"
 const nextUrl = "stream"
 
@@ -79,7 +77,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

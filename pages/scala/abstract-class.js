@@ -31,8 +31,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala abstract class - Periodic exercise to learn bits of knowledge about Scala. Scala abstract class here."
 
-const canonical_url = "https://leobenkel.com/2020/10/skb-scala-abstract-class/"
-
 const prevUrl = "string-format"
 const nextUrl = "recursion"
 
@@ -44,7 +42,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

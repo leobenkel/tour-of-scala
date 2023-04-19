@@ -30,8 +30,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala difference between val, lazy val and def - Periodic exercise to learn bits of knowledge about Scala. Scala difference between val, lazy val and def here."
 
-const canonical_url = "https://leobenkel.com/2020/07/skb-scala-val-lazy-def/"
-
 const prevUrl = "option"
 const nextUrl = "map-for-list"
 
@@ -43,7 +41,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

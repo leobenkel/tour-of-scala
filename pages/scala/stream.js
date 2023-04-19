@@ -33,8 +33,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Stream - Periodic exercise to learn bits of knowledge about Scala. Scala Stream here."
 
-const canonical_url = "https://leobenkel.com/2020/09/skb-scala-stream/"
-
 const prevUrl = "foldleft"
 const nextUrl = "for-comprehension"
 
@@ -46,7 +44,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

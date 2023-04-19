@@ -34,8 +34,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Future - Periodic exercise to learn bits of knowledge about Scala. Scala Future here."
 
-const canonical_url = "https://leobenkel.com/2020/10/skb-scala-future/"
-
 const prevUrl = "implicit-val"
 const nextUrl = "trait"
 
@@ -47,7 +45,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

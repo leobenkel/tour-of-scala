@@ -32,8 +32,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala String Format - Periodic exercise to learn bits of knowledge about Scala. Scala String Format here."
 
-const canonical_url = "https://leobenkel.com/2020/10/skb-scala-string-format/"
-
 const prevUrl = "either"
 const nextUrl = "abstract-class"
 
@@ -45,7 +43,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

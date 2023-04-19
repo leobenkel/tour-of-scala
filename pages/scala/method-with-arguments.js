@@ -20,8 +20,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Method with Arguments- Periodic exercise to learn bits of knowledge about Scala. Scala Method with Arguments here."
 
-const canonical_url = "https://leobenkel.com/2020/07/skb-scala-method-with-arguments/"
-
 const prevUrl = "methods"
 const nextUrl = "list-sum-method"
 
@@ -33,7 +31,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

@@ -26,8 +26,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Map for List - Periodic exercise to learn bits of knowledge about Scala. Scala Map for List here."
 
-const canonical_url = "https://leobenkel.com/2020/07/skb-scala-map-for-list/"
-
 const prevUrl = "val-lazy-def"
 const nextUrl = "class-new"
 
@@ -39,7 +37,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

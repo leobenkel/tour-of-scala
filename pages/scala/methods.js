@@ -21,8 +21,6 @@ const detailedInfoBox = <>
 
 const description = "Scala Knowledge Bits - Scala Methods - Periodic exercise to learn bits of knowledge about Scala. Scala Methods here."
 
-const canonical_url = "https://leobenkel.com/2020/07/skb-scala-methods/"
-
 const prevUrl = "string-interpolation"
 const nextUrl = "method-with-arguments"
 
@@ -34,7 +32,6 @@ export const pageData = {
   mainInfoBox,
   detailedInfoBox,
   description,
-  canonical_url,
   prevUrl,
   nextUrl
 }

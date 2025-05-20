@@ -6,7 +6,7 @@ export const title = "Scala *-parameter"
 
 export const date = "2020-12-16T17:00:54"
 
-const scastieId = "uhVWCfgeREWEbRKVUX639w"
+const scastieId = "atliFs67TKm6z7r8OSifug"
 
 const mainInfoBox = <>
   <p>

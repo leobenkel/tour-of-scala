@@ -6,7 +6,7 @@ export const title = "Scala flatMap"
 
 export const date = "2020-09-02T17:10:15"
 
-const scastieId = "ldCLOORGSEGwvfDOlUKDWA"
+const scastieId = "LES1ZVP7TSeBoi9KUJCzkA"
 
 const mainInfoBox = <>
   <p>

@@ -6,7 +6,7 @@ export const title = "Scala List Filter Method"
 
 export const date = "2020-08-05T17:00:53"
 
-const scastieId = "EVfJS5WZRDWtIdzPHXOs6w"
+const scastieId = "TMCEMboDQTK2EWUvaiDd5g"
 
 const mainInfoBox = <>
   <p>In a previous SKB, we met the <code>map</code> method that the standard library offers. There are plenty more, but let's focus on the <code>filter</code> method in this Scala Knowledge Bit.</p>

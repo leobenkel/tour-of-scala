@@ -6,7 +6,7 @@ export const title = "Scala Traversable"
 
 export const date = "2021-01-13T17:00:07"
 
-const scastieId = "ntaMRDzYQ3uMMgXbQZcECg"
+const scastieId = "3R7qyi15SqGPmU0yqMfvxQ"
 
 const mainInfoBox = <>
   <p>Going a bit further in Functional Programming concepts with <i>Traversable</i></p>

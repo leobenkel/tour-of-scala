@@ -6,7 +6,7 @@ export const title = "Scala Functor"
 
 export const date = "2021-01-04T17:00:29"
 
-const scastieId = "lPfrjWhhQUew9oxzlD0nSw"
+const scastieId = "SxNIO0zvSsyJPr1rnkJJTw"
 
 const mainInfoBox = <>
   <p>

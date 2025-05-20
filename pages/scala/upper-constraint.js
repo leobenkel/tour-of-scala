@@ -6,7 +6,7 @@ export const title = "Scala upper constraint"
 
 export const date = "2020-11-13T17:04:31"
 
-const scastieId = "wYG9m3B3T1qBOuvy5vLjAQ"
+const scastieId = "pnGE3sx2QF618zNKhKhoLw"
 
 const mainInfoBox = <>
   <p>Let's go back to Object Oriented Programming concepts and specifically to interfaces (<code>trait</code>).</p>

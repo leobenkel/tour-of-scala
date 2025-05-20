@@ -6,7 +6,7 @@ export const title = "Scala Case Class"
 
 export const date = "2020-08-10T17:01:37"
 
-const scastieId = "2cLIBX4MTeK7xf7fXBPI4A"
+const scastieId = "J9Wl5OKcRb6LISqNXA4hrQ"
 
 const mainInfoBox = <>
   <p>We learned about <code>class</code> in a previous SKB, today we are going to learn about <code>case class</code>. They serve the same purpose which is to provide a blueprint to create <code>object</code>s. But case class provides a lot of build-in advantages.</p>

@@ -6,7 +6,7 @@ export const title = "Scala pattern matching"
 
 export const date = "2020-09-21T17:00:55"
 
-const scastieId = "5VQri4WFQ6yrPuBJHNIh5A"
+const scastieId = "SnFM3f5GRvCzIvqAWco0jg"
 
 const mainInfoBox = <>
   <p>We are going to learn about <i>pattern matching</i> today. At least, an introduction. Pattern matching is one of the key functionality of scala and it contributes to help you write clean and readable code.</p>

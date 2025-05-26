@@ -6,7 +6,7 @@ export const title = "Scala Covariance"
 
 export const date = "2021-01-11T17:00:00"
 
-const scastieId = "iFi9nYjrT7OfSifQngJZlw"
+const scastieId = "Xyrln1IZRtyKqCvtBfHVrA"
 
 const mainInfoBox = <>
   <p>Let's see what is <i>Covariance</i>.</p>

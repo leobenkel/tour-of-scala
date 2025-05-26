@@ -6,7 +6,7 @@ export const title = "Scala extractor pattern"
 
 export const date = "2021-01-01T17:00:40"
 
-const scastieId = "m2wkxempSUqHNni7KEz1Zg"
+const scastieId = "WuCy5uDvT1WeeWPg8WcUkg"
 
 const mainInfoBox = <>
   <p>

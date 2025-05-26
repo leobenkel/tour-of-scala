@@ -6,7 +6,7 @@ export const title = "Scala pattern matching OR"
 
 export const date = "2020-11-09T17:00:54"
 
-const scastieId = "L2xDjw3yTfeVu8BvTlvJuw"
+const scastieId = "WYfULSwhS12quZ5H6BIkBA"
 
 const mainInfoBox = <>
   <p>Let's continue the pattern matching exploration.</p>

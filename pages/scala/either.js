@@ -6,7 +6,7 @@ export const title = "Scala Either"
 
 export const date = "2020-10-12T17:00:24"
 
-const scastieId = "bzjEzMzhQmSOiJm2bejFkw"
+const scastieId = "caZffM5rS72X8SdfaV23wQ"
 
 const mainInfoBox = <>
   <p><code>Either</code>, you will see, is kind of a in-between <code>Try</code> and <code>Option</code>.</p>

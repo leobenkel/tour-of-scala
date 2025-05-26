@@ -6,7 +6,7 @@ export const title = "Scala Repeated Parameters"
 
 export const date = "2020-10-21T17:02:40"
 
-const scastieId = "t4txyXUBQ16HDTrla2PhZw"
+const scastieId = "gdXHGu2KRUC3yVkBl2FhiQ"
 
 const mainInfoBox = <>
   <p>

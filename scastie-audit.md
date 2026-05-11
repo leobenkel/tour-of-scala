@@ -24,44 +24,51 @@ Status legend:
 
 ## Findings
 
-**The break is server-side, not in this repo.** No code here has changed
-since 2025-05-26 (commit `408ae4d`), and that PR was confirmed working in
-production for ~12 months. Scastie's `/embedded.js` was last-modified on
-**Tue, 2026-05-05 14:20:56 GMT** — about a week before users started
-reporting the issue. That deploy is the most likely trigger.
+**Snippets are truly lost. This is not an API shape change.** Scastie's
+maintainer ([@rochala](https://github.com/rochala)) confirmed in
+[scalacenter/scastie#1204](https://github.com/scalacenter/scastie/issues/1204)
+on 2025-11-14:
 
-**Two hypotheses for the actual cause, both consistent with the data:**
+> "we've cleaned the database of anonymous snippets and from now on they
+> will not be stored indefinitely. If someone wants to have persistent
+> snippets they now need to login."
 
-1. **Snippets are truly lost.** All 82 current IDs *and* all 82 pre-PR-#31
-   IDs (created years earlier, in distinct batches) return the same
-   `POST /api/download/<id> → 404`. If only one generation were affected
-   we could blame retention/expiration, but both generations failing
-   identically points to a data-side event (purge, migration, or storage
-   reset) coinciding with the 2026-05-05 deploy.
+And on 2025-11-18:
 
-2. **The API shape changed.** `embedded.js` was rebuilt 6 days ago. It
-   could be that the new build sends requests in a form the old recorded
-   IDs no longer match (different namespace, different host, additional
-   required parameter). Our raw probes from this script don't replicate
-   exactly what the embed runtime does, so we can't fully rule this out.
+> "All non-anonymous snippets of users who did not login for 2.5 years
+> and did not accept new privacy policy were also deleted... I already
+> spent way too long fighting with mongodb before I brought the idea to
+> drop all anonymous snippets"
 
-**Caveat: no positive control.** We did not test any known-working
-Scastie snippet. Every ID we probed (164 unique values across both
-generations) returned the same response, so we know "this set of IDs is
-inaccessible", but we cannot independently prove that *any* anonymous
-snippet ID is currently retrievable via the live API. A positive control
-would settle hypothesis 1 vs 2.
+All of tour-of-scala's snippets were created anonymously (PR #31 in
+May 2025 and earlier), so they were caught by the November 2025 wipe.
+This audit's data is consistent with that statement: both the
+post-PR-#31 IDs (created May 2025) and the pre-PR-#31 IDs (created
+years earlier) return identical 404s. The 2026-05-05 `embedded.js`
+rebuild is unrelated — the data was already gone six months before then.
 
-**Suggested next probe:** render `https://scastie.scala-lang.org/` (or any
-freshly-created snippet) in a headless browser, capture the network call
-the embed makes to fetch its snippet, and replay that exact call against
-one of our 82 IDs. If the replay succeeds for a fresh snippet but 404s
-for ours → hypothesis 1 (lost data). If even the fresh snippet 404s
-through our replay → hypothesis 2 (we're calling it wrong).
+**Reproducing the screenshot.** The "Scala Method with Arguments"
+lesson references `ZDXmAr6wQ4OTcBSHfJCFmw`; that ID returns 404 via the
+audit, which matches the user-visible `//snippet not found` in the
+editor.
 
-**Reproducing the screenshot.** The "Scala Method with Arguments" lesson
-references `ZDXmAr6wQ4OTcBSHfJCFmw`; that ID returns 404 via the audit,
-which matches the user-visible `//snippet not found` in the editor.
+## Implications for tour-of-scala
+
+- The snippets are not coming back. Scastie will not restore them.
+- Re-creating them as anonymous snippets on scastie.scala-lang.org
+  would only buy time — the new policy is "not stored indefinitely",
+  so they would be wiped again.
+- Durable options:
+  1. **Re-create under a Scastie account.** Snippets owned by a
+     logged-in user appear to be retained (with the 2.5-year inactivity
+     caveat). The URL shape changes from `/<base64UUID>` to
+     `/<login>/<base64UUID>/latest`, which `components/scastie.js`
+     would need to support.
+  2. **Stop depending on Scastie.** Embed code locally (a static block
+     for display + optional "Open in Scastie" link). Removes the
+     external dependency entirely.
+  3. **Switch to another playground** (scala-cli web, Scala 3
+     scastie-alternative, etc.).
 
 ## Per-lesson results
 

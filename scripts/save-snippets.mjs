@@ -29,10 +29,18 @@ const SAVE_URL = `${SCASTIE_HOST}/api/save`
 const CONCURRENCY = 2
 const MAX_RETRIES = 3
 
-const argv = new Set(process.argv.slice(2))
+const rawArgs = process.argv.slice(2)
+const argv = new Set(rawArgs)
 const DRY_RUN = argv.has("--dry-run")
 const FORCE = argv.has("--force")
 const SKIP_SAVE = argv.has("--skip-save")
+const ONLY = (() => {
+    const eq = rawArgs.find((a) => a.startsWith("--only="))
+    if (eq) return eq.slice("--only=".length)
+    const i = rawArgs.indexOf("--only")
+    if (i !== -1 && rawArgs[i + 1]) return rawArgs[i + 1]
+    return null
+})()
 
 const log = (...a) => console.log("[save-snippets]", ...a)
 const err = (...a) => console.error("[save-snippets]", ...a)
@@ -147,7 +155,18 @@ async function rewritePage(lesson, newId) {
 }
 
 async function main() {
-    const entries = await readJson(SNIPPETS_JSON)
+    const all = await readJson(SNIPPETS_JSON)
+    let entries = all
+    if (ONLY) {
+        entries = all.filter((e) => e.lesson === ONLY)
+        if (entries.length === 0) {
+            throw new Error(
+                `--only=${ONLY} did not match any lesson; ` +
+                    `valid lessons: ${all.map((e) => e.lesson).join(", ")}`,
+            )
+        }
+        log(`--only=${ONLY}: scoping to 1 lesson`)
+    }
     log(`loaded ${entries.length} entries from snippets.json`)
 
     // 1. Validate every lesson has a .scala source file + a page file.
@@ -161,7 +180,7 @@ async function main() {
             throw new Error(`missing page file: ${pagePath}`)
         })
     }
-    log("validated paths for all 82 lessons")
+    log(`validated paths for ${entries.length} lesson(s)`)
 
     // 2. Build POST bodies.
     const bodies = []
@@ -194,12 +213,14 @@ async function main() {
         ids = {}
     }
 
+    const inScope = new Set(entries.map((e) => e.lesson))
     if (!SKIP_SAVE) {
         const cookie = await readCookie()
         const todo = bodies.filter((b) => !ids[b.lesson])
-        log(`${ids && Object.keys(ids).length} already saved; ${todo.length} remaining`)
+        const alreadyInScope = entries.filter((e) => ids[e.lesson]).length
+        log(`${alreadyInScope}/${entries.length} already saved (in scope); ${todo.length} remaining`)
 
-        let done = Object.keys(ids).length
+        let done = alreadyInScope
         await runWithConcurrency(todo, CONCURRENCY, async ({ lesson, body }) => {
             const resp = await postSave(body, cookie)
             const newId = resp?.base64UUID
@@ -212,22 +233,28 @@ async function main() {
             log(`saved ${done}/${entries.length}: ${lesson} -> ${newId}`)
         })
 
-        if (Object.keys(ids).length !== entries.length) {
+        const savedInScope = entries.filter((e) => ids[e.lesson]).length
+        if (savedInScope !== entries.length) {
             throw new Error(
-                `only ${Object.keys(ids).length}/${entries.length} saved; aborting before page rewrite`,
+                `only ${savedInScope}/${entries.length} saved; aborting before page rewrite`,
             )
         }
-        log(`all ${entries.length} snippets saved`)
+        log(`all ${entries.length} in-scope snippet(s) saved`)
     }
 
-    // 4. Rewrite pages.
+    // 4. Rewrite pages (only for in-scope lessons).
+    let rewritten = 0
     for (const lesson of Object.keys(ids)) {
+        if (!inScope.has(lesson)) continue
         await rewritePage(lesson, ids[lesson])
+        rewritten++
     }
-    log(`rewrote ${Object.keys(ids).length} page files`)
+    log(`rewrote ${rewritten} page file(s)`)
 
-    // 5. Clean up tmp file on full success.
-    await fs.unlink(TMP_IDS).catch(() => {})
+    // 5. Clean up tmp file only on full-set success.
+    if (!ONLY && Object.keys(ids).length === entries.length) {
+        await fs.unlink(TMP_IDS).catch(() => {})
+    }
     log("done")
 }
 

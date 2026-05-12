@@ -6,7 +6,7 @@ export const title = "Scala Range"
 
 export const date = "2020-09-09T17:06:05"
 
-const scastieId = "kTjI5evhSLyRQBtPRckawA"
+const scastieId = "vgcejvUDTLaQNxVaexfr4A"
 
 const mainInfoBox = <>
   <p>I can't believe we haven't seen <code>Range</code> yet !</p>

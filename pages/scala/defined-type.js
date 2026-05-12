@@ -6,7 +6,7 @@ export const title = "Scala defined type"
 
 export const date = "2020-09-18T17:00:29"
 
-const scastieId = "sSmyzl5aQcW0iGskJxZIpA"
+const scastieId = "Ya9mgcWsT7qNmNXAxEQG2A"
 
 const mainInfoBox = <>
   <p>Let's make our own type!</p>

@@ -202,27 +202,44 @@ async function main() {
             path.join(SNIPPETS_DIR, `${e.lesson}.scala`),
             "utf8",
         )
-        const scalaVersion = e.target?.scalaVersion
-        if (!scalaVersion) throw new Error(`${e.lesson}: missing target.scalaVersion`)
-        // Map old `tpe` shape to Circe-derivation class name. We only have
-        // "Jvm" with Scala 2 in our corpus today; extend here if that grows.
-        let target
-        if (e.target.tpe === "Jvm" && scalaVersion.startsWith("2.")) {
-            target = { Scala2: { scalaVersion } }
-        } else if (e.target.tpe === "Jvm" && scalaVersion.startsWith("3.")) {
-            target = { Scala3: { scalaVersion } }
-        } else {
+        const wrapTarget = (t, ctx) => {
+            if (t.tpe === "Jvm" && t.scalaVersion?.startsWith("2.")) {
+                return { Scala2: { scalaVersion: t.scalaVersion } }
+            }
+            if (t.tpe === "Jvm" && t.scalaVersion?.startsWith("3.")) {
+                return { Scala3: { scalaVersion: t.scalaVersion } }
+            }
             throw new Error(
-                `${e.lesson}: unsupported target ${JSON.stringify(e.target)}; add a mapping in save-snippets.mjs`,
+                `${ctx}: unsupported target ${JSON.stringify(t)}; add a mapping in save-snippets.mjs`,
             )
         }
+        if (!e.target?.scalaVersion) throw new Error(`${e.lesson}: missing target.scalaVersion`)
+        const target = wrapTarget(e.target, `${e.lesson} target`)
+        // ScalaDependency.target is the same sealed-trait shape, so wrap it the same way.
+        // isAutoResolve has a Scala-side default of true but Circe's derived
+        // decoder still requires it on the wire.
+        const wrapDep = (lib, ctx) => ({
+            ...lib,
+            target: wrapTarget(lib.target, `${ctx}.target`),
+            isAutoResolve: lib.isAutoResolve ?? true,
+        })
+        const libraries = (e.libraries ?? []).map((lib, i) =>
+            wrapDep(lib, `${e.lesson} libraries[${i}]`),
+        )
+        // librariesFromList: List[(ScalaDependency, Project)] — encoded as a
+        // JSON array of two-element arrays. The first element is a
+        // ScalaDependency that also needs target-wrapping.
+        const librariesFromList = (e.librariesFromList ?? []).map(([dep, project], i) => [
+            wrapDep(dep, `${e.lesson} librariesFromList[${i}][0]`),
+            project,
+        ])
         const sbtInputs = {
             isWorksheetMode: true,
             isShowingInUserProfile: false,
             code,
             target,
-            libraries: e.libraries ?? [],
-            librariesFromList: e.librariesFromList ?? [],
+            libraries,
+            librariesFromList,
             sbtConfigExtra: e.sbtConfigExtra ?? "",
             sbtConfigSaved: e.sbtConfigSaved ?? null,
             sbtPluginsConfigExtra: e.sbtPluginsConfigExtra ?? "",

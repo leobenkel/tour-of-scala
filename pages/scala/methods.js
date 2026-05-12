@@ -6,7 +6,7 @@ export const title = "Scala Methods"
 
 export const date = "2020-07-17T17:00:40"
 
-const scastieId = "4FCkgVNaT7ucVCga5w5qIA"
+const scastieId = "XCylf178TISPROUnb9Eldg"
 
 const mainInfoBox = <>
   <p>A method in programming language is a bit of code that get executed when called and return a value.</p>

@@ -6,7 +6,7 @@ export const title = "Scala Call-by-name Parameters"
 
 export const date = "2020-08-07T17:01:43"
 
-const scastieId = "JonOPclARiarms4qOZ1aIA"
+const scastieId = "svJmVBzzRVeImIhIv7jLqw"
 
 const mainInfoBox = <>
   <p>There are two ways to give parameters to a function in most programming languages: 'by-value' and 'call-by-name'.</p>

@@ -6,7 +6,7 @@ export const title = "Scala contexts"
 
 export const date = "2020-11-02T17:01:11"
 
-const scastieId = "2YvBpo1XRQevleQmHm6w6g"
+const scastieId = "bcgofptTR7eh5mjP8cXY1A"
 
 const mainInfoBox = <>
   <p>

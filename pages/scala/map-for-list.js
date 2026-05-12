@@ -6,7 +6,7 @@ export const title = "Scala Map for List"
 
 export const date = "2020-07-29T17:00:13"
 
-const scastieId = "LxP34WAsQyq5gV62cPatkg"
+const scastieId = "oXAEqBLpTi6F36EFhwbfWA"
 
 const mainInfoBox = <>
   <p>Ready for our first dive into Functional Programming? Don't worry, we are going through this adventure together and I will make sure you don't get lost.</p>

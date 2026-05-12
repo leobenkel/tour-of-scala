@@ -6,7 +6,7 @@ export const title = "Scala pattern matching @"
 
 export const date = "2020-11-06T17:00:49"
 
-const scastieId = "k1cFwuZdQheviSdQGDDzMw"
+const scastieId = "YcgvS9qZSQuFu6CCStAPBg"
 
 const mainInfoBox = <>
   <p>

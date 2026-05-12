@@ -6,7 +6,7 @@ export const title = "Scala Stream"
 
 export const date = "2020-09-25T17:00:35"
 
-const scastieId = "5lF704InT2mzBKntjzsU9Q"
+const scastieId = "KgktWkYmRhi9wKDZVslhAw"
 
 const mainInfoBox = <>
   <p>

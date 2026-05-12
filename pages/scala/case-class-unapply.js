@@ -6,7 +6,7 @@ export const title = "Scala case class unapply"
 
 export const date = "2020-11-20T17:00:41"
 
-const scastieId = "vadTervdRJCmLlcOFsDWfQ"
+const scastieId = "T3bbCdv5SzG9ouPxcPfRWQ"
 
 const mainInfoBox = <>
   <p>After so many SKBs, you pretty much are an expert !</p>

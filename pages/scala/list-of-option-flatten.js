@@ -6,7 +6,7 @@ export const title = "Scala List of Option flatten"
 
 export const date = "2020-12-25T17:02:53"
 
-const scastieId = "WxOdhbt5SNaKM5OYilv36Q"
+const scastieId = "Y2fULPKNTyKcKSyVLRFSug"
 
 const mainInfoBox = <>
   <p>

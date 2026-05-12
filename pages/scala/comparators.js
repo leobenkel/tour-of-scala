@@ -7,7 +7,7 @@ export const title = "Scala Comparators"
 
 export const date = "2020-08-03T17:01:36"
 
-const scastieId = "iBb50DUtT0WYfzlVbkPomg"
+const scastieId = "uc7OzY1nTRSGHvUB608PJQ"
 
 const mainInfoBox = <>
   <p>A few new concepts are needed for this SKB.</p>

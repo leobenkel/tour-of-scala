@@ -190,25 +190,67 @@ async function main() {
     log(`validated paths for ${entries.length} lesson(s)`)
 
     // 2. Build POST bodies.
+    //
+    // Scastie's BaseInputs is a sealed trait (SbtInputs | ScalaCliInputs) and
+    // its target field SbtScalaTarget is also sealed (Scala2 | Scala3 | Js |
+    // Native | Typelevel). Both use Circe's default semiauto derivation, which
+    // encodes sealed traits as { "ClassName": { ...fields } } — so we have to
+    // wrap our payload with those discriminators.
     const bodies = []
     for (const e of entries) {
         const code = await fs.readFile(
             path.join(SNIPPETS_DIR, `${e.lesson}.scala`),
             "utf8",
         )
-        const { lesson, ...meta } = e
-        bodies.push({ lesson, body: { ...meta, code } })
+        const scalaVersion = e.target?.scalaVersion
+        if (!scalaVersion) throw new Error(`${e.lesson}: missing target.scalaVersion`)
+        // Map old `tpe` shape to Circe-derivation class name. We only have
+        // "Jvm" with Scala 2 in our corpus today; extend here if that grows.
+        let target
+        if (e.target.tpe === "Jvm" && scalaVersion.startsWith("2.")) {
+            target = { Scala2: { scalaVersion } }
+        } else if (e.target.tpe === "Jvm" && scalaVersion.startsWith("3.")) {
+            target = { Scala3: { scalaVersion } }
+        } else {
+            throw new Error(
+                `${e.lesson}: unsupported target ${JSON.stringify(e.target)}; add a mapping in save-snippets.mjs`,
+            )
+        }
+        const sbtInputs = {
+            isWorksheetMode: true,
+            isShowingInUserProfile: false,
+            code,
+            target,
+            libraries: e.libraries ?? [],
+            librariesFromList: e.librariesFromList ?? [],
+            sbtConfigExtra: e.sbtConfigExtra ?? "",
+            sbtConfigSaved: e.sbtConfigSaved ?? null,
+            sbtPluginsConfigExtra: e.sbtPluginsConfigExtra ?? "",
+            sbtPluginsConfigSaved: e.sbtPluginsConfigSaved ?? null,
+            forked: null,
+        }
+        bodies.push({ lesson: e.lesson, body: { SbtInputs: sbtInputs } })
     }
 
     if (DRY_RUN) {
         log("--dry-run: showing first body shape and size summary")
-        const summary = bodies.map(({ lesson, body }) => ({
-            lesson,
-            scalaVersion: body.target?.scalaVersion,
-            codeBytes: body.code.length,
-            libs: body.libraries.length,
-        }))
+        const summary = bodies.map(({ lesson, body }) => {
+            const inner = body.SbtInputs ?? body.ScalaCliInputs ?? {}
+            const targetKey = Object.keys(inner.target ?? {})[0]
+            return {
+                lesson,
+                discriminator: Object.keys(body)[0],
+                target: targetKey,
+                scalaVersion: inner.target?.[targetKey]?.scalaVersion,
+                codeBytes: inner.code?.length,
+                libs: inner.libraries?.length,
+            }
+        })
         console.table(summary.slice(0, 5))
+        if (summary.length === 1) {
+            log("full body:")
+            console.log(JSON.stringify(bodies[0].body, null, 2))
+        }
         log(`... ${summary.length} entries total. Aborting before any network.`)
         return
     }

@@ -1,7 +1,6 @@
 [
   {
     "lesson": "_-placeholder",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ndef add(a: Int, b: Int): Int = {\n  println(s\"$a + $b\")\n  ???\n}\n\n{ // Partial Functions\n  println(\"Partial function:\")\n  val add2_1: Int => Int = add(_, 2)\n  val add2_2: Int => Int = add(2, _)\n\n  val input_r: Int = ???\n  val r_1: Int = add2_1(input_r)\n  val r_2: Int = add2_2(input_r)\n  println(r_1)\n  println(r_2)\n  assert(r_1 == r_2)\n}\n\n{ // list - transformations\n  println(\"Transformations:\")\n  val ll: List[Int] = (0 until ???).toList\n  println(ll)\n\n  val ll_add1: List[Int] = ll.map(n => n + 1)\n  val ll_add1_1: List[Int] = ll.map(_ + 1)\n  println(ll_add1)\n  println(ll_add1_1)\n  assert(ll_add1 == ll_add1_1)\n}\n\n{ // transformation with tuples\n  println(\"Transformations tuples:\")\n  val ll: List[(Int, Int)] = ((0 until 10) zip (5 until 15)).toList\n  println(ll)\n\n  val ll_add_1: List[Int] = ll.map { case (a, b) => ??? }\n  println(ll_add_1)\n  val ll_add_2: List[Int] = ll.map(a => a._1 + a._2)\n  println(ll_add_2)\n\n  assert(ll_add_1 == ll_add_2)\n}\n\n{ // accumulators\n  println(\"Accumulators:\")\n  val ll: List[Int] = (0 until 10).toList\n  println(ll)\n\n  val ll_sum_1: Int = ll.sum\n  println(ll_sum_1)\n\n  val ll_sum_2: Int = ll.foldLeft(0) { case (acc, current) => ??? }\n  println(ll_sum_2)\n\n  val ll_sum_3: Int = ll.foldLeft(0)(_ + _)\n  println(ll_sum_3)\n\n  val ll_sum_4: Int = ll.reduce((acc, cur) => ???)\n  println(ll_sum_4)\n\n  val ll_sum_5: Int = ll.reduce(_ + _)\n  println(ll_sum_5)\n\n  val all_results = List(ll_sum_1, ll_sum_2, ll_sum_3, ll_sum_4, ll_sum_5)\n  assert(all_results.forall(_ == ll_sum_1), all_results)\n}\n\nprintln(\n  \"Congratulations ! 'If your ship doesn’t come in, swim out to meet it!' – Jonathan Winters\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -15,7 +14,6 @@
   },
   {
     "lesson": "_-wildcard",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n// 1) pattern matching 1\n{\n  val input: String = ???\n  val result: Int = input match {\n    case \"abc\" => ???\n    case _     =>\n      // match on anything else\n      ???\n  }\n  assert(result == 1, result)\n}\n\n// 2) pattern matching 2\n{\n  val input: Option[String] = Some(???)\n  val result: Int = input match {\n    case None    => ???\n    case Some(_) =>\n      // match on anything as long as it is a Some(...)\n      ???\n  }\n  assert(result == 2, result)\n}\n\n// 3) pattern matching 3\n{\n  case class User(id: Int, name: String, age: Int)\n\n  val input: User = ???\n  val result: Int = input match {\n    // we only care about some fields\n    case User(_, _, 30)          => ???\n    case User(_, _, n) if n > 30 => ???\n    case _                       =>\n      // match on everything else\n      ???\n  }\n  assert(result == 2, result)\n}\n\n// 4) import all\n{\n  import scala.util._\n  // everything inside the package 'scala.util' is available\n  val r: Int = Try(???) match {\n    case Success(v) => ???\n    case Failure(f) => throw f\n  }\n  assert(r == 3, r)\n}\n\n// 5) ignore val\n{\n  // we don't care of the output\n  val a: Int = ???\n  val _: Int = a\n}\n\n// 6) ignore output\n{\n  val r: Option[Int] = for {\n    a: Int <- Some(???)\n    _ = println(\"step 1 complete\")\n    b: Int <- Some(???)\n    _ = println(\"step 2 complete\")\n    _: Int <- Some(???)\n    r = a + b\n  } yield r\n  assert(r == Some(3), r)\n}\n\n// 7) map\n{\n  val l: List[Int] = ???\n  val ll: List[Int] = l.map(_ => 1)\n  println(ll)\n  val r: Int = ll.sum\n  assert(r == 4, r)\n}\n\nprintln(\n  \"Congratulations ! 'Pain is temporary. Quitting lasts forever.' – Lance Armstrong\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -29,7 +27,6 @@
   },
   {
     "lesson": "abstract-class",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nabstract class Shape(\n    name: String,\n    protected val lengthOfSides: Int,\n    numberOfSides: Int\n) {\n  def circumference: Double = numberOfSides * lengthOfSides\n\n  override def toString: String =\n    s\"$name shape of size $lengthOfSides \" +\n      f\"with $numberOfSides sides have a circumference of $circumference%1.2f\"\n}\n\ncase class Square(size: Int) extends Shape(\"Square\", ???, ???)\ncase class Triangle(size: Int) extends Shape(\"Triangle\", ???, ???)\n\ncase class Circle(radius: Int) extends Shape(\"Circle\", ???, 0) {\n  override lazy val circumference: Double = scala.math.Pi * 2.0 * lengthOfSides\n}\n\nval square: Square = Square(size = ???)\nval triangle: Triangle = Triangle(size = ???)\nval circle: Circle = Circle(radius = ???)\n\nval shapes: List[Shape] = List(\n  square,\n  triangle,\n  circle\n)\n\nshapes.foreach(println)\n\nassert(square.circumference == 16)\nassert(triangle.circumference == 9)\nassert(Math.abs(circle.circumference - 12) <= 1)\n\nprintln(\n  \"Congratulations ! 'Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better.' - Samuel Beckett\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -43,7 +40,6 @@
   },
   {
     "lesson": "applicative",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n// Functor and Applicative //\n\ntrait Functor[F[_]] {\n  def map[A, B](fa: F[A])(f: A => B): F[B]\n}\n\ntrait Applicative[F[_]] extends Functor[F] {\n  def pure[A](a: A): F[A]\n\n  def applicate[A, B](f: F[A => B])(a: F[A]): F[B]\n\n  final override def map[A, B](a: F[A])(f: A => B): F[B] =\n    applicate[A,B](pure[A => B](???))(???)\n}\n\n//////////\n\n// Example //\n\ntrait Box[+A] {\n  def map[B](f: A => B): Box[B] = Box.map(this)(???)\n\n  def isDefined: Boolean\n  def open: A\n}\n\ncase class FilledBox[A](v: A) extends Box[A] {\n  final lazy val isDefined: Boolean = ???\n  final lazy val open: A = ???\n}\ncase object EmptyBox extends Box[Nothing] {\n  final lazy val isDefined: Boolean = ???\n  final lazy val open: Nothing =\n    throw new Exception(\"The box was empty!\")\n}\n\nobject Box extends Applicative[Box] {\n  def apply[A](): Box[A] = EmptyBox\n  def apply[A](a: A): Box[A] = pure(a)\n\n  def pure[A](a: A) = FilledBox[A](???)\n\n  def applicate[A, B](ff: Box[A => B])(fa: Box[A]): Box[B] = {\n    fa match {\n      case EmptyBox => EmptyBox\n      case FilledBox(a) =>\n        ff match {\n          case EmptyBox     => ???\n          case FilledBox(f) => FilledBox(???)\n        }\n    }\n  }\n}\n\n////////\n\n// usages //\n{ // works like a Functor when defined\n  val b: Box[Int] = ???\n  println(b)\n  assert(b.isDefined)\n  assert(b.open == 2)\n  val r = b.map(???)\n  println(r)\n  assert(r.isDefined)\n  assert(r.open == 4)\n}\n\n{ // works like a Functor when not defined\n  val b: Box[Int] = ???\n  println(b)\n  assert(!b.isDefined)\n  val r = b.map(???)\n  println(r)\n  assert(!r.isDefined)\n}\n\n{ // the real power of Applicative\n  val fa: Box[String] = Box(???)\n  val fb: Box[Int] = Box(???)\n  def f(a: String, b: Int): String = List.fill(???)(a).mkString(\" \")\n\n  println(fa)\n  println(fb)\n\n  val fab: Box[Int => String] = fa.map(a => (i: Int) => ???)\n\n  val r: Box[String] = Box.applicate[Int, String](???)(???)\n  println(r)\n  assert(r == Box(\"abc abc abc\"))\n}\n\nprintln(\n  \"Congratulations ! 'Find out who you are and do it on purpose.' - Dolly Parton\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -57,7 +53,6 @@
   },
   {
     "lesson": "apply",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nclass Person(\n    // 'val' to make the fields \"public\"\n    val firstName: String,\n    val lastName: String\n) {\n  lazy val fullName: String = s\"$firstName $lastName\"\n\n  def apply(talk: String): String = s\"$fullName says: '$talk'\"\n\n  // we are going to learn about 'override' in a later SKB\n  override def toString: String = s\"Person($firstName, $lastName)\"\n}\n\nobject Person {\n  // the \"case class\" version of \"apply\"\n  def apply(firstName: String, lastName: String): Person = {\n    new Person(firstName, lastName)\n  }\n\n  // \"enhanced\" constructor\n  def apply(fullName: String): Person = {\n    // split is cutting the 'String' into pieces based on the given separator\n    val parts = fullName.split(\" \")\n    // we are going to learn about this later. It gets complicated.\n    val firstName: String = parts.lift(0).getOrElse(\"N/A\")\n    val lastName: String = parts.lift(1).getOrElse(\"N/A\")\n    // instantiating the class\n    new Person(firstName, lastName)\n  }\n}\n\n// use the 'new' to instantiate the class\nval leo: Person = new Person(???, \"Benkel\")\nprintln(leo)\n\n// use the \"case class\" version of \"apply\"\nval tesla: Person = Person(\"Nikola\", ???)\nprintln(tesla)\n\n// use the \"enhanced\" constructor\nval eddison: Person = Person.apply(\"Thomas Edison\")\nprintln(eddison)\n\n// use the apply inside the class\nprintln(tesla(\"I want to help bring free energy to the world!\"))\nprintln(eddison.apply(???))\n\nval p: Person = ???\n\nassert(leo.firstName == \"Leo\")\nassert(tesla.lastName == \"Tesla\")\nassert(p(\"Hello World\") == s\"Wonderful You says: 'Hello World'\")\n\nprintln(\"Congratulations ! 'Don’t cry because it’s over. Smile because it happened.' - Dr. Seuss\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -71,7 +66,6 @@
   },
   {
     "lesson": "call-by-name-parameters",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ndef myIf(predicate: Boolean, ifTrue: => Int, ifFalse: => Int): Int = {\n  if(predicate) ifTrue else ifFalse\n}\n\n\nlazy val a: Int = {\n  throw new Exception(\"Wrong path\")\n}\n\nlazy val b: Int = {\n  println(\"creating 'b'\")\n  ???\n}\n\nval decision: Boolean = ???\n\nval result: Int = myIf(\n  decision,\n  ifTrue = a,\n  ifFalse = b\n)\n\n\nassert(result == 567)\n\nprintln(\"Congratulations ! 'Do what you have to do, until you can do what you want to do.' Oprah Winfrey\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -85,7 +79,6 @@
   },
   {
     "lesson": "case-class-copy",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ntype ArticleId = Int\ntype AuthorId = Int\ntype Date = Long\n\ncase class ArticleRow(\n    id: ArticleId,\n    authorId: AuthorId,\n    content: String,\n    numberOfLikes: Int = 1,\n    lastUpdateDate: Date\n) {\n  def like(): ArticleRow = this.copy(numberOfLikes = this.numberOfLikes + 1)\n\n  def updateContent(\n      content: String = this.content,\n      authorId: AuthorId = this.authorId\n  ): ArticleRow = this.copy(content = content, authorId = authorId)\n\n  override def toString: String = \"Article(\" +\n    s\"id:$id, \" +\n    s\"author:$authorId, \" +\n    s\"content:'$content', \" +\n    s\"likes:$numberOfLikes, \" +\n    s\"date:$lastUpdateDate\" +\n    \")\"\n}\n\nval article: ArticleRow = ArticleRow(\n  id = 1,\n  authorId = ???,\n  content = ???,\n  lastUpdateDate = 123L\n)\nprintln(article)\nassert(article.content == \"bar\")\n\nval likedArticle: ArticleRow = article.like().like()\nprintln(likedArticle)\nassert(likedArticle.numberOfLikes == 5)\n\nval copyArticle = likedArticle.copy(id = ???)\nprintln(copyArticle)\nassert(copyArticle.id == 4)\n\nval updateContent = copyArticle.updateContent(content = ???)\nprintln(updateContent)\nassert(updateContent.content == \"foo\")\n\nprintln(\"Congratulations ! 'Hold the vision, trust the process.' – Unknown\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -99,7 +92,6 @@
   },
   {
     "lesson": "case-class-unapply",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ncase class Foo(a: Int, b: String, c: Double)\n\nval f: Foo = Foo(a = ???, b = ???, c = ???)\n\n// little reminder on \n// what pattern matching for a case class look like\nval rF = f match {\n  case Foo(n, \"a\", d) if n > 1 => n\n  case Foo(1, s, d)            => Math.ceil(d)\n  case Foo(n, s, d @ 0.3)      => Math.floor(n + d)\n  case f                       => throw new Exception(s\"Unknown $f\")\n}\n\nassert(rF == 2, rF)\n\n// 'val' is necessary to make , 'a', 'b' and 'c' accessible. \n// Try removing it.\nclass Bar(val a: Int, b: String, c: Double)\n\n// after you are done with the exercise, \n// comment out the companion object to test.\nobject Bar {\n  // and try commenting out the 'unapply' method\n  def unapply(bar: Bar): Option[(Int, String, Double)] = {\n    Some((bar.a, ???, ???))\n  }\n}\n\nval b: Bar = new Bar(a = ???, b = ???, c = ???)\n\nval rB = b match {\n  case Bar(n, \"a\", d) if n > 1 => n\n  case Bar(1, s, d)            => Math.ceil(d)\n  case Bar(n, s, d @ 0.3)      => Math.floor(n + d)\n  case f                       => throw new Exception(s\"Unknown $f\")\n}\n\nassert(rB == 4, rB)\n\nprintln(\n  \"Congratulations ! 'The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.' – Winston Churchill\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -113,7 +105,6 @@
   },
   {
     "lesson": "case-class",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ncase class Person(firstName: String, lastName: String)\n\nval result: Person = Person(\"Leo\", ???)\n\nassert(result.lastName == \"Benkel\")\n\nprintln(\n  \"Congratulations ! 'Next to trying and winning, the best thing is trying and failing.' ― Lucy Maud Montgomery\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -127,7 +118,6 @@
   },
   {
     "lesson": "case-object",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nobject A {\n  lazy val a: String = \"a\"\n}\n\ncase object Foo {}\n\nval a: A.type = A\nval foo: Foo.type = Foo\n\nassert(a == A)\nassert(foo == Foo)\n\nprintln(s\"'a' is ${a.toString}\")\nprintln(s\"'foo' is ${foo.toString}\")\n\nassert(a.a == \"a\")\nassert(foo.foo == \"foo\")\n\nval expectedName: String = ???\nassert(foo.toString == expectedName)\n\nprintln(\n  \"Congratulations ! 'Failure will never overtake me if my determination to succeed is strong enough.' - Og Mandino\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -141,7 +131,6 @@
   },
   {
     "lesson": "challenge-1",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n// Utilities\nobject Round {\n  def apply(d: Double, precision: Int = 2): Double = {\n    val pow = Math.pow(10, precision)\n    Math.round(???) / ???\n  }\n}\n\ntrait Displayable {\n  def display: String\n}\n\n// Items:\nsealed abstract class Item(name: String, price: Double)\n    extends Displayable {\n  lazy val display: String = s\"${this.name.capitalize}\\t${???}\"\n}\n\n// case object of Items:\ncase object Carrot extends Item(\"Carrot\", ???)\n// and Bread, Lemon, ...\n\n// Rows of grocery list :\ncase class GroceryListRow(item: Item, quantity: Int) extends Displayable {\n  lazy val cost: Double = ???\n  lazy val display: String =\n    s\"${item.display}\\t\\t${???}\\t\\t${???}\"\n}\n\ncase class Groceries(items: List[GroceryListRow]) extends Displayable {\n  lazy val totalCost: Double = ???\n\n  lazy val display: String =\n    \"Name\\tPrice per Unit\\t???\\t???\\n\" +\n      items.map(_.display).mkString(???) +\n      s\"\\nTotal cost: ${???}\\n\" +\n      \"-------------------\"\n\n  def add(item: GroceryListRow): Groceries =\n    this.copy(items = ???)\n}\n\nobject Groceries {\n  def build(items: GroceryListRow*): Groceries = Groceries(???)\n}\n\n// Test Items\n{\n  assert(Carrot.name == \"carrot\")\n  assert(Carrot.price == 0.4)\n  assert(Carrot.display == \"Carrot\\t0.4\", Carrot.display)\n}\n// Test Rows\n{\n  val testRow = GroceryListRow(Carrot, 2)\n  assert(testRow.cost == 0.8)\n  assert(testRow.item == Carrot)\n  assert(testRow.display == s\"${Carrot.display}\\t\\t2\\t\\t0.8\", testRow.display)\n}\n// Test Cart\n{\n  val testCart = Groceries.build(\n    GroceryListRow(Carrot, 3),\n    GroceryListRow(Lemon, 5)\n  )\n  assert(testCart.totalCost == 3.7, cart.totalCost)\n  println(testCart.display)\n  assert(testCart.display.contains(\"Name\"))\n  assert(testCart.display.contains(\"Price per Unit\"))\n  assert(testCart.display.contains(\"Quantity\"))\n  assert(testCart.display.contains(\"Total Price\"))\n  assert(testCart.display.contains(Carrot.display))\n  assert(testCart.display.contains(Lemon.display))\n  assert(testCart.display.contains(testCart.totalCost.toString))\n}\n\n// Use cart\nval cart = Groceries\n  .build(\n    GroceryListRow(Carrot, 3),\n    ???\n  )\n  .add(GroceryListRow(Apple, 3))\n  .add(GroceryListRow(Lemon, 5))\n  .add(GroceryListRow(Bread, 1))\n  .add(GroceryListRow(???, ???))\n\nprintln(cart.display)\nassert(cart.totalCost == 30)\n\nprintln(\n  \"Congratulations ! 'The question isn’t who is going to let me, it’s who is going to stop me' - Ayn Rand\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -155,7 +144,6 @@
   },
   {
     "lesson": "class-new",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nclass Person(firstName: String, lastName: String) {\n  lazy val fullName: String = s\"$firstName ${???}\"\n  \n  def sayMyName(): Unit = println(s\"My name is $fullName.\")\n}\n\nval p: Person = new Person(???, \"Benkel\")\n\np.sayMyName()\n\nassert(p.fullName == \"Leo Benkel\")\n\nprintln(\"Congratulations ! 'Everything has beauty, but not everyone can see.' - Confucius\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -169,7 +157,6 @@
   },
   {
     "lesson": "companion-objects",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nimport Animal._\n\ncase class Animal(numberOfLegs: Int) {\n  lazy val name: String = convertLegNumberToName(numberOfLegs)\n}\n\nobject Animal {\n  val BipedName = \"biped\"\n  val QuadripedName = \"quadriped\"\n  val CentipedName = \"centiped\"\n\n  private val LegName: Map[Int, String] = Map(\n    2 -> BipedName,\n    4 -> QuadripedName,\n    100 -> CentipedName\n  )\n\n  private def convertLegNumberToName(numberOfLegs: Int): String = {\n    LegName.get(numberOfLegs).getOrElse(s\"$numberOfLegs legged creature\")\n  }\n}\n\nval quadriPed: Animal = ???\n\nval biPed: Animal = ???\n\n// Try uncommenting this: (remove the '//')\n// println(Animal.convertLegNumberToName(biPed.numberOfLegs))\n\nassert(quadriPed.name == QuadripedName)\nassert(biPed.name == BipedName)\n\nprintln(\"Congratulations ! We only live 4000 weeks, live them the fullest.\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -183,7 +170,6 @@
   },
   {
     "lesson": "comparators",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval a: Int = 5\nval b: Int = ???\n\n// less than\nassert(a < b)\n\nval c: Int = 10\nval d: Int = ???\n\n// equals\nassert(c == d)\n\nval e: Int = 13\nval f: Int = ???\n\n// greater than\nassert(e > f)\n\nprintln(\"Congratulations ! 'The giant tree grows from a grain.'\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -197,7 +183,6 @@
   },
   {
     "lesson": "constraint-inheritance",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ntrait Animal {\n  def name: String\n  def makeCuddles: Boolean\n}\n\ntrait Pet { self: Animal =>\n  def petId: Int\n\n  override final lazy val makeCuddles: Boolean = true\n\n  override def toString: String =\n    s\"I am $name[$petId] and I cuddle: $makeCuddles\"\n}\n\n// Try adding the 'Animal' trait\ncase class Dog(override val name: String, override val petId: Int)\n    extends Pet {}\n\nval dog: Dog = ???\nprintln(dog)\nassert(dog.name == \"Snuffles\")\n\nprintln(\n  \"Congratulations ! 'Creativity Is Intelligence Having Fun.' – Albert Einstein\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -211,7 +196,6 @@
   },
   {
     "lesson": "contexts",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n1\n\nval a: Int = ???\n\nval b: Int = {\n  val a: Int = ???\n  val b: Int = ???\n  a + b\n}\n\nassert(a == 10)\nassert(b == 12)\n\n{\n  val a: Int = ???\n  val b: Int = ???\n  assert(a + b == 7)\n\n  {\n    val a: Int = ???\n    val b: Int = ???\n    assert(a + b == 8)\n\n    {\n      val b: Int = ???\n      assert(a + b == 9)\n\n      {\n        assert(a + b == 10)\n\n      }\n\n    }\n\n  }\n}\n\nprintln(\n  \"Congratulations ! 'Life is 10% what happens to you and 90% how you react to it.' - Charles R. Swindoll\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -225,7 +209,6 @@
   },
   {
     "lesson": "covariance",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n// parent class\ntrait Shape\n// child class\ncase class Square() extends Shape\ncase class Circle() extends Shape\n\n{\n  trait NormalSocket[A]\n  object NormalSocket {\n    def apply[A](): NormalSocket[A] = new NormalSocket[A] {}\n  }\n\n  val a: NormalSocket[Square] = ???\n\n  // comment this line\n  val b: NormalSocket[Circle] = a\n  // comment this line\n  val c: NormalSocket[Shape] = a\n}\n\n{\n  trait CovariantSocket[+A]\n  object CovariantSocket {\n    def apply[A](): CovariantSocket[A] = new CovariantSocket[A] {}\n  }\n\n  val a: CovariantSocket[Square] = ???\n\n  // comment this line\n  val b: CovariantSocket[Circle] = a\n\n  val c: CovariantSocket[Shape] = a\n  assert(c == a)\n}\n\nprintln(\n  \"Congratulations ! 'Make it work.' - Tim Gunn\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -239,7 +222,6 @@
   },
   {
     "lesson": "curry",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ndef add(a: Int)(b: Int): Int = a + b\n\nval add2: Int => Int = add(???)\n\nval r1: Int = add2(???)\n\nassert(r1 == 6)\n\nval r2 = add(???)(???)\n\nassert(r2 == 7)\n\nval r3 = add(???) {\n  3 + 4\n}\n\nassert(r3 == 10)\n\nprintln(\"Congratulations ! Don't stop going forward!\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -253,7 +235,6 @@
   },
   {
     "lesson": "defined-type",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ntype MyType = Int\n\ndef factory(): MyType = ???\n\nval n: MyType = factory()\n\nval expected: MyType = ???\n\nassert(n == expected, n)\n\nprintln(\n  \"Congratulations ! 'Well done is better than well said.' – Stephen Hawking\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -267,7 +248,6 @@
   },
   {
     "lesson": "either",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval lEi: List[Either[String, Int]] = List(\n  Left(\"abc\"),\n  Right(12)\n)\n\nprintln(lEi)\n\ndef divide(a: Double, b: Double): Either[String, Double] = {\n  if (b == 0) Left(???) else Right(???)\n}\n\nval a1: Double = ???\nval b1: Double = ???\nval badResult: Either[String, Double] = divide(a1, b1)\nassert(badResult.isLeft)\nbadResult.left.foreach(l => println(s\"Error: $l\"))\n\nval a2: Double = ???\nval b2: Double = ???\nval goodResult: Either[String, Double] = divide(a2, b2)\n\n// Either is Right-bias, map is applied on Right by default\nval resultModified: Either[String, Double] = goodResult.map(r => r + 1)\nval resultGet: Double = resultModified.getOrElse(1.0)\nassert(resultGet == 13)\nassert(goodResult.isRight)\n\n\n\nprintln(\n  \"Congratulations ! 'No bird soars too high if he soars with his own wings.' - William Blake\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -281,7 +261,6 @@
   },
   {
     "lesson": "enumeration",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nobject Ores {\n  sealed abstract class Ore(val pricePerKg: Double)\n\n  // https://www.dailymetalprice.com/metalprices.php\n  case object Iron extends Ore(0.1235)\n  case object Gold extends Ore(61350.05)\n  case object Zinc extends Ore(2.3970)\n}\nimport Ores._\n\nval o: Ore = ???\n\nval result = o match {\n  case Iron => 1\n  case Gold => 2\n}\nassert(result == 3, result)\n\n\ncase class Box(ore: Ore, mass: Double) {\n  lazy val value: Double = ore.pricePerKg * mass\n\n  override def toString = s\"[$ore x ${mass}Kg]\"\n}\n\nval boxes = List(\n  Box(???, ???),\n  Box(???, ???),\n  Box(Nickel, 1),\n  Box(???, 3),\n  Box(Iron, ???),\n  Box(Zinc, 2),\n  Box(Gold, ???),\n  Box(Godl, 1)\n)\n\nval totalWeight = boxes.map(_.mass).sum\nassert(totalWeight == 25, totalWeight)\n\nval totalValue = boxes.map(_.value).sum\n\nval totalWeightGold = boxes.filter(_.ore == Gold).map(_.mass).sum\nassert(totalWeightGold == 5, totalWeightGold)\n\nval totalWeightNickel = boxes.filter(_.ore == Nickel).map(_.mass).sum\nassert(totalWeightNickel == 5, totalWeightNickel)\n\nprintln(s\"Shipment: $boxes\")\nprintln(s\"Total weight: ${totalWeight}Kg | Total Value: $$${totalValue}\")\nboxes.groupBy(_.ore).foreach {\n  case (Iron, boxes) => println(s\"- a lot of iron\")\n  case (ore, boxes) =>\n    val totalWeight = boxes.map(_.mass).sum\n    val totalValue = boxes.map(_.value).sum\n    println(\n      s\"- $ore: Total weight: ${totalWeightGold}Kg | Total Value: $$${totalWeightNickel}\"\n    )\n}\nprintln(\n  \"Congratulations ! 'Many of us never realize our greatness because we become sidetracked by secondary activities' - Less Brown\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -295,7 +274,6 @@
   },
   {
     "lesson": "extractor-pattern",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ntrait Extractor[A] {\n  // Try to remove the 'import' as well as ': ClassTag'\n  import scala.reflect.ClassTag\n  def apply[B <: A: ClassTag](input: List[A]): List[B] = {\n    input.collect { case b: B => b }\n  }\n}\n\ntrait Animal\n\nobject AnimalExtract extends Extractor[Animal]\n\ncase class Dog(name: String) extends Animal\ncase class Cat(name: String) extends Animal\n\nval animals: List[Animal] = ???\nprintln(animals)\nassert(animals.length == 5)\n\n// Try removing '[Dog]'\nval dogs: List[Dog] = AnimalExtract[Dog](animals)\nprintln(dogs)\nassert(dogs.length == 2)\n\nval cats: List[Cat] = ???\nprintln(cats)\nassert(cats.length == 3)\n\nprintln(\n  \"Congratulations ! 'Start where you are. Use what you have. Do what you can.' - Arthur Ashe\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -309,7 +287,6 @@
   },
   {
     "lesson": "flatmap",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval opt: Option[Int] = Some(???)\n\nval outOpt: Option[Int] = opt.flatMap {\n  case n if n > 3 => Some(???)\n  case 1          => Some(???)\n  case _          => None\n}\n\nassert(outOpt == Some(3))\n\nval l: List[Int] = ??? :: ??? :: Nil\n\nval outList: List[Int] = l.flatMap {\n  case n if n == 2 => List(1, 2, 3)\n  case n if n == 3 => n :: n :: Nil\n  case n if n < 5  => n :: Nil\n  case _           => Nil\n}\n\nassert(outList.length == 4)\n\nprintln(\"Congratulations ! Go beyond.\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -323,7 +300,6 @@
   },
   {
     "lesson": "foldable",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ntrait Foldable[F[_]] {\n  def fold[A, B](fa: F[A])(start: B)(f: (B, A) => B): B\n}\n\nsealed abstract class Node[A](val v: A) {\n  def fold[B](start: B)(f: (B, A) => B) = ???\n}\ncase class Chain[A](override val v: A, next: Node[A]) extends Node[A](???) {\n  override final lazy val toString: String = s\"$v -> ${next.toString}\"\n}\ncase class Tail[A](override val v: A) extends Node[A](???) {\n  override final lazy val toString: String = v.toString\n}\n\nobject Node extends Foldable[Node] {\n  def apply[A](v: A): Node[A] = Tail(v)\n  def apply[A](v: A, next: Node[A]) = ???\n\n  def fold[A, B](fa: Node[A])(start: B)(f: (B, A) => B): B = {\n    def loop(n: Node[A], acc: B): B = {\n      n match {\n        case Tail(v)        => ???\n        case Chain(v, rest) => loop(rest, ???)\n      }\n    }\n\n    loop(???, ???)\n  }\n}\n\n{\n  val chain: Node[Int] = Node(???, ???)\n  println(chain)\n\n  val r: Int = chain.fold[Int](???)(_ + _)\n  println(r)\n}\n\n{\n  val chain: Node[String] = Node(???)\n  println(chain)\n  val r1: String = chain.fold(\"\") {\n    case (\"\", v)  => ???\n    case (acc, v) => s\"$acc ${v.capitalize}\"\n  }\n  println(r1)\n  assert(r1 == \"Hello World !\")\n\n  val r2 = chain.fold(0)(_ + _.length)\n  println(r2)\n  assert(r2 == ???)\n}\n\nprintln(\n  \"Congratulations ! 'Be deliberate and afraid of nothing.' - Audre Lorde\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -337,7 +313,6 @@
   },
   {
     "lesson": "foldleft",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval startR: Int = ???\nval endR: Int = ???\nval stepR: Int = 3\nval l: List[Int] = (startR until endR by stepR).toList\nprintln(l)\n\nval startFold: Int = ???\n// try to replace '(a, b) => a + b' by '_ + _'\nval r1: Int = l.foldLeft(startFold)((a, b) => a + b)\nassert(r1 == 64, r1)\n\nval factor: Int = ???\n\ndef isEven(n: Int): Boolean = n % factor == 0\n\nval r2 = l.foldLeft(List.empty[Int]) {\n  case (accumulator, n) if isEven(n)  => accumulator :+ (n / factor)\n  case (accumulator, n) if !isEven(n) => accumulator :+ (n * factor)\n}\n\nassert(r2 == List(0, 6, 3, 18, 6, 30, 9), r2)\n\nprintln(\n  \"Congratulations ! 'If you're going through hell, keep going.' - Franklin D. Roosevelt\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -351,7 +326,6 @@
   },
   {
     "lesson": "for-comprehension",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ncase class Row(id: Int, list: List[Int])\n\nval howManyInput: Int = ???\nval howManyListItem: Int = ???\n\nval input: List[Row] = (0 to howManyInput)\n  .map(i => Row(i, list = (0 to howManyListItem).toList))\n  .toList\n\nval modFilter: Int = ???\nval increase: Int = ???\n\nval output1: List[Int] = input.flatMap {\n  case Row(id, list) =>\n    list.flatMap(n =>\n      List(id, n)\n        .withFilter(i => id + n % modFilter == 0)\n        .map(_ + increase)\n    )\n}\nval output1Sum = output1.sum\nprintln(output1Sum)\n\nval output2: List[Int] = for {\n  Row(id, list) <- input\n  n <- list\n  i <- List(id, n)\n  if id + n % modFilter == 0\n} yield {\n  i + increase\n}\nval output2Sum = output2.sum\nprintln(output2Sum)\n\nassert(output1Sum == output2Sum, output1Sum)\nassert(output1 == output2)\nval expected: Int = ???\nassert(output1Sum == expected, output1Sum)\n\nprintln(\n  \"Congratulations ! 'Knowing is not enough; we must apply. Willing is not enough; we must do.' – Johann Wolfgang von Goethe\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -365,7 +339,6 @@
   },
   {
     "lesson": "functor",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ntrait Functor[F[_]] {\n  def map[A, B](fa: F[A])(f: A => B): F[B]\n}\n\ncase class Pair[A](m: A, n: A) {\n  def map[B](f: A => B): Pair[B] = Pair.map(this)(???)\n}\n\nobject Pair extends Functor[Pair] {\n  def map[A, B](fa: Pair[A])(f: A => B): Pair[B] = {\n    Pair[B](f(fa.m), ???)\n  }\n}\n\n{\n  val p: Pair[Int] = Pair(???, ???)\n  println(p)\n  assert(p.m == 3)\n  assert(p.n == 5)\n  val r: Pair[Int] = p.map(???)\n  println(r)\n  assert(r.m == 4)\n  assert(r.n == 6)\n}\n\n{\n  val p: Pair[String] = Pair(???, ???)\n  println(p)\n  assert(p.m == \"hello\")\n  assert(p.n == \"world!\")\n  val r: Pair[Int] = p.map(???)\n  println(r)\n  assert(r.m == 5)\n  assert(r.n == 6)\n}\n\nprintln(\n  \"Congratulations ! 'I never dreamed about success. I worked for it.' - Estee Lauder\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -379,7 +352,6 @@
   },
   {
     "lesson": "future",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n// imports\nimport java.util.concurrent.TimeUnit\nimport scala.util.Try\nimport scala.concurrent.duration.Duration\nimport scala.concurrent.{\n  Await,\n  ExecutionContext,\n  ExecutionContextExecutor,\n  Future\n}\n\nimplicit val ex: ExecutionContextExecutor = ExecutionContext.global\n\nprintln(\">> Start exercise\")\n\n// making futures\n// notice the type `=> Int`\ndef createCompute(name: String)(operation: => Int): Future[Int] = {\n  Future {\n    println(s\"Start $name\")\n    val output = operation\n    println(s\"Done $name\")\n    output\n  }\n}\n\n// start as soon as created\nval f1: Future[Int] = createCompute(\"f1\") {\n  Thread.sleep(100)\n  ???\n}\n// support map and all the other flatMap, ...\nval f2: Future[Int] = createCompute(\"f2\") {\n  Thread.sleep(50)\n  ???\n}.map(a => a + 1)\n\n// chained together\nval fTotal = for {\n  f1Result <- f1\n  // not running in parallel\n  f3Result <- createCompute(\"f3\") {\n    Thread.sleep(50)\n    ???\n  }\n  f4Result <- createCompute(\"f4\") {\n    Thread.sleep(50)\n    ???\n  }\n  f5Result <- createCompute(\"f5\") {\n    Thread.sleep(50)\n    ???\n  }\n  f2Result <- f2\n} yield {\n  f1Result + f2Result + f3Result + f4Result + f5Result\n}\n\n// try different wait time\nval outputTotal: Int =\n  Await.result(fTotal, Duration(???, TimeUnit.MILLISECONDS))\n\nassert(outputTotal == 15, outputTotal)\n\n// Future can be dangerous\nprintln(\">> Start Part 2\")\n\nval f: Future[Int] = Future {\n  println(\"start\")\n  // On a second run, try reducing this number\n  Thread.sleep(1500)\n  // this will print, Future are not cancellable\n  println(\"finish\")\n  ???\n}\n\n// or increase this number\nval output: Int =\n  Try(Await.result(f, Duration(1, TimeUnit.SECONDS))).getOrElse(5)\n\nThread.sleep(750)\n\nassert(output == 1, output)\n\nprintln(\n  \"Congratulations ! 'Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better.' – Samuel Beckett\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -393,7 +365,6 @@
   },
   {
     "lesson": "generic-trait",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ntrait Combine[A] {\n  def combineWith(a: A): A\n}\n\ncase class PotatoBag(weight: Double) extends Combine[PotatoBag] {\n  override def combineWith(otherBag: PotatoBag): PotatoBag =\n    PotatoBag(this.weight + otherBag.weight)\n}\n\ncase class TruckOfPotatoes(potatoBags: PotatoBag*) {\n  lazy val totalWeight: Double =\n    potatoBags\n      .reduceOption((a, b) => a.combineWith(b))\n      .map(_.weight)\n      .getOrElse(???)\n}\n\nval truck: TruckOfPotatoes = TruckOfPotatoes(???)\n\nval totalWeigth = truck.totalWeight\n\nassert(totalWeigth == 18.1, totalWeigth)\n\nprintln(\n  \"Congratulations ! 'Set your goals high, and don't stop till you get there.' - Bo Jackson\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -407,7 +378,6 @@
   },
   {
     "lesson": "higher-kind",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ntrait CounterT[A] {\n  def elements: List[A]\n  def latest: A\n}\n\ncase class Counter(override val elements: List[Int]) extends CounterT[Int] {\n  override final lazy val latest: Int = elements.last\n}\n\ntrait CountUtil[F[_]] {\n  def apply[A](input: F[A]): Long\n}\n\nobject Count {\n  object ForSet extends CountUtil[Set] {\n    def apply[A](input: Set[A]): Long = ???\n  }\n\n  object ForList extends CountUtil[List] {\n    def apply[A](input: List[A]): Long = ???\n  }\n\n  object ForCounter extends CountUtil[CounterT] {\n    def apply[A](input: CounterT[A]): Long = input.elements.length\n  }\n}\n\nval s: Set[Int] = ???\nval sCount: Long = Count.ForSet(s)\nassert(sCount == 3, sCount)\n\nval l: List[Int] = ???\nval lCount: Long = Count.ForList(l)\nassert(lCount == 4, lCount)\n\nval c: Counter = ???\nval cCount: Long = Count.ForCounter(c)\nassert(cCount == 4, cCount)\n\nprintln(\n  \"Congratulations ! 'Nothing will work unless you do' - Maya Angelou\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -421,7 +391,6 @@
   },
   {
     "lesson": "implicit-class",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nobject Implicits {\n  implicit class IntExtra(val i: Int) extends AnyVal {\n    def isEven: Boolean = i % (??? : Int) == 0\n    def increaseByN(n: Int = 1): Int = i + n\n  }\n\n  implicit class ListExtra(list: List[Int]) {\n    def everyNMap(n: Int)(f: Int => Int): List[Int] = {\n      list.zipWithIndex.map {\n        case (element, i) if i % n == 0 => f(element)\n        case (element, _)               => element\n      }\n    }\n  }\n}\n\nimport Implicits._\n\nval listEnd: Int = ???\n\nval input: List[Int] = (0 to listEnd).toList\nprintln(input)\n\nval output: List[Int] = input\n  .filter(_.isEven)\n  .everyNMap(???)(_.increaseByN(???))\n\nprintln(output)\n\nval result: Int = output.sum\nval expected: Int = 60\nassert(result == expected, result)\n\nprintln(\n  \"Congratulations ! 'It does not matter how slowly you go as long as you do not stop.' – Confucius\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -435,7 +404,6 @@
   },
   {
     "lesson": "implicit-conversion",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n// Necessary to remove \"warnings\"\n// Try to comment it out to see it for yourself\nimport scala.language.implicitConversions\n\ncase class Foo(number: Int)\n\ncase class Bar(txt: String)\n\n// try commenting out this object once you complete the exercise\nobject Bar {\n  implicit def toFoo(bar: Bar): Foo = {\n    println(s\"[DEBUG] Converting: $bar\")\n    Foo(number = bar.txt.length)\n  }\n}\n\n// note that this accept Foo as input\ndef display(f: Foo): Unit = println(s\"Display: $f\")\n\ndef increase(f: Foo): Foo = f.copy(number = f.number + 1)\n\nval f: Foo = Foo(???)\nval b: Bar = Bar(???)\n\ndisplay(f)\ndisplay(b)\n\nval f_out: Foo = increase(f)\nval b_out: Foo = increase(???)\n\nassert(f_out.number == 3)\nassert(b_out.number == 5)\n\nprintln(\n  \"Congratulations ! 'Sometimes later becomes never. Do it now.' – Unknown\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -449,7 +417,6 @@
   },
   {
     "lesson": "implicit-proof",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n{ // Require type proof\n  trait Foo[A]\n\n  object Foo {\n    def apply[A](): Foo[A] = new Foo[A] {}\n  }\n\n  object ValidFoos {\n    implicit val FooInt: Foo[Int] = Foo[Int]()\n    implicit val FooString: Foo[String] = ???\n  }\n  import ValidFoos._\n\n  def isValidFoo[A: Foo](a: A): A = {\n    println(s\"'${a.toString}' is a valid Foo\")\n    ???\n  }\n\n  val a: Int = isValidFoo[Int](???)\n  assert(a == 3)\n  val b: String = isValidFoo[String](???)\n  assert(b == \"abc\")\n  \n  // Try commenting this out, then fix it.\n  // val c: Double = isValidFoo(1.2)\n}\n\n{ // With access to the proof\n  def sum[A](a: A, b: A)(implicit num: Numeric[A]): A = {\n    println(s\"$a + $b\")\n    num.plus(a, ???)\n  }\n\n  val r1: Int = sum[Int](???, ???)\n  println(r1)\n  assert(r1 == 4)\n  val r2: Double = sum[Double](???, ???)\n  println(r2)\n  assert(r2 == 0.6)\n  val r3: Long = sum[Long](???, ???)\n  println(r3)\n  assert(r3 == 7867)\n}\n\nprintln(\n  \"Congratulations ! 'Being strong means rejoicing in who you are, complete with imperfections.' - Margaret Woodhouse\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -463,7 +430,6 @@
   },
   {
     "lesson": "implicit-val",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ncase class Tracker(name: String)\n\nobject Utils {\n  def add(a: Int, b: Int)(implicit t: Tracker): Int = {\n    println(s\"${t.name} add\")\n    a + b\n  }\n\n  def multiply(a: Int, b: Int)(implicit t: Tracker): Int = {\n    println(s\"${t.name} multiply\")\n    a * b\n  }\n}\n\nobject Foo {\n  implicit private val t: Tracker = Tracker(\"[Foo]\")\n\n  private val a: Int = ???\n  private val b: Int = ???\n  val out = Utils.add(a, b)\n}\n\nobject Bar {\n  implicit private val t: Tracker = Tracker(\"[Bar]\")\n\n  private val a: Int = ???\n  private val b: Int = ???\n  val out = Utils.multiply(a, b)\n}\n\nval fooOut = Foo.out\nval barOut = Bar.out\n\nassert(fooOut == 8, fooOut)\nassert(barOut == 60, barOut)\n\nval oneOff = Utils.add(10, ???)(Tracker(???))\nassert(oneOff == 34, oneOff)\n\nprintln(\n  \"Congratulations ! 'When something is important enough, you do it even if the odds are not in your favor.' – Elon Musk\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -477,7 +443,6 @@
   },
   {
     "lesson": "infix-notation",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n{\n  val a: Int = ???\n  val b: Int = ???\n  val r: Int = a.+(b)\n  assert(r == 17, r)\n}\n\n{\n  val a: Boolean = ???\n  val b: Boolean = false\n  val r: Boolean = a.||(b)\n  assert(r)\n}\n\n{\n  case class Foo(a: Int) {\n    def combineWith(extraA: Int): Foo = {\n      this.copy(a = this.a + extraA)\n    }\n\n    def combineWith(other: Foo): Foo = {\n      this.copy(a = this.a + other.a)\n    }\n\n    def increased: Foo = this.combineWith(1)\n  }\n\n  val a: Foo = Foo(???)\n  val b1: Int = ???\n  val r1: Foo = a combineWith b1\n  assert(r1.a == 13)\n\n  val b2: Foo = Foo(b1)\n  val r2: Foo = a.combineWith(b2)\n  assert(r1.==(r2))\n}\n\nprintln(\"Congratulations ! 'Failure will never overtake me if my determination to succeed is strong enough.' - Og Mandino\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -491,7 +456,6 @@
   },
   {
     "lesson": "list-filter-method",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval l = List(1, 2, 4, 8)\nprintln(l)\n\nval filtered = l.filter(a => ???)\nprintln(filtered)\n\nval result = filtered.sum\n\nassert(result == 1)\n\nprintln(\"Congratulations ! 'Prepare the umbrella before it rains.' \")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -505,7 +469,6 @@
   },
   {
     "lesson": "list-flatten",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval l: List[Int] = List(1, 2, ???, 4)\n\nval ll: List[List[Int]] = l.map(a => List(a - 1, a, a + 1))\nprintln(s\"Map: $ll\")\n\nval flatList: List[Int] = ll.flatten\nprintln(s\"Flat: $flatList\")\n\nval sum: Int = ???\n\nassert(sum == 30, sum)\n\nprintln(\"Congratulations ! Hapiness = Reality - Expectation\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -519,7 +482,6 @@
   },
   {
     "lesson": "list-of-option-flatten",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n{ // List\n  println(\">> List\")\n\n  // create list of list\n  val l: List[List[Int]] = List(List(???), List(???))\n  println(l)\n  assert(l.length == 2)\n  assert(l(0).length == 2)\n\n  // flatten to list\n  val lFlatten1: List[Int] = l.flatten\n  println(lFlatten1)\n  assert(lFlatten1.length == 5)\n\n  // transform and flatten\n  val lFlatten2: List[Int] = l.map(_.map(_ + 1)).flatten\n  println(lFlatten2)\n\n  // transform and flatten in one operation\n  val lFlatten3: List[Int] = l.flatMap(_.map(_ + 1))\n  println(lFlatten3)\n\n  assert(lFlatten2.sum == lFlatten3.sum)\n}\n\n{ // Option\n  println(\">> Option\")\n\n  // create option of option | Try with 'None' and 'Some'\n  val opt: Option[Option[Int]] = Some(???)\n  println(opt)\n  assert(opt.isDefined)\n\n  // flatten to option\n  val optFlatten1: Option[Int] = opt.flatten\n  println(optFlatten1)\n\n  // transform and flatten\n  val optFlatten2: Option[Int] = opt.map(_.map(_ + 1)).flatten\n  println(optFlatten2)\n\n  // transform and flatten in one operation\n  val optFlatten3: Option[Int] = opt.flatMap(_.map(_ + 1))\n  println(optFlatten3)\n\n  assert(optFlatten1.isEmpty == optFlatten3.isEmpty)\n}\n\n{ // List of Option\n  println(\">> List[Option[Int]]\")\n\n  // create list of option\n  val a: List[Option[Int]] = List(Some(???), None, ???)\n  println(a)\n  assert(a.length == 4)\n\n  // flatten to list\n  val aFlatten1: List[Int] = a.flatten\n  println(aFlatten1)\n  assert(aFlatten1.length == 2)\n\n  // transform and flatten\n  val aFlatten2: List[Int] = a.map(_.map(_ + 1)).flatten\n  println(aFlatten2)\n\n  // transform and flatten in one operation\n  val aFlatten3: List[Int] = a.flatMap(_.map(_ + 1))\n  println(aFlatten3)\n  assert(aFlatten2.sum == aFlatten3.sum)\n  assert(aFlatten3.sum == 6)\n}\n\nprintln(\n  \"Congratulations ! 'There is no traffic jam along the extra mile.' - Roger Staubach\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -533,7 +495,6 @@
   },
   {
     "lesson": "list-parallel",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nimport scala.collection.parallel.CollectionConverters._\n\nval from: Int = 0\nval end: Int = 12\n// have fun with the step. You know \"Range\" now.\nval step: Int = ???\nval expected: Int = ???\n\nval result1: Int = (from to end by step).map { a =>\n  val adder: Int = ???\n  println(s\"#seq> $a + $adder\")\n  a + adder\n}.sum\nassert(result1 == expected, result1)\n\nprintln(\"With 'par':\")\nval result2: Int = (from to end by step).par.map { a =>\n  val adder: Int = ???\n  println(s\"#par> $a + $adder\")\n  a + adder\n}.sum\nassert(result2 == expected, result2)\n\nprintln(\n  \"Congratulations ! 'Do today what others won’t so tomorrow you can do what others can’t.' – Jerry Rice\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -577,7 +538,6 @@
   },
   {
     "lesson": "list-pattern-matching",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n// creating list\n{\n  // create a list\n  val l1: List[Int] = List(???)\n  println(l1)\n  assert(l1 == List(1, 2, 3))\n\n  // create a list with the '::' syntax\n  val l2: List[Int] = 7 :: 6 :: ??? :: Nil\n  println(l2)\n  assert(l2.length == 3)\n\n  // combine list\n  val l3: List[Int] = l1 ++ l2\n  println(l3)\n  assert(l3.length == 6)\n\n  // +: and :: are equivalent when it comes to create list\n\n  // prepend one or more element to list\n  val l4: List[Int] = ??? +: 3 +: l3\n  println(l4)\n  assert(l4(0) == 2)\n\n  // prepend one or more element to list\n  val l5: List[Int] = ??? :: 5 :: l4\n  println(l5)\n  assert(l5(0) == 2)\n\n  // append one or more element to list\n  val l6: List[Int] = l5 :+ 5 :+ ???\n  println(l6)\n  assert(l6.length == ???, l6.length)\n}\n\n// pattern matching with list\n{\n  def processList(l: List[Int]): Int = {\n    l match {\n      case Nil                          => 0\n      case a :: Nil                     => a\n      case a :: b :: Nil                => a + b\n      case a :: b :: tail if a + b == 5 => 5\n      case a :: 3 :: 4 :: tail          => tail.length * 2\n      case a :: b :: c :: Nil           => 3\n      case 1 :: tail                    => tail.length + 2\n      case head :: tail                 => head\n      case _                            => -1\n    }\n  }\n\n  assert(processList(???) == -1)\n  assert(processList(???) == 0)\n  assert(processList(???) == 1)\n  assert(processList(???) == 2)\n  assert(processList(???) == 3)\n  assert(processList(???) == 4)\n  assert(processList(???) == 5)\n  assert(processList(???) == 6)\n  assert(processList(???) == 7)\n}\n\nprintln(\n  \"Congratulations ! 'The best time to plant a tree was 20 years ago. The second best time is now.' - Chinese Proverb\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -591,7 +551,6 @@
   },
   {
     "lesson": "list-sum-method",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval l = List(3, ???)\n\nval result = l.sum\n\nassert(result == 10)\n\nprintln(\"Congratulations ! You deserve the best !\")",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -605,7 +564,6 @@
   },
   {
     "lesson": "list-zip",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval l1: List[Int] = ???\nval l2: List[Int] = ???\n\nassert(l1.length >= l2.length)\n\n// step by step\n\nval r_zip: List[(Int, Int)] = l1 zip l2\nprintln(r_zip)\n\nval r_swap: List[(Int, Int)] = r_zip.map(tuple => tuple.swap)\nprintln(r_swap)\n\nval r_delta: List[Int] = r_swap.map { case (a, b) => ??? }\nprintln(r_delta)\n\nval r_sum: Int = r_delta.sum\nprintln(r_sum)\n\nlazy val expectedValue: Int = ???\nassert(r_sum == expectedValue, r_sum)\n\n// all at once\nlazy val r: Int = l1\n  .zip(???)\n  // just replace the whole (??? : TYPE) .\n  // It was to resolve compilation issue so the error happen in the right order to solve the exercise.\n  // Sorry about that.\n  .map(tuple => (??? : (Int, Int)))\n  .map { case (a, b) => (??? : Int) }\n  .sum\nprintln(r)\n\nassert(r_sum == r)\n\nprintln(\n  \"Congratulations ! 'If you do what you always did, you will get what you always got.' - Anonymous\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -619,7 +577,6 @@
   },
   {
     "lesson": "literal-identifiers",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval `a`: Int = ???\nprintln(`a`)\nassert(`a` == 1)\n\nval `this is a valid value name`: String = ???\nprintln(`this is a valid value name`)\nassert(`this is a valid value name` == \"abc\")\n\nprintln(\n  \"Congratulations ! 'Remember why you started.' - Anonymous\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -633,7 +590,6 @@
   },
   {
     "lesson": "main",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nobject Database {\n  private lazy val fakeDatabase: Map[Int, String] = Map(\n    34 -> \"abc\",\n    12 -> \"def\"\n  )\n\n  def apply(key: Int): Option[String] = fakeDatabase.get(key)\n}\n\n// This could be named anything, try !\nobject Main {\n\n  // Try removing or commenting this method to get familiar with the errors.\n  def main(args: Array[String]): Unit = {\n    assert(Database(12) == Some(\"bob\"))\n    assert(Database(34) == None)\n    assert(Database(76) == Some(\"Leo\"))\n\n    println(\n      \"Congratulations ! 'It does not matter how slowly you go as long as you do not stop.' - Confucius\"\n    )\n  }\n}\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -647,7 +603,6 @@
   },
   {
     "lesson": "map-for-list",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval l = List(3, 7, ???)\nprintln(l)\n\nval upOne = l.map(a => a + 1)\nprintln(upOne)\n\nval result = upOne.sum\n\nassert(result == 20)\n\nprintln(\"Congratulations ! 'Write it on your heart that every day is the best day in the year.' - Ralph Waldo Emerson\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -661,7 +616,6 @@
   },
   {
     "lesson": "method-with-arguments",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ndef add(a: Int, b: Int): Int = ???\n\nassert(add(1, 2) == 3)\n\nprintln(\"Congratulations ! Have a great day !\")",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -675,7 +629,6 @@
   },
   {
     "lesson": "methods",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ndef makeHelloWorld1: String = ???\n\nassert(makeHelloWorld1 == \"Hello World\")\n\ndef makeHelloWorld2(): String = ???\n\nassert(makeHelloWorld2() == \"Hello World\")\n\nprintln(\"Congratulations ! You are a great human being !\")",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -689,7 +642,6 @@
   },
   {
     "lesson": "monad",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n// Functor, Applicative and Monad //\n\ntrait Functor[F[_]] {\n  def map[A, B](fa: F[A])(f: A => B): F[B]\n}\n\ntrait Applicative[F[_]] extends Functor[F] {\n  def pure[A](a: A): F[A]\n  def applicate[A, B](f: F[A => B])(fa: F[A]): F[B]\n}\n\ntrait Monad[F[_]] extends Applicative[F] {\n  def flatten[A](ffa: F[F[A]]): F[A]\n\n  def flatMap[A, B](fa: F[A])(f: A => F[B]): F[B] = {\n    val ffb: F[F[B]] = map(???)(???)\n    val fb: F[B] = flatten(???)\n    fb\n  }\n\n  final override def applicate[A, B](f: F[A => B])(fa: F[A]): F[B] = {\n    flatMap(???) { (fab: A => B) =>\n      map(???)(fab(_))\n    }\n  }\n}\n\n// USAGE //\n\nsealed abstract class Box[+A](val isDefined: Boolean)\n\nimplicit object BoxMonad extends Monad[Box] {\n  final override def map[A, B](fa: Box[A])(f: A => B): Box[B] = {\n    fa match {\n      case FilledBox(a) => pure(f(???))\n      case EmptyBox     => ???\n    }\n  }\n\n  final override def pure[A](a: A): Box[A] = FilledBox(???)\n\n  final override def flatten[A](ffa: Box[Box[A]]): Box[A] = {\n    ffa match {\n      case FilledBox(fa) => ???\n      case EmptyBox      => EmptyBox\n    }\n  }\n\n}\n\nimplicit class BoxMonadUtil[A](ba: Box[A])(implicit m: Monad[Box]) {\n  def map[B](f: A => B): Box[B] = m.map(???)(???)\n  def flatMap[B](f: A => Box[B]): Box[B] = m.flatMap(???)(???)\n\n  def filter(p: A => Boolean): Box[A] = ba.flatMap {\n    case a if p(a) => FilledBox(???)\n    case _         => EmptyBox\n  }\n}\n\ncase class FilledBox[A](v: A) extends Box[A](true)\n\ncase object EmptyBox extends Box[Nothing](false)\n\n// EXAMPLES //\n\n{\n  println(\"- example 1\")\n  val box: Box[Int] = FilledBox(???)\n  println(box)\n  assert(box.isDefined)\n\n  val box1: Box[Int] = box.map(_ * 2)\n  println(box1)\n  assert(box1.isDefined)\n  box1.map { a =>\n    assert(a == 8)\n  }\n}\n\n{\n  println(\"- example 2\")\n  val box: Box[Int] = FilledBox(???)\n  println(box)\n  assert(box.isDefined)\n\n  val box1: Box[String] = box.flatMap {\n    case a if a % 2 == 0 => FilledBox(\"even\")\n    case a if a % 3 == 0 => FilledBox(\"three\")\n    case a if a > 10     => FilledBox(\"unknown\")\n    case _               => EmptyBox\n  }\n  println(box1)\n}\n\n{\n  println(\"- example 3\")\n  val box: Box[Int] = FilledBox(???)\n  println(box)\n  assert(box.isDefined)\n\n  val box1: Box[Int] = box.filter(_ > 3)\n  println(box1)\n  assert(!box1.isDefined)\n}\n\nprintln(\n  \"Congratulations ! 'Blame it or praise it, there is no denying the wild horse in us.' - Virginia Woolf\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -703,7 +655,6 @@
   },
   {
     "lesson": "multiple-inheritance",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ntrait Animal {\n  // try to uncomment this\n  // def weight: Double\n}\n\ntrait CanWalk {\n  def numberOfLegs: Int\n}\n\ntrait CanSwim {}\n\ntrait HasFur {\n  def color: String\n}\n\ntrait Mammal {\n  final lazy val layEgg: Boolean = false\n}\n\ntrait IsPet {\n  def name: String\n  def color: String\n}\n\ntrait HasNumber {\n  def name: Int\n}\n\ntype MammalAnimal = Animal with Mammal\n\n// Try to replace 'Animal with Mammal' with 'MammalAnimal'\ntrait LandMammal extends Animal with Mammal with CanWalk with HasFur {}\n\ntrait SeaMammal extends Animal with Mammal with CanSwim {}\n\nabstract class Pet(override final val name: String) extends IsPet\nabstract class WildLife(override final val name: Int) extends HasNumber\n\n// Try to add 'WildLife' to the mix\ncase class Dog(givenName: String, override val color: String)\n    extends Pet(name = ???)\n    with LandMammal {}\n\n// try to add the trait 'IsPet' to the mix\n// try to switch the order and put the abstract class after the trait\ncase class Whale(id: Int) extends WildLife(name = ???) with SeaMammal {}\n\n////////\n\nval input: List[Animal] = List(\n  ???\n)\nprintln(input)\nassert(input.length == 5)\n\nimport scala.util.Try\nval mammalAnimals: List[MammalAnimal] =\n  input.flatMap(a => Try(a.asInstanceOf[MammalAnimal]).toOption)\nprintln(input)\nassert(mammalAnimals.length == 5)\n\nval pets: List[IsPet] =\n  mammalAnimals.flatMap(a => Try(a.asInstanceOf[IsPet]).toOption)\nprintln(pets)\nassert(pets.length == 3)\n\nprintln(\n  \"Congratulations ! 'Dream as if you’ll live forever. Live as if you’ll die today.' - James Dean\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -717,7 +668,6 @@
   },
   {
     "lesson": "objects",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nobject Configuration {\n  lazy val KeyNumberOfFoos: String = \"NumberOfFoos\"\n  lazy val KeyNumberOfBar: String = \"NumberOfBar\"\n}\n\nobject Database {\n  private val database: Map[String, Int] = Map(\n    Configuration.KeyNumberOfFoos -> ???,\n    Configuration.KeyNumberOfBar -> 12\n  )\n\n  def getDataFromDatabase(key: String): Option[Int] =\n    database.get(key)\n}\n\nval configurationFromDatabase: Option[Int] =\n  Database.getDataFromDatabase(Configuration.KeyNumberOfFoos)\n\nprintln(configurationFromDatabase)\n\nassert(configurationFromDatabase.contains(567))\n\nprintln(\"Congratulations ! 'Be nice to yourself, you’re doing your best.'\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -731,7 +681,6 @@
   },
   {
     "lesson": "operators",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n{\n  // simple operator +/*\n  case class Complex(real: Double, imaginary: Double) {\n    def +(other: Complex): Complex =\n      Complex(\n        real = this.real + other.real,\n        imaginary = this.imaginary + other.imaginary\n      )\n\n    def *(other: Complex): Complex =\n      Complex(\n        real = this.real * other.real - this.imaginary * other.imaginary,\n        imaginary = this.real * other.imaginary + this.imaginary * other.real\n      )\n\n    override final lazy val toString: String =\n      s\"$real${if (imaginary >= 0) \"+\" else \"\"}${imaginary}i\"\n  }\n\n  val cA: Complex = Complex(???, ???)\n  val cB: Complex = Complex(???, ???)\n  val r: Complex = ???\n  println(r)\n  assert(r.real == 6)\n  assert(r.imaginary == 8)\n}\n\n{ // stranger ones\n  case class Node(s: String) {\n    // |+| is the traditional operator for \"combine\"\n    def |+|(other: Node): Node = Node(this.s + ???)\n\n    // this is invented\n    def \\/(other: Node): Node = Node(s\"$s/${other.s}\")\n    def /(other: Node): Node = Node(???)\n\n    def unary_! = Node(s.reverse)\n  }\n\n  val a: Node = Node(???)\n  val b: Node = Node(???)\n  val r1: Node = a |+| b\n  println(r1)\n  assert(r1.s == \"ab\")\n\n  val r2: Node = a \\/ b\n  val r3: Node = a / b\n  println(r2)\n  assert(r2.s == \"a/b\")\n  assert(r3 == r2)\n\n  val r4: Node = !r1\n  println(r4)\n  assert(r4.s == ???)\n}\n\n{ // unary\n  case class Value(i: Double) {\n    def unary_- = Value(-1 * i)\n    def unary_+ = Value(i + 1)\n    def unary_~ = Value(Math.round(i).toDouble)\n  }\n\n  val v: Value = Value(???)\n  val r1: Value = -v\n  println(r1)\n  assert(r1.i == 4.2)\n\n  val r2: Value = +r1\n  println(r2)\n  assert(r2.i == 5.2)\n\n  val r3: Value = ???\n  println(r3)\n  assert(r3.i == 5)\n}\n\nprintln(\n  \"Congratulations ! 'Don’t worry about being successful but work toward being significant and the success will naturally follow.' - Oprah Winfrey\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -745,7 +694,6 @@
   },
   {
     "lesson": "option-map",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval input: Option[Int] = Some(1)\nprintln(input)\n\nval mapped: Option[Int] = input.map(a => ???)\nprintln(mapped)\n\nval result: Int = mapped.getOrElse(0)\n\nassert(result == 2)\n\nprintln(\n  \"Congratulations ! There are no pressure to be happy, take your time.\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -759,7 +707,6 @@
   },
   {
     "lesson": "option-pattern-matching",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ndef processOpt(opt: Option[Int]): Int = {\n  opt match {\n    case Some(n) => n * 2\n    case None    => -1\n  }\n}\n\nval a: Option[Int] = Some(2)\nval r1: Int = processOpt(a)\nassert(r1 == 4)\n\nval b: Option[Int] = None\nval r2: Int = processOpt(b)\nassert(r2 == -1)\n\nprintln(\n  \"Congratulations ! 'Someday is not a day of the week.' - Denise Brennan-Nelson\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -773,7 +720,6 @@
   },
   {
     "lesson": "option",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval choice1: Boolean = ???\n\nval result1: Option[Int] = if(choice1) None else Some(1)\n\nassert(result1.isEmpty)\n\nval choice2: Boolean = ???\n\nval result2: Option[Int] = if(choice2) None else Some(1)\n\nassert(result2.isDefined)\n\nprintln(\"Congratulations ! Believe in yourself !\")",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -787,7 +733,6 @@
   },
   {
     "lesson": "pattern-matching-at",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ncase class Person(firstName: String, lastName: String) {\n  override lazy val toString: String = s\"[$firstName $lastName]\"\n}\n\nobject Person {\n  def apply(fullName: String): Person = {\n    val splited = fullName.split(\" \")\n    Person(splited(0), splited(1))\n  }\n}\n\n// Generated with https://www.randomlists.com/fake-name-generator\nval people = Seq(\n  Person(\"Adriana Zhang\"),\n  Person(\"Jerome Serrano\"),\n  Person(\"Jakayla Gomez\"),\n  Person(???),\n  Person(\"Anabel Rowe\"),\n  Person(\"Lara Dudley\"),\n  Person(\"Malaki Sullivan\"),\n  Person(???),\n  Person(???),\n  Person(\"Eugene Gaines\"),\n  Person(\"Derrick Pace\"),\n  Person(\"Rylee Ayers\")\n)\n\nval output = people\n  .flatMap {\n    case p @ Person(firstName, _) if firstName.startsWith(\"A\") => Some(p)\n    case p @ (Person(\"Rylee\", _) | Person(_, \"Pace\"))          => Some(p)\n    case Person(firstName, \"Terrell\")                          => Some(Person(firstName, \"Doe\"))\n    case p @ Person(\"Lara\", _)                                 => Some(p.copy(firstName = \"John\"))\n    case _                                                     => None\n  }\n  .sortBy(_.toString)\n\noutput.foreach(println)\n\nval expectedLength: Int = ???\nassert(output.length == expectedLength)\n\nprintln(\n  \"Congratulations ! 'Do one thing every day that scares you.' ― Eleanor Roosevelt\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -801,7 +746,6 @@
   },
   {
     "lesson": "pattern-matching-for-case-class",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ncase class Person(firstName: String, lastName: String) {\n  override lazy val toString: String = s\"[$firstName $lastName]\"\n\n  private lazy val firstLetterFirstName: Char = firstName.toUpperCase.head\n  private lazy val firstLetterLastName: Char = ???\n\n  lazy val initials: String =\n    s\"$firstLetterFirstName$firstLetterLastName\"\n\n  lazy val isFirstBefore: Boolean = firstLetterFirstName <= firstLetterLastName\n\n}\n\nobject Person {\n  def apply(fullName: String): Person = {\n    val splited = fullName.split(\" \")\n    Person(splited(0), splited(1))\n  }\n}\n\n// Generated with https://www.randomlists.com/fake-name-generator\nval people = Seq(\n  Person(\"Adriana Zhang\"),\n  Person(\"Jerome Serrano\"),\n  Person(\"Jakayla Gomez\"),\n  Person(\"Oscar Martinez\"),\n  Person(\"Anabel Rowe\"),\n  Person(\"Lara Dudley\"),\n  Person(\"Malaki Sullivan\"),\n  Person(\"Hailey Terrell\"),\n  Person(\"Aubree Ferrell\"),\n  Person(\"Eugene Gaines\"),\n  Person(\"Derrick Pace\"),\n  Person(\"Rylee Ayers\"),\n  Person(\"Beckham Meadows\"),\n  Person(\"Tanner Francis\"),\n  Person(???),\n  Person(\"Fabian Compton\"),\n  Person(\"Kirsten Potter\"),\n  Person(\"Kara Jensen\"),\n  Person(\"Jasper Ray\"),\n  Person(???)\n)\n\nval output: Seq[(Int, String)] = people.map {\n  case Person(\"Malaki\", _) => 1 -> ???\n  case p @ Person(_, lastName) if lastName.endsWith(\"l\") =>\n    2 -> s\"$p's last name end with 'l' and the lastName was $lastName\"\n  case p @ (Person(\"Fabian\", _) | Person(_, \"Potter\") |\n      Person(\"Eugene\", \"Gaines\")) =>\n    3 -> s\"$p was selected by this complex filter\"\n  case p if p.initials == \"JP\" => 4 -> s\"$p has initial: ${p.initials}\"\n  case p if p.isFirstBefore =>\n    5 -> s\"$p has the first name first letter before the last name first letter: ${p.initials}\"\n  case p => 6 -> s\"$p was not catch by any filter\"\n}.sorted\n\nprintln(\"Names processed:\")\noutput.foreach(println)\n\nassert(output.length == people.length)\n\nval groups = output.groupBy(_._1).view.mapValues(_.length)\n\nprintln(\"Names grouped:\")\ngroups.foreach(println)\n\nval expectedGroup2: Int = ???\nassert(groups(2) == expectedGroup2)\n\nval expectedGroup5: Int = ???\nassert(groups(5) == expectedGroup5)\n\nprintln(\n  \"Congratulations ! 'The best time to plant a tree was 20 years ago. The second best time is now.' – Chinese Proverb\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -815,7 +759,6 @@
   },
   {
     "lesson": "pattern-matching-or",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nsealed trait Shape\n\ncase object Square extends Shape\ncase object Triangle extends Shape\ncase object Circle extends Shape\ncase object Rectangle extends Shape\ncase object Hexagone extends Shape\n\nval shape: Shape = ???\n\nval output: String = shape match {\n  case s @ (Square | Circle)           => s\"The $s is perfect\"\n  case Hexagone | Triangle | Rectangle => \"This shape is ok\"\n  case s                               => s\"I dont know this shape: $s\"\n}\n\nprintln(output)\n\nassert(output == s\"I dont know this shape: $shape\")\n\nprintln(\"Congratulations ! 'Impossible is just an opinion.' – Paulo Coelho\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -829,7 +772,6 @@
   },
   {
     "lesson": "pattern-matching",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ntype L = List[Int]\n\nval startR: Int = ???\nval endR: Int = 10\nval l: L = (startR to endR).toList\nprintln(l)\n\nval l1: L = l.map {\n  case 0          => ???\n  case n if n < 5 => n + 4\n  case n if n < 8 => n - 3\n  case _          => ???\n}\nprintln(l1)\nval expected1: Int = ???\nassert(l1.sum == expected1, l1)\n\ndef transform(input: L, f: Int => Int): L = {\n  def loop(accumulator: L, rest: L): L = {\n    println(s\"acc: $accumulator\")\n    rest match {\n      case Nil          => accumulator\n      case head :: tail => loop(accumulator :+ f(head), tail)\n    }\n  }\n  loop(Nil, input)\n}\n\nval l2: L = transform(l1, a => a + 1)\nprintln(l2)\nval expected2: Int = ???\nassert(l2.sum == expected2, l2)\n\nprintln(\n  \"Congratulations ! 'If you can dream it, you can do it.' – George S. Patton\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -843,7 +785,6 @@
   },
   {
     "lesson": "random",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nimport scala.util.Random\n\n{\n  // Create a random generator\n  val rand = new Random()\n\n  println(\"Random Int:\")\n  println(rand.nextInt())\n\n  // Try different values\n  val maxRand = ???\n  println(s\"Random Int lower than $maxRand:\")\n  println(rand.nextInt(maxRand))\n}\n\n// Utilities to generate \"random\" numbers\nobject RandomUtils {\n  // the seed\n  val seed = 0\n  // initialize the random generator\n  private val rand = new Random(seed)\n\n  def randomInt(min: Int, max: Int): Int = {\n    rand.nextInt(max - min) + ???\n  }\n}\n\nval minRand = 10\nval maxRand = 20\nprintln(\n  s\"Random number between $minRand and $maxRand with seed ${RandomUtils.seed}:\"\n)\nprintln(RandomUtils.randomInt(minRand, maxRand))\n\nval output = RandomUtils.randomInt(13, 200)\nassert(output == 41, output)\n\nfor {\n  min <- 0 to 1000\n  max <- 0 to ???\n  if min < max\n} {\n  val randomNumber = RandomUtils.randomInt(min, max)\n  assert(randomNumber >= min)\n  assert(randomNumber < max)\n}\n\nprintln(\"Congratulations ! Keep moving forward.\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -857,7 +798,6 @@
   },
   {
     "lesson": "range",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval inputList1 = (0 to 50)\nprintln(inputList1)\nval result1: Int = inputList1.sum\nval expected1: Int = ???\nassert(result1 == expected1, result1)\n\nval step: Int = ???\nval inputList2 = (0 until 20 by step).toList\nprintln(inputList2)\nval result2: Int = inputList2.length\nval expected2: Int = 7\nassert(result2 == expected2, result2)\n\nprintln(\"Congratulations ! 'Happiness is when what you think, what you say, and what you do are in harmony.' - Mahatma Ghandi\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -871,7 +811,6 @@
   },
   {
     "lesson": "recursion",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ndef sumUpTo(until: Int): Int = {\n  def loop(n: Int = 0, acc: Int = 0): Int = {\n    if (n >= until) n + acc\n    else loop(n + 1, acc + n)\n  }\n\n  loop()\n}\n\nval result: Int = sumUpTo(???)\nval expected: Int = ???\nassert(result == expected, result)\n\nprintln(\n  \"Congratulations ! 'Knowing is not enough; we must apply. Willing is not enough; we must do.' - Johann Wolfgang von Goethe\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -885,7 +824,6 @@
   },
   {
     "lesson": "regex",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nimport scala.util.matching.Regex\nimport java.util.regex.{Matcher, Pattern}\nimport scala.util.Try\n\n// simple and quick use case\nval testPhoneNumber: String = ???\nval isPhoneNumber = \"[0-9]{3}-[0-9]{3}-[0-9]{4}\".r.matches(testPhoneNumber)\nprintln(s\"is phone number: $isPhoneNumber\")\n\n// longer, more efficient\nobject FindEmail {\n  private val regex: Regex = new Regex(\"([a-z]+)@([a-z]+)\\\\.([a-z]+)\")\n  private val pattern: Pattern = regex.pattern\n\n  def apply(input: String): RegexFind = RegexFind(pattern.matcher(input))\n\n  case class RegexFind(private val m: Matcher) {\n    private lazy val find: Boolean = m.find()\n    private lazy val groupCount: Int = m.groupCount()\n\n    private lazy val matches: List[String] = (for {\n      n <- 1 to groupCount\n      group = Try(m.group(n))\n      if group.isSuccess\n    } yield group.get).toList\n\n    override lazy val toString: String = s\"match: $find, matches: $matches\"\n  }\n}\n\nval testEmail: String = ???\nval matches = FindEmail(testEmail)\nprintln(s\"Matches: $matches\")\n\n// with pattern matching\nval testAddress: String = ???\nval isAddress = \"([0-9]+) ([a-z]+) (st|blvd)\\\\.\".r\ntestAddress match {\n  case isAddress(number, streetName, streetType) =>\n    println(s\"streetName: $streetName $streetType , at: $number\")\n    assert(number.toInt == 123, number)\n}\n\nprintln(\n  \"Congratulations ! 'The most effective way to do it, is to do it.' - Amelia Earhart\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -899,7 +837,6 @@
   },
   {
     "lesson": "repeated-parameters",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ncase class AnnoyingInput(l: List[Int]) {\n  lazy val sum = l.sum\n}\n\ncase class NiceLookingInput(l: Int*) {\n  lazy val sum = l.sum\n}\n\nval a1: AnnoyingInput = AnnoyingInput(List(1, ???, 3))\nval b1: NiceLookingInput = NiceLookingInput(1, 2, ???)\nprintln(a1)\nprintln(b1)\nassert(a1.sum == b1.sum)\n\nval input: List[Int] = List(1, ???, ???)\n\nval a2: AnnoyingInput = AnnoyingInput(input)\nval b2: NiceLookingInput = NiceLookingInput(input: _*)\nassert(a2.sum == b2.sum)\n\nprintln(\n  \"Congratulations ! 'It always seems impossible until it's done.' - Nelson Mandela\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -913,7 +850,6 @@
   },
   {
     "lesson": "sealed",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nsealed trait Shape {\n  def name: String\n}\n\nobject Shapes {\n  case class Square() extends Shape {\n    override lazy final val name: String = \"Square\"\n  }\n  case class Triangle() extends Shape {\n    override lazy final val name: String = \"Triangle\"\n  }\n  case class Circle() extends Shape {\n    override lazy final val name: String = \"Circle\"\n  }\n}\n\nval a: Shape = ???\n\nassert(a.name == \"Triangle\")\n\nprintln(\"Congratulations ! Keep on doing great things !\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -927,7 +863,6 @@
   },
   {
     "lesson": "self-referred-type",
-    "code": "// Learn more about Scala on https://leobenkel.com\n{\n  trait Combinable {\n    def |+|(other: Combinable): Combinable\n  }\n\n  case class AverageInt(value: Int) extends Combinable {\n    // try to replace the input by 'AverageInt' instead of 'Combinable'\n    override def |+|(other: Combinable): AverageInt =\n      // the 'asInstanceOf' is dangerous because evaluated at Runtime\n      AverageInt((value + other.asInstanceOf[AverageInt].value) / 2)\n  }\n\n  {\n    val a: AverageInt = AverageInt(???)\n    val b: AverageInt = AverageInt(???)\n    val r: Int = (a |+| b).value\n    assert(r == 3)\n  }\n\n  {\n    case class ConcatStrings(value: String) extends Combinable {\n      override def |+|(other: Combinable): ConcatStrings =\n        ConcatStrings((value + other.asInstanceOf[ConcatStrings].value))\n    }\n    // uncomment the lines below, the compiler is not stopping us from doing this. But we have runtime error.\n    // val a: ConcatStrings = ConcatStrings(\"a\")\n    // val b: AverageInt = AverageInt(4)\n    // val r: String = (a |+| b).value\n  }\n}\n\n{\n  trait Combinable[A <: Combinable[A]] {\n    def |+|(other: A): A\n  }\n\n  case class AverageInt(value: Int) extends Combinable[AverageInt] {\n    override def |+|(other: AverageInt): AverageInt =\n      AverageInt((value + other.value) / 2)\n  }\n\n  {\n    val a: AverageInt = AverageInt(???)\n    val b: AverageInt = AverageInt(???)\n    val r: Int = (a |+| b).value\n    assert(r == 3)\n  }\n\n  case class ConcatStrings(value: String) extends Combinable[ConcatStrings] {\n    override def |+|(other: ConcatStrings): ConcatStrings =\n      ConcatStrings((value + other.value))\n  }\n\n  {\n    // uncomment the lines below, the compiler now stop us from doing this.\n    // val a: ConcatStrings = ConcatStrings(\"a\")\n    // val b: AverageInt = AverageInt(4)\n    // val r: String = (a |+| b).value\n  }\n\n  {\n    // nothing stop us from doing this\n    case class AddInt(value: Int) extends Combinable[ConcatStrings] {\n      override def |+|(other: ConcatStrings): ConcatStrings =\n        ConcatStrings((value.toString + other.value))\n    }\n\n    // and the compiler dont see any problem now. Even worse than before because no error anywhere, just bad result.\n    val a: AddInt = AddInt(???)\n    val b: ConcatStrings = ConcatStrings(???)\n    val r = (a |+| b).value\n    println(r)\n  }\n}\n\n{\n  // With this, we keep all the advantages of the test above, feel free to cut and paste them in this block.\n  trait Combinable[A <: Combinable[A]] { this: A =>\n    def |+|(other: A): A\n  }\n\n  // uncomment below, the compiler now does not allow us to do this\n  // case class AddInt(value: Int) extends Combinable[ConcatStrings] {\n  //   override def |+|(other: ConcatStrings): ConcatStrings =\n  //     ConcatStrings((value.toString + other.value))\n  // }\n}\n\nprintln(\n  \"Congratulations ! 'Just one small positive thought in the morning can change your whole day.' - Dalai Lama\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -941,7 +876,6 @@
   },
   {
     "lesson": "set",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval s1: Set[Int] = Set(6, 0, 2, ???, 1)\nprintln(s1)\nval s2: Set[Int] = (0 to ??? by 2).toSet\nprintln(s2)\n\nval s: Set[Int] = s1 ++ s2\nprintln(s)\n\nval increment: Int = ???\nval result = s.map(a => a + increment).sum\n\nassert(result == 38, result)\n\nprintln(\n  \"Congratulations ! 'The secret of getting ahead is getting started.' - Mark Twain\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -955,7 +889,6 @@
   },
   {
     "lesson": "star-parameter",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n{\n  case class Node(value: Int, connections: List[Node] = Nil) {\n    lazy val connectionsCount = connections.length\n  }\n\n  val tree = Node(\n    1,\n    ???\n  )\n  assert(tree.value == 1)\n  assert(tree.connectionsCount == 2)\n  assert(tree.connections.head.connections.head.connections.head.value == 4)\n}\n\n{\n  class Node(val value: Int, val connections: List[Node] = Nil) {\n    lazy val connectionsCount = connections.length\n  }\n\n  object N {\n    def apply(value: Int, connections: Node*): Node =\n      new Node(???, ???)\n  }\n\n  val tree = N(\n    ???,\n    ???\n  )\n  assert(tree.value == 1)\n  assert(tree.connectionsCount == 2)\n  assert(tree.connections.head.connections.head.connections.head.value == 4)\n\n  val listNode: List[Node] = (0 until 10).map(N(_)).toList\n\n  val tree2 = N(???, listNode: _*)\n  assert(tree2.value == 1)\n  assert(tree2.connectionsCount == ???)\n}\n\nprintln(\n  \"Congratulations ! 'It is never too late to be what you might have been.' - George Eliot\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -969,7 +902,6 @@
   },
   {
     "lesson": "stream",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval startN: Int = ???\nval increment: Int = ???\n\n// FIRST STREAM //\nprintln(\"- First stream -\")\n\n// Stream was renamed to LazyList in scala 2.13\ndef stream1(n: Int = 0): LazyList[Int] = {\n  n #:: stream1(n + increment)\n}\nval s1 = stream1(startN)\nval takeN: Int = ???\n\n// is not computed yet. not materialized.\nprintln(s1.take(takeN))\n\n// always return the same thing\nprintln(s1.take(takeN).toList)\nprintln(s1.take(takeN).toList)\nprintln(s1.take(takeN).toList)\n\nval r1 = s1.take(takeN).sum\nassert(r1 == 90, r1)\n\n// SECOND STREAM //\nprintln(\"- Second stream -\")\n\ndef stream2(n: Int = 0): LazyList[Int] = {\n  LazyList\n    .from(n)\n    .map(a => a * increment)\n}\nval s2: LazyList[Int] = stream2(startN)\n\n// can take less\nprintln(s2.take(6).take(5).take(4).toList)\n// cannot take more\nprintln(s2.take(4).take(5).take(6).toList)\n\nval r2 = s2.take(takeN).sum\nassert(r2 == 90, r2)\n\n// FACTORIAL //\nprintln(\"- Factorial -\")\n\n// without stream\ndef factorial(n: Int): Int = {\n  if (n == 0) ???\n  else n * factorial(n - 1)\n}\n\n// with stream\ndef factorialStream(n: Int): Int = {\n  // all those 'val' would be removed in production code. This is just for the exercise.\n  val start: Int = ???\n  val takeN: Int = ???\n  def multiply(a: Int, b: Int): Int = ???\n  LazyList\n    .from(start)\n    .take(takeN)\n    .foldLeft(1)(multiply)\n}\n\n(0 to 10).foreach { n =>\n  val f: Int = factorial(n)\n  val fs: Int = factorialStream(n)\n  println(s\"$f == $fs\")\n  assert(f == fs)\n}\n\nprintln(\n  \"Congratulations ! 'The secret of getting ahead is getting started.' - Mark Twain\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -983,7 +915,6 @@
   },
   {
     "lesson": "string-format",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n// simple leading zeros\nval i: Int = ???\nval outputLeadingZeros = f\"$i%04d\"\nprintln(outputLeadingZeros)\nassert(outputLeadingZeros == \"0005\")\n\n\n// customize leading zeros\nval length: Int = ???\n// try with 0, 1, 2, ' '\nval c: Char = '0'\nprintln(s\"%${c}${length}d\".format(i))\n\n// truncated decimals and leading zeros\nval infiniteDouble: Double = 10 / 3.0\nprintln(f\"$infiniteDouble%09.4f\")\n\n// dynamic truncated decimals and leading zeros\nval totalCharacterNumber: Int = ???\nval decimalQuantity: Int = ???\nassert(totalCharacterNumber > decimalQuantity)\nval outputTruncDecimalAndLeadZero = s\"%0${totalCharacterNumber}.${decimalQuantity}f\".format(infiniteDouble)\nprintln(outputTruncDecimalAndLeadZero)\nassert(outputTruncDecimalAndLeadZero == \"003.333\")\n\n// using locale to format things\nimport java.util.Locale\nimport java.text.NumberFormat\n\nval bigNumber: Long = 123345567\nval formatNumberFR = NumberFormat.getIntegerInstance(Locale.FRANCE)\nprintln(formatNumberFR.format(bigNumber))\nval formatNumberUS = NumberFormat.getIntegerInstance(Locale.US)\nprintln(formatNumberUS.format(bigNumber))\n\nprintln(\n  \"Congratulations ! 'With the new day comes new strength and new thoughts.' - Eleanor Roosevelt\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -997,7 +928,6 @@
   },
   {
     "lesson": "string-interpolation",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval h: String = ???\n\nval result: String = s\"$h World\"\n\nassert(result == \"Hello World\")\n\nprintln(\"Congratulations ! You are incredible !\")",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -1011,7 +941,6 @@
   },
   {
     "lesson": "thread-sleep",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n/**\n  * Simple function to get current time\n  */\ndef now = {\n  import java.util.Calendar\n  Calendar.getInstance().getTime()\n}\n\nprintln(s\"$now - Start\")\n\nval seconds: Int = ???\nval milliSeconds: Int = seconds * 1000\n\nprintln(s\"$now - Waiting $seconds seconds\")\n\nThread.sleep(milliSeconds)\n\nprintln(s\"$now - Done\")\n\nprintln(\"Congratulations ! You are the best You there is, so far !\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -1025,7 +954,6 @@
   },
   {
     "lesson": "trait",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ntrait Animal {\n  def name: String\n  protected def sound: String\n  final def talk(): Unit = println(s\"$name says $sound\")\n}\n\ncase class Dog(override val name: String) extends Animal {\n  override protected final lazy val sound = \"woof\"\n}\n\ncase class Cat(override val name: String) extends Animal {\n  override protected final lazy val sound = \"meow\"\n}\n\nval cat: Cat = Cat(???)\nval dog: Dog = Dog(???)\nval bird: Bird = Bird(???)\n\nval myAnimals: List[Animal] = List(cat, dog, bird)\n\nmyAnimals.foreach(a => a.talk())\n\nassert(myAnimals.map(a => a.name) == List(\"Kitty\", \"Snuffles\", \"Coco\"))\n\nprintln(\n  \"Congratulations ! 'Set your goals high, and don't stop till you get there.' - Bo Jackson\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -1039,7 +967,6 @@
   },
   {
     "lesson": "traversable",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n// Functor, Applicative and Traversable //\n\ntrait Functor[F[_]] {\n  def map[A, B](fa: F[A])(f: A => B): F[B]\n}\n\ntrait Applicative[F[_]] extends Functor[F] {\n  def pure[A](a: A): F[A]\n\n  def applicate[A, B](f: F[A => B])(a: F[A]): F[B]\n\n  final override def map[A, B](a: F[A])(f: A => B): F[B] =\n    applicate[A, B](pure[A => B](f))(a)\n}\n\ntrait Traversable[F[_]] extends Applicative[F] {\n  final def traverse[A, B](la: List[A])(f: A => F[B]): F[List[B]] = {\n    la.foldLeft(pure(List.empty[B])) { case (acc, element) =>\n      val fb: F[B] = f(???)\n      val fCombine: F[B => List[B]] = map(???)((l: List[B]) => (a: B) => l :+ a)\n      val output: F[List[B]] = applicate(???)(???)\n      output\n    }\n  }\n\n  // 'x => x' has a shortcut in Scala: 'identity' , try replacing it.\n  final def sequence[A](lfa: List[F[A]]): F[List[A]] = traverse(???)(a => a)\n}\n\n//////////\n\n// Example //\n\ncase class Box[A](v: A)\n\nobject Box extends Traversable[Box] {\n  def pure[A](a: A) = Box[A](???)\n\n  def applicate[A, B](ff: Box[A => B])(fa: Box[A]): Box[B] = Box(ff.v(???))\n}\n\n////////\n\n// usages //\n{ // traverse\n  println(\"-Traverse-\")\n  val input: List[Int] = ???\n  println(input)\n  assert(input.length == 4)\n\n  val output: Box[List[String]] = Box.traverse(input) {\n    case 1               => ???\n    case n if n % 2 == 0 => ???\n    case a               => Box(\"x\" * a)\n  }\n  println(output)\n  assert(output.v.length == 4)\n}\n\n{ // sequence\n  println(\"-Sequence-\")\n  val input: List[Box[Int]] = ???\n  println(input)\n  assert(input.length == 4)\n\n  val output: Box[List[Int]] = Box.sequence(???)\n  println(output)\n  assert(output.v.length == 4)\n}\n\n////////\n\nprintln(\n  \"Congratulations ! 'What would you do if you weren’t afraid?' - Sheryl Sandberg\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -1053,7 +980,6 @@
   },
   {
     "lesson": "try",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n// comment it out ( start the line with '//')\nthrow new Exception(\"Something is broken\")\n\nval badBadMath = 5 / 0\n\nimport scala.util.Random\nimport scala.util.{Try, Success, Failure}\n\nval rand = new Random(0)\n\nval numerator: Int = ???\n\ndef denominator(): Int = if (rand.nextBoolean()) 0 else 1\n\ndef mightFail(): Try[Int] = Try(numerator / denominator())\n\ndef results(): Int = mightFail() match {\n  case Success(v) => ???\n  case Failure(ex) =>\n    println(s\"It failed but we are trying again: $ex\")\n    results()\n}\n\nassert(results() == 12)\n\ndef badMethod(): Try[Int] = Try(throw new Exception(\"Bad method\"))\n\nval alternativeResults: Int = badMethod().getOrElse(???)\n\nassert(alternativeResults == 8)\n\nprintln(\"Congratulations ! Go beyond.\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -1067,7 +993,6 @@
   },
   {
     "lesson": "tuple",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n// Tuple2:\n\nval a: (Int, String) = (12, ???)\n\n// Accessors\n\nval first: Int = a._1\nval second: String = ???\n\nassert(first == 12)\nassert(second == \"abc\")\n\n// Flip a Tuple 2\n\nval flip = a.swap\n\nval expectedFlip: (String, Int) = \"abc\" -> ???\n\nassert(flip == expectedFlip)\n\n// Tuple3\n\nval tripleList: List[(Int, String, Int)] = List(\n  (1, \"a\", 1),\n  (???, ???, ???),\n  (3, \"c\", 3)\n)\n\n// tuple in map\nval modifiedTripleList: List[(Int, String)] =\n  tripleList.map(r => (r._1 + r._3) -> ???)\n\nval expectedModifiedTripleList: List[(Int, String)] = List(\n  2 -> ???,\n  4 -> \"haha\",\n  ???\n)\n\nassert(expectedModifiedTripleList == modifiedTripleList)\n\nprintln(\"Congratulations ! Do not be afraid, you are not alone.\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -1081,7 +1006,6 @@
   },
   {
     "lesson": "typeclass",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\n// TRAIT\ntrait DoubleUp[A] {\n  def apply(a: A): A\n}\n\n// IMPLICIT IMPLEMENTATIONS\nimplicit val DoubleUpInt: DoubleUp[Int] = new DoubleUp[Int] {\n  def apply(a: Int): Int = ???\n}\n\nimplicit object DoubleUpString extends DoubleUp[String] {\n  def apply(a: String): String = List(a, a).mkString(\" \")\n}\n\n// USE CASE\ndef fourTime[A](a: A)(implicit double: DoubleUp[A]): A = double(???)\n\n// EXAMPLES\nval i: Int = fourTime[Int](???)\nprintln(i)\nassert(i == 32)\n\nval s: String = fourTime[String](???)\nprintln(s)\nassert(s == \"hello hello hello hello\")\n\ncase class Square(c: Int) {\n  final lazy val area: Int = ???\n}\n\n// you might need that ... :)\n// implicit ...\n\nval square: Square = Square(???)\nprintln(square)\nassert(square.area == 36)\n\n// uncomment those when you get here \n// val bigSquare: Square = fourTime(square)\n// println(bigSquare)\n// assert(bigSquare.area == 576)\n\nprintln(\n  \"Congratulations ! 'Life is short. Don’t be lazy.' - Sophia Amoruso\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -1095,7 +1019,6 @@
   },
   {
     "lesson": "unapply-magic",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nsealed trait Element {\n  def serialize: String\n  def display: String\n}\n\nobject Elements {\n  case object EndOfParse extends Element {\n    def serialize: String = \"\"\n    override final lazy val display: String = ???\n    override final lazy val toString: String = this.display\n  }\n\n  sealed abstract class Word(nextElement: Element) extends Element {\n    def serializeSelf: String\n    override final def serialize: String =\n      this.serializeSelf + nextElement.serialize\n\n    override final lazy val toString: String =\n      s\"${this.display}, ${nextElement.toString}\"\n  }\n\n  case class Number(n: Int, nextElement: Element) extends Word(nextElement) {\n    override final lazy val serializeSelf: String = n.toString\n    override final lazy val display: String = s\"N($n)\"\n  }\n  case class Letter(c: Char, nextElement: Element) extends Word(nextElement) {\n    override final lazy val serializeSelf: String = ???\n    override final lazy val display: String = ???\n  }\n  case class Space(nextElement: Element) extends Word(nextElement) {\n    override final lazy val serializeSelf: String = ???\n    override final lazy val display: String = ???\n  }\n}\n\nobject Parser {\n  import Elements._\n\n  private object NumberParser {\n    private val regex = \"([0-9])(.*)\".r\n\n    def unapply(s: String): Option[Number] = {\n      s match {\n        case regex(n, rest) => Some(Number(???, Parser(???)))\n        case _              => None\n      }\n    }\n  }\n\n  private object LetterParser {\n    private val regex = \"([a-zA-Z])(.*)\".r\n\n    def unapply(s: String): Option[Letter] = {\n      s match {\n        case regex(n, rest) => Some(Letter(n.head, Parser(rest)))\n        case _              => None\n      }\n    }\n  }\n\n  private object SpaceParser {\n    private val regex = \"( )(.*)\".r\n\n    def unapply(s: String): Option[Space] = {\n      s match {\n        case regex(n, rest) => Some(Space(Parser(???)))\n        case _              => None\n      }\n    }\n  }\n\n  private object EndOfParserParser {\n    def unapply(s: String): Option[EndOfParse.type] = {\n      if (???) {\n        Some(EndOfParse)\n      } else {\n        None\n      }\n    }\n  }\n\n  def apply(input: String): Element = {\n    input match {\n      case NumberParser(n)        => n\n      case LetterParser(l)        => ???\n      case SpaceParser(s)         => s\n      case EndOfParserParser(eof) => ???\n      case i =>\n        val errorMessage: String = s\"Do not know how to parse $i\"\n        throw new Exception(errorMessage)\n    }\n  }\n}\n\n{\n  println(\">>> Test eof\")\n  val input: String = \"\"\n  val parsed = Parser(input)\n  println(s\"parsed: $parsed\")\n  val serialized = parsed.serialize\n  println(s\"output: $serialized\")\n  assert(input == serialized, serialized)\n  assert(parsed.display == \"EOF\", parsed.display)\n}\n\n{\n  println(\">>> Test space\")\n  val input: String = \" \"\n  val parsed = Parser(input)\n  println(s\"parsed: $parsed\")\n  val serialized = parsed.serialize\n  println(s\"output: $serialized\")\n  assert(input == serialized, serialized)\n  assert(parsed.display == \"SPACE\", parsed.display)\n}\n\n{\n  println(\">>> Test letter\")\n  val input: String = \"a\"\n  val parsed = Parser(input)\n  println(s\"parsed: $parsed\")\n  val serialized = parsed.serialize\n  println(s\"output: $serialized\")\n  assert(input == serialized, serialized)\n  assert(parsed.display == \"L(a)\", parsed.display)\n}\n\n{\n  println(\">>> Test number\")\n  val input: String = \"2\"\n  val parsed = Parser(input)\n  println(s\"parsed: $parsed\")\n  val serialized = parsed.serialize\n  println(s\"output: $serialized\")\n  assert(input == serialized, serialized)\n  assert(parsed.display == \"N(2)\", parsed.display)\n}\n\n{\n  println(\">>> Test 3 element\")\n  val input: String = \"4 b\"\n  val parsed = Parser(input)\n  println(s\"parsed: $parsed\")\n  val serialized = parsed.serialize\n  println(s\"output: $serialized\")\n  assert(input == serialized, serialized)\n  assert(parsed.toString == \"N(4), SPACE, L(b), EOF\", parsed.toString)\n}\n\n{\n  println(\">>> Test text\")\n  val input: String = \"Hello World 123\"\n  println(s\"input:  $input\")\n  val parsed = Parser(input)\n  println(s\"parsed: $parsed\")\n  val serialized = parsed.serialize\n  println(s\"output: $serialized\")\n\n  assert(input == serialized, serialized)\n}\n\nprintln(\n  \"Congratulations ! 'Don’t let what you cannot do interfere with what you can do.' — John Wooden\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -1109,7 +1032,6 @@
   },
   {
     "lesson": "upper-constraint",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\ntrait Shape\n\ncase object Square extends Shape\ncase object Triangle extends Shape\ncase object Circle extends Shape\n\nabstract class Color(r: Int, g: Int, b: Int) {\n  final lazy val display: String = s\"$this($r,$g,$b)\"\n}\n\ncase object Red extends Color(255, 0, 0)\ncase object Blue extends Color(0, 0, 255)\n\ncase class Canvas[S <: Shape, C <: ???](shape: S, color: C) {\n  override def toString: String = s\"${color.display} $shape\".toLowerCase\n}\n\nval c1 = Canvas(???, Blue)\nprintln(c1)\nassert(c1.shape == Triangle)\nassert(c1.color == Blue)\n\nval c2 = Canvas(Rectangle, Yellow)\nprintln(c2)\nassert(c2.shape == Rectangle)\nassert(c2.color == Yellow)\n\nprintln(\n  \"Congratulations ! 'Whether you think you can, or you think you can’t – you’re right.' — Henry Ford\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -1123,7 +1045,6 @@
   },
   {
     "lesson": "val-lazy-def",
-    "code": "// Learn more about Scala on https://leobenkel.com\nprintln(\"-\")\nprintln(\"Starting\")\n\nlazy val thisLazyVal: Int = {\n  println(\"this lazy val\")\n  ???\n}\n\ndef thisMethod: Int = {\n  println(\"this method\")\n  ???\n}\n\nval thisValue: Int = {\n  println(\"this value\")\n  ???\n}\n\nprintln(\"-\")\nprintln(\"Testing method\")\nassert(thisMethod + thisMethod == 10)\n\nprintln(\"-\")\nprintln(\"Testing Lazy val\")\nassert(thisLazyVal + thisLazyVal == 20)\n\nprintln(\"-\")\nprintln(\"Testing val\")\nassert(thisValue + thisValue == 40)\n\nprintln(\"-\")\nprintln(\"Congratulations ! Stay focused on your journey to greatness !\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -1137,7 +1058,6 @@
   },
   {
     "lesson": "val-pattern-matching",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval tuple2: (Int, Option[Int]) = ???\n\nval (r1, _) = tuple2\nprintln(r1)\nassert(r1 == 3)\n\nval (_, r2) = tuple2\nprintln(r2)\nassert(r2 == Some(4))\n\nval (_, Some(r3)) = ???\nprintln(r3)\nassert(r3 == 4)\n\n// try different values here\nval a @ \"abc\": String = ???\n\nprintln(\n  \"Congratulations ! 'If you persevere long enough, if you do the right things long enough, the right things will happen.' - Manon Rheaume\"\n)\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -1151,7 +1071,6 @@
   },
   {
     "lesson": "values",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nval a: Int = ???\n\nval result: Int = 2 + a\n\nassert(result == 8)\n\nprintln(\"Congratulations ! You are amazing !\")",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"
@@ -1165,7 +1084,6 @@
   },
   {
     "lesson": "visibility",
-    "code": "// Learn more about Scala on https://leobenkel.com\n\nobject Foo {\n  val visibilityPublic = \"a\"\n\n  private val visibilityPrivate = \"b\"\n}\n\n// try to use 'visibilityPrivate'.\nval result: String = ???\n\nassert(result == \"a\")\n\nprintln(\"Congratulations ! You can change the world.\")\n",
     "target": {
       "scalaVersion": "2.13.16",
       "tpe": "Jvm"

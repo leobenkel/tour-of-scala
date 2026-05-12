@@ -6,7 +6,7 @@ export const title = "Scala List parallel"
 
 export const date = "2020-09-11T17:01:21"
 
-const scastieId = "PaBhpeY9TcmkQI93ukPKeA"
+const scastieId = "FdpOsjhgTXSYwVWJdzHVQg"
 
 const mainInfoBox = <>
   <p>

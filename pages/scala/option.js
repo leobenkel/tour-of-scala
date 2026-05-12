@@ -6,7 +6,7 @@ export const title = "Scala Option"
 
 export const date = "2020-07-24T17:02:54"
 
-const scastieId = "oeGow36oTTWDJJo3PyxG4w"
+const scastieId = "UjbpHYNVRvuzYgPGSfhR2Q"
 
 const mainInfoBox = <>
   <p><code>Option</code> is the way in Scala to handle <code>null</code>.

@@ -6,7 +6,7 @@ export const title = "Scala Typeclass"
 
 export const date = "2021-01-15T17:02:53"
 
-const scastieId = "jaaSKIsuT16QJiHhCr3FZA"
+const scastieId = "v6Yrw95ZRWWp8r6MwTP4nA"
 
 const mainInfoBox = <>
   <p><i>Typeclasses</i> woooohh , sorry it is a bit late for scary Halloween words but here we are !</p>

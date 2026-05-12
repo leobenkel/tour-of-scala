@@ -6,7 +6,7 @@ export const title = "Scala List zip"
 
 export const date = "2020-11-25T17:01:50"
 
-const scastieId = "avq8hDpLQ1Cit7oPekMUBw"
+const scastieId = "1oqgZ1tbQhOmh6SVBi9sig"
 
 const mainInfoBox = <>
   <p>

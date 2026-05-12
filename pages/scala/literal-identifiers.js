@@ -6,7 +6,7 @@ export const title = "Scala literal identifiers"
 
 export const date = "2020-12-30T17:03:03"
 
-const scastieId = "VWTn1c52RAKnbrLkIzoirQ"
+const scastieId = "rsDvuxlDTyyb0FHrMUYGPQ"
 
 const mainInfoBox = <>
   <p>Super short one today.</p>

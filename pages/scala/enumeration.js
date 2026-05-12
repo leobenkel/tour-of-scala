@@ -6,7 +6,7 @@ export const title = "Scala Enumeration for 2.x"
 
 export const date = "2020-10-30T17:00:57"
 
-const scastieId = "oPca1p3MQziI5lU6VhBoeQ"
+const scastieId = "fjieU4dxTlevjGxDzPJp5w"
 
 const mainInfoBox = <>
   <p>Time to assemble everything we learned in the recent episodes !</p>

@@ -6,7 +6,7 @@ export const title = "Scala difference between val, lazy val and def"
 
 export const date = "2020-07-27T17:01:27"
 
-const scastieId = "YOvUmsqRRDak1gysW1eL6g"
+const scastieId = "kNWD9RpXRDiLbWTUFarBhQ"
 
 const mainInfoBox = <>
   <p>We have seen <code>val</code> and <code>def</code> in previous SKBs but we haven't encountered the keyword <code>lazy</code> before.</p>

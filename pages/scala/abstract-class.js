@@ -6,7 +6,7 @@ export const title = "Scala abstract class"
 
 export const date = "2020-10-16T17:00:18"
 
-const scastieId = "iu3s7VmgS8eXwG9t7QPKgA"
+const scastieId = "wmSLaTdBSaGXvyWwgrijaw"
 
 const mainInfoBox = <>
   <p>This SKB is going to continue our progress in the Object Oriented Programming aspect of Scala.</p>

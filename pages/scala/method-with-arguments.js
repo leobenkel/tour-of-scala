@@ -6,7 +6,7 @@ export const title = "Scala Method with Arguments"
 
 export const date = "2020-07-20T17:00:01"
 
-const scastieId = "CQFDZ7FgQ16GO4qspKib4Q"
+const scastieId = "VPqCUZd4Sc2Orr0XXZIkfA"
 
 const mainInfoBox = <>
   <p>In programming language, a method does some operations and return a result.</p>

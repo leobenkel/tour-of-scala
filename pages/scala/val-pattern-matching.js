@@ -6,7 +6,7 @@ export const title = "Scala val pattern matching"
 
 export const date = "2020-12-14T17:00:25"
 
-const scastieId = "eDzuxyW8R7OMAdnz1VNJHg"
+const scastieId = "XKfAtE1VRr28NU1Hn2ttZQ"
 
 const mainInfoBox = <>
   <p>

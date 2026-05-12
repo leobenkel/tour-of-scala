@@ -8,7 +8,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -21,7 +21,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -34,7 +34,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -47,7 +47,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -60,7 +60,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -73,7 +73,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -86,7 +86,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -99,7 +99,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -112,7 +112,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -125,7 +125,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -138,7 +138,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -151,7 +151,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -164,7 +164,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -177,7 +177,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -190,7 +190,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -203,7 +203,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -216,7 +216,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -229,7 +229,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -242,7 +242,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -255,7 +255,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -268,7 +268,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -281,7 +281,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -294,7 +294,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -307,7 +307,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -320,7 +320,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -333,7 +333,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -346,7 +346,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -359,7 +359,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -372,7 +372,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -385,7 +385,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -398,7 +398,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -411,7 +411,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -424,7 +424,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -437,7 +437,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -450,7 +450,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -463,7 +463,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -476,7 +476,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -489,7 +489,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -532,7 +532,7 @@
       ]
     ],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies ++= Seq(\n  \"org.scala-lang.modules\" %% \"scala-parallel-collections\" % \"0.2.0\",\n  \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"\n)",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies ++= Seq(\n  \"org.scala-lang.modules\" %% \"scala-parallel-collections\" % \"0.2.0\",\n  \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"\n)",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -545,7 +545,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -558,7 +558,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -571,7 +571,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -584,7 +584,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -597,7 +597,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -610,7 +610,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -623,7 +623,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -636,7 +636,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -649,7 +649,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -662,7 +662,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -675,7 +675,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -688,7 +688,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -701,7 +701,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -714,7 +714,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -727,7 +727,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -740,7 +740,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -753,7 +753,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -766,7 +766,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -779,7 +779,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -792,7 +792,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -805,7 +805,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -818,7 +818,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -831,7 +831,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -844,7 +844,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -857,7 +857,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -870,7 +870,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -883,7 +883,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -896,7 +896,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -909,7 +909,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -922,7 +922,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -935,7 +935,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -948,7 +948,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -961,7 +961,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -974,7 +974,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -987,7 +987,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -1000,7 +1000,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -1013,7 +1013,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -1026,7 +1026,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -1039,7 +1039,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -1052,7 +1052,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -1065,7 +1065,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -1078,7 +1078,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
@@ -1091,7 +1091,7 @@
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   }

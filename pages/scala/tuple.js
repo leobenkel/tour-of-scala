@@ -6,7 +6,7 @@ export const title = "Scala Tuple"
 
 export const date = "2020-08-26T17:02:11"
 
-const scastieId = "OnpRhzslSrmAPtJN0AYoWw"
+const scastieId = "ovvljNECRoKY1Wh65E48TQ"
 
 const mainInfoBox = <>
   <p>Imagine, for instance, you would like to pair together an identification number (<code>Int</code>) and a name (<code>String</code>).

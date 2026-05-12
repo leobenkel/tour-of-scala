@@ -6,7 +6,7 @@ export const title = "Scala Foldable"
 
 export const date = "2021-01-06T17:00:48"
 
-const scastieId = "v3wuvYc6RQmzR66bk8qvsg"
+const scastieId = "4vuILncTQsOxgDZnEhxB7g"
 
 const mainInfoBox = <>
   <p>After learning about <i>Functor</i>, the next piece with no dependency is <i>Foldable</i>.</p>

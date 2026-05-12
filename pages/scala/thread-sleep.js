@@ -6,7 +6,7 @@ export const title = "Scala Thread Sleep"
 
 export const date = "2020-08-28T17:04:15"
 
-const scastieId = "Bisr0qd6TiGCUzL1hUFd6g"
+const scastieId = "nxYe6cP3SJqRlgMFsIKitg"
 
 const mainInfoBox = <>
   <p>

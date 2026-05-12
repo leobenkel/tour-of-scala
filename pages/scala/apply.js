@@ -6,7 +6,7 @@ export const title = "Scala apply"
 
 export const date = "2020-08-19T17:03:28"
 
-const scastieId = "iPglMQEiRfWyVG5DHKyo7g"
+const scastieId = "RTpwGicRR3SneaXdv5eLqQ"
 
 const mainInfoBox = <>
   <p><code>apply</code> is a <i>magic</i> Scala method. There is no need to call <code>apply</code> explicitly to execute it. And this is part of the tool that the <code>case class</code> use.</p>

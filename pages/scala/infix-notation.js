@@ -6,7 +6,7 @@ export const title = "Scala infix notation"
 
 export const date = "2020-11-04T17:03:46"
 
-const scastieId = "xSDEZW3cT7CtXTbrtKxSvA"
+const scastieId = "yMCzfAtKRNaTQaQVGYgoYQ"
 
 const mainInfoBox = <>
   <p>

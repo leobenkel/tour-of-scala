@@ -6,7 +6,7 @@ export const title = "Scala trait"
 
 export const date = "2020-10-09T17:00:40"
 
-const scastieId = "OZNqDKcuTducc9AaoxJFuA"
+const scastieId = "a9CilF1DS12RKXPdv9elYQ"
 
 const mainInfoBox = <>
   <p><code>trait</code> are like <code>interface</code> from other languages.</p>

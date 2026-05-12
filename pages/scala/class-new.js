@@ -6,7 +6,7 @@ export const title = "Scala Class new"
 
 export const date = "2020-07-31T17:00:32"
 
-const scastieId = "bh5EmYhdR6u1bW8gfKjY2g"
+const scastieId = "vtKJElw3RuelNGMWRhMHhA"
 
 const mainInfoBox = <>
   <p>Scala is a language that join both worlds “Functional Programming” and “Object Oriented”.</p>

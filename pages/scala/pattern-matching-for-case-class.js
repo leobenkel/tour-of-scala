@@ -6,7 +6,7 @@ export const title = "Scala pattern matching for case class"
 
 export const date = "2020-11-11T17:01:22"
 
-const scastieId = "YYfk3tSXTlGTravievxZEg"
+const scastieId = "y6EQFMfwT5a6vV79NDSL8g"
 
 const mainInfoBox = <>
   <p>We learned about pattern matching in the past and there were a lot of “<i>we will learn about this later</i>“.</p>

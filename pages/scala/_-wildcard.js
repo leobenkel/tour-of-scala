@@ -6,7 +6,7 @@ export const title = "Scala _ wildcard"
 
 export const date = "2020-12-11T17:00:41"
 
-const scastieId = "GsGZxBR8Q1Soy6TQFTKnoQ"
+const scastieId = "h0NBLPxuRVqL4J62JHAuBA"
 
 const mainInfoBox = <>
   <p>

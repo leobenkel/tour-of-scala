@@ -6,7 +6,7 @@ export const title = "Scala implicit val"
 
 export const date = "2020-10-05T17:02:55"
 
-const scastieId = "eiWGG4G7Qoe1ldzFfGDCtg"
+const scastieId = "56hzjX9rQIeSVfZaieKboQ"
 
 const mainInfoBox = <>
   <p><code>implicit val</code> can do a lot but, for now, we are just going to learn about the basic use case.</p>

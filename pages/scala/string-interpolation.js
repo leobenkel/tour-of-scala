@@ -6,7 +6,7 @@ export const title = "Scala String Interpolation"
 
 export const date = "2020-07-15T17:01:28"
 
-const scastieId = "lwH1J4fdSsWs2JC9b5Hykg"
+const scastieId = "zkE3s5vPTqCoVQsmhd7KZA"
 
 const mainInfoBox = <>
   <p>Scala String Interpolation is how Strings can be constructed in Scala. It will be the way you can add Values inside a String. </p>

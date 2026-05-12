@@ -6,7 +6,7 @@ export const title = "Scala String Format"
 
 export const date = "2020-10-14T17:01:13"
 
-const scastieId = "tMiJL0glR3exHoEdGFKZBQ"
+const scastieId = "t8tSZPk3Q06SqcloPlKKcg"
 
 const mainInfoBox = <>
   <p>Little break from the heavy stuff !</p>

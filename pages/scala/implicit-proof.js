@@ -6,7 +6,7 @@ export const title = "Scala implicit proof"
 
 export const date = "2020-11-30T17:00:00"
 
-const scastieId = "j5KUq7jdTaujb5a5bJEH0g"
+const scastieId = "SgbqzZ1eTHiYPieRDtHTRg"
 
 const mainInfoBox = <>
   <p>

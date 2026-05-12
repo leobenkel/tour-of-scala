@@ -6,7 +6,7 @@ export const title = "Scala Generic Trait"
 
 export const date = "2020-10-23T17:01:26"
 
-const scastieId = "U5lfs4yvS82TMygUeHMctg"
+const scastieId = "CbQ58gctTvu0b8d8OO8ahA"
 
 const mainInfoBox = <>
   <p>

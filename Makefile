@@ -27,3 +27,9 @@ update_netlify:
 
 check_versions:
 	npm outdated
+
+refresh_snippets:
+	node scripts/save-snippets.mjs
+
+refresh_snippets_dry:
+	node scripts/save-snippets.mjs --dry-run

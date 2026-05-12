@@ -6,7 +6,7 @@ export const title = "Scala Values"
 
 export const date = "2020-07-13T17:00:26"
 
-const scastieId = "V5hjMfbkSb28UEedNKP2zw"
+const scastieId = "LcD7RECoSci6Wo6QU4AeBg"
 
 const mainInfoBox = <>
   <p>A variable can be considered in two parts. First its name, for instance <code>a</code> and then its value, for instance, <code>12</code>.</p><p>In Scala, a variable also has a type, for instance, <code>Int</code> when it is an integer.</p>

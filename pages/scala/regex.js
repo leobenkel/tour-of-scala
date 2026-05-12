@@ -6,7 +6,7 @@ export const title = "Scala Regex"
 
 export const date = "2020-10-02T17:00:02"
 
-const scastieId = "ofpEC7pYQ6OaAYH4OQfzsQ"
+const scastieId = "xt67NczOQrel9S6TYKu55g"
 
 const mainInfoBox = <>
   <p>This SKB is about Regex, which stand for Regular Expression.</p>

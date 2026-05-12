@@ -6,7 +6,7 @@ export const title = "Scala Option map"
 
 export const date = "2020-08-21T17:00:44"
 
-const scastieId = "xWLsuNGXQ7uVnaUE35AyAA"
+const scastieId = "6i8IliO3QxC2HEpBkaPy5Q"
 
 const mainInfoBox = <>
   <p>If you followed along, you might remember <code>map</code> from the <code>List</code>. In Scala, and in functional programming, you are going to hear about <code>map</code> a whole bunch.</p>

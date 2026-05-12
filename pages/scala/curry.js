@@ -7,7 +7,7 @@ export const title = "Scala Curry"
 
 export const date = "2020-09-04T17:03:48"
 
-const scastieId = "pm2hh2y4Roa4ncyCvW59nQ"
+const scastieId = "wRDvxH1JQiaT4zCKwNomVA"
 
 const mainInfoBox = <>
   <p>No, we are not talking about food here.</p>

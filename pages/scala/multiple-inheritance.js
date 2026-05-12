@@ -6,7 +6,7 @@ export const title = "Scala multiple inheritance"
 
 export const date = "2020-12-04T17:01:30"
 
-const scastieId = "iTqY4AsHScucBLyf9l6j2g"
+const scastieId = "OglaJGkbQjGv2I8AKLHvIA"
 
 const mainInfoBox = <>
   <p>

@@ -6,7 +6,7 @@ export const title = "Scala for-comprehension"
 
 export const date = "2020-09-28T17:00:25"
 
-const scastieId = "FTZpkSrSRAG8WVFHEVCgFw"
+const scastieId = "ZQz4PtphS4emqZc8b7U9Lw"
 
 const mainInfoBox = <>
   <p>Using a lot of <code>map</code> and <code>flatMap</code> can make the code very hard to read as it goes into deep functions of functions.</p>

@@ -44,3 +44,7 @@ public/workbox*.js.map
 .sass-cache
 
 *.log
+
+# scastie re-save script scratch files
+.scastie-cookie
+.scastie-ids.tmp.json

@@ -6,7 +6,7 @@ export const title = "Scala case class copy"
 
 export const date = "2020-11-16T17:00:16"
 
-const scastieId = "vR4QaHcPSjOyqN0lkqJtTA"
+const scastieId = "VNw6pBW0SI2b0Uem5IcZ2w"
 
 const mainInfoBox = <>
   <p>

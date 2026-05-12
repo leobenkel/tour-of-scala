@@ -83,6 +83,11 @@ const scastieHost = "https://scastie.scala-lang.org"
 const scastieLibUrl = `${scastieHost}/embedded.js`
 const scastieCSS = `${scastieHost}/public/embedded.css`
 
+// Snippets are saved under this user's account on Scastie so they persist;
+// the embed needs user+update to look up owned snippets by base64UUID.
+const scastieUser = "leobenkel"
+const scastieUpdate = 0
+
 export default function Scastie({ scastieId }) {
     const styles = useStyles()
 
@@ -97,20 +102,39 @@ export default function Scastie({ scastieId }) {
     const divId = `id-scastie-${scastieId}`
 
     useEffect(() => {
-        if (containerRef.current) {
-            // https://betterprogramming.pub/4-ways-of-adding-external-js-files-in-reactjs-823f85de3668
-            const script = document.createElement("script")
-            script.src = scastieLibUrl
-            script.crossOrigin = "anonymous"
-            script.async = true
-            containerRef.current.appendChild(script)
+        if (!containerRef.current) return
+        if (window.scastie) return
 
-            return () => {
-                script.remove()
+        // Fetch + patch + inject instead of <script src>. The current
+        // embedded.js assumes any consumer running on a "localhost" hostname
+        // is the Scastie dev environment and points tree-sitter/metals/etc.
+        // at local backend ports (9000, 8000) instead of the prod URL, even
+        // when EmbeddedResource is given a serverUrl. That breaks the embed
+        // on this site's `next dev`. Replacements:
+        //   (a) the literal "http://localhost:9000" used as the file://
+        //       fallback inside SyntaxHighlightingPlugin, and
+        //   (b) every  ===\"localhost\"  hostname check, so the production
+        //       fallback branches always win.
+        // Both are no-ops if Scastie ever fixes this upstream.
+        const controller = new AbortController()
+        let script
+        fetch(scastieLibUrl, { signal: controller.signal })
+            .then((r) => r.text())
+            .then((src) => {
+                const patched = src
+                    .replaceAll('"http://localhost:9000"', `"${scastieHost}"`)
+                    .replaceAll('==="localhost"', '==="__embed_disabled__"')
+                script = document.createElement("script")
+                script.textContent = patched
+                document.head.appendChild(script)
+            })
+            .catch(() => {})
 
-                const cssLink = document.querySelector(`link[href="${scastieCSS}"]`)
-                if (cssLink) cssLink.remove()
-            }
+        return () => {
+            controller.abort()
+            if (script) script.remove()
+            const cssLink = document.querySelector(`link[href="${scastieCSS}"]`)
+            if (cssLink) cssLink.remove()
         }
     }, [containerRef])
 
@@ -126,6 +150,8 @@ export default function Scastie({ scastieId }) {
                 try {
                     window.scastie.EmbeddedResource({
                         base64UUID: scastieId,
+                        user: scastieUser,
+                        update: scastieUpdate,
                         injectId: divId,
                         serverUrl: scastieHost
                     })

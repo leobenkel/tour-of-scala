@@ -6,7 +6,7 @@ export const title = "Scala self-referred type"
 
 export const date = "2020-12-18T17:00:02"
 
-const scastieId = "wKhJFuWwSw2CE38r1JOT1g"
+const scastieId = "Pg7pUUEsQZiF2U3EHqYWqw"
 
 const mainInfoBox = <>
   <p>

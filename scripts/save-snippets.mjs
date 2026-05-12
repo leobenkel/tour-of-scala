@@ -281,7 +281,10 @@ async function main() {
             ids[lesson] = newId
             await writeJson(TMP_IDS, ids)
             done++
-            log(`saved ${done}/${entries.length}: ${lesson} -> ${newId}`)
+            const userInfo = resp.user
+                ? ` (user=${resp.user.login}, update=${resp.user.update})`
+                : ""
+            log(`saved ${done}/${entries.length}: ${lesson} -> ${newId}${userInfo}`)
         })
 
         const savedInScope = entries.filter((e) => ids[e.lesson]).length

@@ -83,6 +83,11 @@ const scastieHost = "https://scastie.scala-lang.org"
 const scastieLibUrl = `${scastieHost}/embedded.js`
 const scastieCSS = `${scastieHost}/public/embedded.css`
 
+// Snippets are saved under this user's account on Scastie so they persist;
+// the embed needs user+update to look up owned snippets by base64UUID.
+const scastieUser = "leobenkel"
+const scastieUpdate = 0
+
 export default function Scastie({ scastieId }) {
     const styles = useStyles()
 
@@ -126,6 +131,8 @@ export default function Scastie({ scastieId }) {
                 try {
                     window.scastie.EmbeddedResource({
                         base64UUID: scastieId,
+                        user: scastieUser,
+                        update: scastieUpdate,
                         injectId: divId,
                         serverUrl: scastieHost
                     })

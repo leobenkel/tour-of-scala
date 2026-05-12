@@ -6,7 +6,7 @@ export const title = "Scala List Flatten"
 
 export const date = "2020-08-24T17:02:03"
 
-const scastieId = "2RCrTtxoTZOene4QtZXEug"
+const scastieId = "Berm24edTjiGwjF9H3wg8A"
 
 const mainInfoBox = <>
   <p>Do you remember the <code>map</code>, from few SKBs ago ?</p>

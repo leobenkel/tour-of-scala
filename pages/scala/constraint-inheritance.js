@@ -6,7 +6,7 @@ export const title = "Scala constraint inheritance"
 
 export const date = "2020-12-07T17:01:22"
 
-const scastieId = "JvlP6uwzS5ut6ewgP5IXEQ"
+const scastieId = "anWnmLwETV6omSuS0PJhBg"
 
 const mainInfoBox = <>
   <p>

@@ -6,7 +6,7 @@ export const title = "Scala unapply magic"
 
 export const date = "2020-12-02T17:00:24"
 
-const scastieId = "4q7VFaHFQHqsFtV4pNcAdA"
+const scastieId = "JBDgaZS4T5273DsujYt52Q"
 
 const mainInfoBox = <>
   <p>

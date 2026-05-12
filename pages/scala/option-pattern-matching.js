@@ -6,7 +6,7 @@ export const title = "Scala Option pattern matching"
 
 export const date = "2020-12-21T17:02:35"
 
-const scastieId = "DFyBThWBSXuJsZElqgLdYw"
+const scastieId = "q64CvHKbRuGmB8izwUQHSw"
 
 const mainInfoBox = <>
   <p>Easy one today.</p>

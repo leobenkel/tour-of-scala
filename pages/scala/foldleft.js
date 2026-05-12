@@ -6,7 +6,7 @@ export const title = "Scala foldLeft"
 
 export const date = "2020-09-23T17:01:07"
 
-const scastieId = "hygqjInhSVWccRw7FTpZfA"
+const scastieId = "WSUvWVqxRKirVmfEfLACXQ"
 
 const mainInfoBox = <>
   <p>Let me introduce <i>accumulators</i> and <i>aggregations</i>.</p>

@@ -6,7 +6,7 @@ export const title = "Scala List Sum Method"
 
 export const date = "2020-07-22T17:01:35"
 
-const scastieId = "GVtzEOSyQcucY2uqrfacqQ"
+const scastieId = "4kBAMHigSVeJHO8Qsl5WPg"
 
 const mainInfoBox = <>
   <p>Scala has a lot of pre-built methods. We are going to learn about one related to <code>List</code> called <code>sum</code>.</p>

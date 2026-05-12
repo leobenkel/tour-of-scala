@@ -6,7 +6,7 @@ export const title = "Scala _ placeholder"
 
 export const date = "2020-11-27T17:01:59"
 
-const scastieId = "S5N5iyw0TTG6VJdIoqiijQ"
+const scastieId = "KSuH466bT4O2ZCJEv6o8Tg"
 
 const mainInfoBox = <>
   <p>Today we are leveling up !</p>

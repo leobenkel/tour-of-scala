@@ -6,7 +6,7 @@ export const title = "Scala companion objects"
 
 export const date = "2020-08-17T17:00:05"
 
-const scastieId = "2o4AyYofRC2CtQta5tYgmA"
+const scastieId = "ilFPjJWpQkuz5cYktkMNZw"
 
 const mainInfoBox = <>
   <p><code>Companion objects</code> are a specific type of <code>object</code>.</p>

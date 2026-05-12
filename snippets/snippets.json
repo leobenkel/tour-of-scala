@@ -2,501 +2,501 @@
   {
     "lesson": "_-placeholder",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "_-wildcard",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "abstract-class",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "applicative",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "apply",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "call-by-name-parameters",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "case-class-copy",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "case-class-unapply",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "case-class",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "case-object",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "challenge-1",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "class-new",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "companion-objects",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "comparators",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "constraint-inheritance",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "contexts",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "covariance",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "curry",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "defined-type",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "either",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "enumeration",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "extractor-pattern",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "flatmap",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "foldable",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "foldleft",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "for-comprehension",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "functor",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "future",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "generic-trait",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "higher-kind",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "implicit-class",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "implicit-conversion",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "implicit-proof",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "implicit-val",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "infix-notation",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "list-filter-method",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "list-flatten",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "list-of-option-flatten",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "list-parallel",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [
@@ -532,566 +532,566 @@
       ]
     ],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies ++= Seq(\n  \"org.scala-lang.modules\" %% \"scala-parallel-collections\" % \"0.2.0\",\n  \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"\n)",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies ++= Seq(\n  \"org.scala-lang.modules\" %% \"scala-parallel-collections\" % \"0.2.0\",\n  \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"\n)",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "list-pattern-matching",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "list-sum-method",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "list-zip",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "literal-identifiers",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "main",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "map-for-list",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "method-with-arguments",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "methods",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "monad",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "multiple-inheritance",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "objects",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "operators",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "option-map",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "option-pattern-matching",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "option",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "pattern-matching-at",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "pattern-matching-for-case-class",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "pattern-matching-or",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "pattern-matching",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "random",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "range",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "recursion",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "regex",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "repeated-parameters",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "sealed",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "self-referred-type",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "set",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "star-parameter",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "stream",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "string-format",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "string-interpolation",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "thread-sleep",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "trait",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "traversable",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "try",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "tuple",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "typeclass",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "unapply-magic",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "upper-constraint",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "val-lazy-def",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "val-pattern-matching",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "values",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   },
   {
     "lesson": "visibility",
     "target": {
-      "scalaVersion": "2.13.16",
+      "scalaVersion": "2.13.18",
       "tpe": "Jvm"
     },
     "libraries": [],
     "librariesFromList": [],
     "sbtConfigExtra": "scalacOptions ++= Seq(\n  \"-deprecation\",\n  \"-encoding\", \"UTF-8\",\n  \"-feature\",\n  \"-unchecked\"\n)",
-    "sbtConfigSaved": "scalaVersion := \"2.13.16\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
+    "sbtConfigSaved": "scalaVersion := \"2.13.18\"\nscalacOptions += \"-language:higherKinds\"\naddCompilerPlugin(\"org.typelevel\" %% \"kind-projector\" % \"0.13.3\" cross CrossVersion.full)\n\nscalacOptions += \"-Ydelambdafy:inline\"\nlibraryDependencies += \"org.scastie\" %% \"runtime-scala\" % \"1.0.0-SNAPSHOT\"",
     "sbtPluginsConfigExtra": "",
     "sbtPluginsConfigSaved": "addSbtPlugin(\"org.lyranthe.sbt\" % \"partial-unification\" % \"1.1.2\")\naddSbtPlugin(\"org.scastie\" % \"sbt-scastie\" % \"1.0.0-SNAPSHOT\")"
   }

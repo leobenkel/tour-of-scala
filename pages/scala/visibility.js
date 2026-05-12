@@ -6,7 +6,7 @@ export const title = "Scala visibility"
 
 export const date = "2020-08-14T17:02:32"
 
-const scastieId = "r7ivlvbqSZyMF7wSidIu1A"
+const scastieId = "b8YNozffT8yfdWDucWbdZQ"
 
 const mainInfoBox = <>
   <p>Visibility is about what a <code>class</code> or an <code>object</code> expose to the rest of the world.</p>

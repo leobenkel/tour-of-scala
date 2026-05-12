@@ -6,7 +6,7 @@ export const title = "Scala implicit class"
 
 export const date = "2020-09-30T17:02:01"
 
-const scastieId = "gFamS13SQR68KaKdEqv3bw"
+const scastieId = "EfFQL9JgRJCLbT37tcgc8g"
 
 const mainInfoBox = <>
   <p>

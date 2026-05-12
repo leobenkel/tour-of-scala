@@ -6,7 +6,7 @@ export const title = "Scala Future"
 
 export const date = "2020-10-07T17:00:24"
 
-const scastieId = "8LHmrp5OTiySb3Z8AhxYcQ"
+const scastieId = "Bg8kR9NcSHeEC2cb9OdVoQ"
 
 const mainInfoBox = <>
   <p>Finally diving into <i>asynchronous</i> standard library !</p>

@@ -6,7 +6,7 @@ export const title = "Scala Random"
 
 export const date = "2020-08-31T17:00:58"
 
-const scastieId = "rzNaitrXQgqSt8oCiyjdcQ"
+const scastieId = "mKeBLrVESfq9NXmzOzn79A"
 
 const mainInfoBox = <>
   <p>

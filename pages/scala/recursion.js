@@ -6,7 +6,7 @@ export const title = "Scala Recursion"
 
 export const date = "2020-10-19T17:00:47"
 
-const scastieId = "rrMZM0GURPGIyiCJwCc94Q"
+const scastieId = "olagBUvfRweJU87FVwasdQ"
 
 const mainInfoBox = <>
   <p>

@@ -7,7 +7,7 @@ export const title = "Scala Monad"
 
 export const date = "2021-01-18T17:00:24"
 
-const scastieId = "TI36VO9tR0CO4j0X5ckxZA"
+const scastieId = "07ghxkpwQKGCh8bgJtlmQA"
 
 const mainInfoBox = <>
   <p>We have done a lot in those last months !</p>

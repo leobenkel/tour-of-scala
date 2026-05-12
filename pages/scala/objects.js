@@ -6,7 +6,7 @@ export const title = "Scala objects"
 
 export const date = "2020-08-12T17:03:24"
 
-const scastieId = "QCE54CLGSCCs6LxgU8NBHw"
+const scastieId = "bjPQaMPnS2eIsRr1hxI33w"
 
 const mainInfoBox = <>
   <p>After seeing about <code>class</code> and <code>case class</code>, we are going to learn about <code>object</code>.</p>

@@ -6,7 +6,7 @@ export const title = "Scala implicit conversion"
 
 export const date = "2020-11-18T17:00:02"
 
-const scastieId = "E4AA2b7ORgaVh631uFVskg"
+const scastieId = "6duoT3VwTiazcIMADkf6Ug"
 
 const mainInfoBox = <>
   <p>Be careful ! I am going to show you something that you have to be really careful about.</p>

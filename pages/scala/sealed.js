@@ -6,7 +6,7 @@ export const title = "Scala Sealed"
 
 export const date = "2020-10-26T17:02:35"
 
-const scastieId = "2oxfpUY7RmC10P5D3YdsAg"
+const scastieId = "u3jBYV9oQGqqO5M0shaFBw"
 
 const mainInfoBox = <>
   <p>A simple new keyword today</p>

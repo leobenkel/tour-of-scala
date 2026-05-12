@@ -71,19 +71,26 @@ async function writeJson(p, obj) {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
-async function postSave(body, cookie) {
+function extractXsrfToken(cookie) {
+    const m = cookie.match(/(?:^|;\s*)XSRF-TOKEN=([^;]+)/)
+    return m ? decodeURIComponent(m[1]) : null
+}
+
+async function postSave(body, cookie, xsrf) {
     let attempt = 0
     while (true) {
         attempt++
         let resp
         try {
+            const headers = {
+                "Content-Type": "application/json",
+                "User-Agent": "tour-of-scala-resaver",
+                Cookie: cookie,
+            }
+            if (xsrf) headers["X-XSRF-TOKEN"] = xsrf
             resp = await fetch(SAVE_URL, {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "User-Agent": "tour-of-scala-resaver",
-                    Cookie: cookie,
-                },
+                headers,
                 body: JSON.stringify(body),
             })
         } catch (e) {
@@ -216,13 +223,15 @@ async function main() {
     const inScope = new Set(entries.map((e) => e.lesson))
     if (!SKIP_SAVE) {
         const cookie = await readCookie()
+        const xsrf = extractXsrfToken(cookie)
+        log(xsrf ? `XSRF-TOKEN found, will send X-XSRF-TOKEN header` : `no XSRF-TOKEN in cookie`)
         const todo = bodies.filter((b) => !ids[b.lesson])
         const alreadyInScope = entries.filter((e) => ids[e.lesson]).length
         log(`${alreadyInScope}/${entries.length} already saved (in scope); ${todo.length} remaining`)
 
         let done = alreadyInScope
         await runWithConcurrency(todo, CONCURRENCY, async ({ lesson, body }) => {
-            const resp = await postSave(body, cookie)
+            const resp = await postSave(body, cookie, xsrf)
             const newId = resp?.base64UUID
             if (!newId || typeof newId !== "string") {
                 throw new Error(`no base64UUID in response: ${JSON.stringify(resp).slice(0, 300)}`)

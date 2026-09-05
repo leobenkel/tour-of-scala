@@ -35,11 +35,9 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-# Service Worker
+# Service Worker (built by `serwist build`, see serwist.config.mjs)
 public/sw.js
 public/sw.js.map
-public/workbox*.js
-public/workbox*.js.map
 
 .sass-cache
 

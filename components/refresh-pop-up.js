@@ -1,85 +1,84 @@
 import {
   useEffect,
+  useRef,
   useState,
 } from 'react'
 
 import dynamic from 'next/dynamic'
-import { useRouter } from 'next/router'
 
 import { isDev } from 'lib/environment'
 
 
 const PopUp = dynamic(() => import('components/pop-up'))
 
-function initSW(enablePopUp) {
-    // https://github.com/shadowwalker/next-pwa/blob/e1d312927c43f45bbb9b07633513dd2c64d5ff79/examples/lifecycle/pages/index.js#L27-L46
-    if (!isDev && typeof window !== 'undefined' && 'serviceWorker' in navigator && window.workbox !== undefined) {
-        const wb = window.workbox
+// How long to wait for the new worker to take control before reloading anyway.
+const TAKEOVER_TIMEOUT_MS = 2000
 
-        // A common UX pattern for progressive web apps is to show a banner when a service worker has updated and waiting to install.
-        // NOTE: MUST set skipWaiting to false in next.config.js pwa object
-        // https://developers.google.com/web/tools/workbox/guides/advanced-recipes#offer_a_page_reload_for_users
-        const promptNewVersionAvailable = event => {
-            // `event.wasWaitingBeforeRegister` will be false if this is the first time the updated service worker is waiting.
-            // When `event.wasWaitingBeforeRegister` is true, a previously updated service worker is still waiting.
-            // You may want to customize the UI prompt accordingly.
-            // if (confirm('A newer version of this web app is available, reload to update?')) {
-            //     wb.addEventListener('controlling', event => {
-            //         router.reload()
-            //     })
+// The service worker is built by `serwist build` (see serwist.config.mjs) and
+// registered here rather than automatically, so a waiting worker can be
+// announced to the user instead of silently taking over on the next visit.
+async function initSW(onWaiting) {
+    if (isDev || typeof window === 'undefined' || !('serviceWorker' in navigator)) return null
 
-            //     // Send a message to the waiting service worker, instructing it to activate.
-            //     wb.messageSkipWaiting()
-            // } else {
-            //     console.log(
-            //         'User rejected to reload the web app, keep using old version. New version will be automatically load when user open the app next time.'
-            //     )
-            // }
-            enablePopUp()
-        }
+    const { Serwist } = await import('@serwist/window')
 
-        wb.addEventListener('waiting', promptNewVersionAvailable)
+    const serwist = new Serwist('/sw.js', { scope: '/' })
 
-        // never forget to call register as auto register is turned off in next.config.js
-        wb.register()
-    }
-}
+    serwist.addEventListener('waiting', onWaiting)
 
-function reloadPage(router) {
-    const wb = window.workbox
+    await serwist.register()
 
-    setTimeout(() => router.reload(), 1500)
-
-    wb.addEventListener('controlling', event => {
-        console.log('wasWaitingBeforeRegister', event.wasWaitingBeforeRegister)
-        router.reload()
-    })
-
-    // Send a message to the waiting service worker, instructing it to activate.
-    wb.messageSkipWaiting()
+    return serwist
 }
 
 export default function RefreshPopUp() {
-    const router = useRouter()
-
     const [visible, setVisible] = useState(false)
 
+    const serwistRef = useRef(null)
+
     useEffect(() => {
+        let cancelled = false
+
         initSW(() => setVisible(true))
+            .then((serwist) => {
+                if (cancelled) return
+                serwistRef.current = serwist
+            })
+            .catch(() => {})
+
+        return () => {
+            cancelled = true
+        }
     }, [])
 
-    if (visible) {
-        return <PopUp
-            displayTop
-            cta="RELOAD"
-            onCta={() => {
-                setVisible(false)
-                reloadPage(router)
-            }}
-        >
-            <p>A newer version of this web app is available, reload to update.</p>
-        </PopUp>
-    } else {
-        return null
+    const reloadPage = () => {
+        const reload = () => window.location.reload()
+
+        const serwist = serwistRef.current
+        if (!serwist) return reload()
+
+        // Reload as soon as the new worker takes over, so the page is served by
+        // the version the user just accepted.
+        serwist.addEventListener('controlling', reload)
+        serwist.messageSkipWaiting()
+
+        // Do not hang on that event. `messageSkipWaiting()` is a no-op if the
+        // registration's waiting worker has already moved on, and `controlling`
+        // then never fires. Reloading regardless is safe: the new worker is
+        // picked up on the next load either way.
+        setTimeout(reload, TAKEOVER_TIMEOUT_MS)
     }
+
+    if (!visible) return null
+
+    return <PopUp
+        displayTop
+        cta="RELOAD"
+        onCta={() => {
+            setVisible(false)
+            reloadPage()
+        }}
+    >
+        <p>A newer version of this web app is available, reload to update.</p>
+    </PopUp>
 }

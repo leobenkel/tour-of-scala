@@ -3,6 +3,10 @@
     publish = ".next"
     functions = "functions"
 
+[build.environment]
+    # Next.js 16 requires Node.js >= 20.9
+    NODE_VERSION = "22"
+
 [[plugins]]
 # https://github.com/philhawksworth/netlify-plugin-minify-html#readme
 package = "netlify-plugin-minify-html"

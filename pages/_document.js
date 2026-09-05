@@ -47,6 +47,12 @@ export default class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
+                    {/* <!-- Next.js used to inline Google Fonts CSS via `optimizeFonts`,
+                         which was removed in Next.js 15. Preconnect keeps the font
+                         requests off the critical path. --> */}
+                    <link rel="preconnect" href="https://fonts.googleapis.com" />
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
                     {/* <!-- CSS --> */}
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" />
 

@@ -9,10 +9,10 @@ install:
 	npm audit fix --force || echo ''
 
 start_dev:
-	npx next dev -p 4000
+	npx next dev --webpack -p 4000
 
 start_prod:
-	npx next build --debug
+	npx next build --webpack --debug
 	NODE_OPTIONS='--inspect' npx next start -p 4000
 
 start_prod_netlify:
